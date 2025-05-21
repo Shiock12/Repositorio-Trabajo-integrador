@@ -1,0 +1,497 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body { 
+  font-size: 70%; 
+} 
+
+p { 
+  font-size: 1em;
+} 
+
+@media screen and (min-width: 47em) {
+  body {
+    font-size: 90%; 
+  } 
+  
+  @media screen and (min-width: 60em) {
+    body {
+      font-size: 100%;
+    } 
+  }
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0 0 1.25rem 1.25rem;
+}
+
+.header {
+  position: fixed;
+  background-color: white;
+}
+
+.contenedor {
+  max-width: 31.25rem; /* 500px */
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+.contenedor p {
+  margin-top: 2.5rem;
+}
+
+.form-login {
+  margin-top: 1.25rem;
+  padding: 1.25rem;
+  background-color: #f8f8f8;
+  border-radius: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem;
+  width: 100%;
+}
+
+.form-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.form-item label {
+  width: 9.375rem; /* 150px */
+  text-align: right;
+  margin-right: 0.625rem;
+}
+
+.form-item input {
+  flex: 1;
+  padding: 0.5em;
+}
+
+.form-item span {
+  flex: 1;
+  text-align: left;
+}
+
+.boton-iniciar-sesion,
+.boton-enviar-email,
+.boton-cancelar,
+.boton-generico {
+  padding: 0.625rem;
+  background-color: #93E893;
+  border: 0.125rem solid black;
+  border-radius: 0.5em;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.boton-cancelar {
+  background-color: orangered;
+}
+
+.form-login a:not(.boton-iniciar-sesion) {
+  text-align: center;
+  color: blue;
+  text-decoration: none;
+  margin-top: 0.3125rem;
+}
+
+.recuperar-contraseña {
+  flex-direction: column;
+  text-align: center;
+}
+
+.botones-al-lado {
+  display: flex;
+  justify-content: right;
+  margin-right: 0.625rem;
+  margin-top: 6.25rem;
+}
+
+.botones-al-lado a {
+  margin: 0 0.625rem;
+  width: 12.5rem;
+}
+
+.botones-izquierda {
+  margin-top: 2.0625rem;
+  margin-left: 0.9375rem;
+  width: 70%;
+}
+
+.register {
+  margin: 1.25rem;
+  display: inline-block;
+  width: fit-content;
+  overflow: hidden;
+}
+
+.register img {
+  width: 9.375rem;
+  height: auto;
+}
+
+.align-left,
+.align-right {
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+}
+
+.uso-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.625rem;
+  align-items: start;
+}
+
+.grid-contenedor {
+  display: grid;
+  grid-template-columns: 12.5rem 1fr 1fr;
+  gap: 0.625rem;
+  grid-auto-rows: auto;
+  text-align: center;
+  font-size: 1.1875rem;
+}
+
+.grid-contenedor .box2 {
+  margin-top: 1.25rem;
+}
+
+.grid-contenedor .box3 {
+  text-align: left;
+}
+
+.num-tarjeta {
+  margin: 0.625rem;
+  padding: 0.625rem;
+}
+
+.opciones-cupon {
+  align-items: left;
+  margin-top: 1.25rem;
+}
+
+.cupon-opciones {
+  margin-top: 1.25rem;
+  margin-left: 1.25rem;
+}
+
+.transferencia {
+  margin-top: 1.25rem;
+}
+
+.botones-derecha {
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-item {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0.3125rem 12.7125rem; /* 5px 203.4px */
+}
+
+.navbar a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  border-right: 0.0625rem solid black;
+  border-left: 0.0625rem solid black;
+  border-top: 0.0625rem solid black;
+  border-bottom: 0.0625rem solid black;
+}
+
+.navbar a:hover {
+  background-color: lightgray;
+}
+
+.filtros {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem;
+}
+
+.filtros-izquierda {
+  display: flex;
+  align-items: center;
+}
+
+.filtros-izquierda select {
+  margin: 0.625rem;
+  padding: 0.3125rem;
+  border: 0.125rem solid black;
+  border-radius: 0.3125rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  border: 0.125rem solid black;
+  border-radius: 1.25rem;
+  padding: 0.3125rem 0.625rem;
+  background-color: white;
+}
+
+.search input[type="search"] {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: transparent;
+  margin-left: 0.625rem;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(5, 2fr);
+  gap: 1.25rem;
+  max-width: 62.5rem;
+  margin: auto;
+  margin-left: 18.75rem;
+  margin-top: 6.25rem;
+}
+
+.galeria img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.galeria a {
+  width: 15.625rem;
+  height: 10.5625rem;
+  display: block;
+  overflow: hidden;
+}
+
+.galeria img:hover,
+.galeria-pelicula img:hover {
+  transform: scale(1.05);
+}
+
+.iframe-a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.boton-comenzar-peli {
+  margin-top: 0.625rem;
+  text-decoration: none;
+  font-size: 1.25rem;
+  padding: 1.25rem;
+  background-color: lightskyblue;
+  width: 35rem;
+  text-align: center;
+  color: black;
+  border: 0.0625rem solid black;
+  border-radius: 0.3125rem;
+  font-weight: bold;
+}
+
+.contenedor-pelicula {
+  display: flex;
+  gap: 1.875rem;
+  align-items: flex-start;
+  padding: 1.25rem;
+  width: 95%;
+  margin: 1.875rem;
+}
+
+.contenedor-pelicula .detalle-pelicula {
+  flex: 1;
+  font-size: 1.52em;
+  width: 100%;
+}
+
+.contenedor-pelicula .detalle-pelicula a {
+  text-decoration: none;
+  color: black;
+}
+
+.contenedor-pelicula .detalle-pelicula p {
+  margin: 0.3125rem;
+}
+
+.galeria-pelicula {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin: auto;
+  margin-left: 1.875rem;
+  width: 95%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.descripcion {
+  padding-top: 1.875rem;
+  font-size: 0.9em;
+}
+
+.galeria-pelicula img {
+  width: 100%;
+  height: auto;
+  max-height: 15.625rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.series-similares .galeria-pelicula {
+  margin-top: 4.375rem;
+}
+
+/* Vista de la serie */
+.contenedor-serie {
+  display: flex;
+  gap: 1.875rem;
+  align-items: flex-start;
+  padding: 1.25rem;
+  width: 95%;
+  margin: 1.875rem;
+}
+
+.contenedor-serie .iframe-serie {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor-serie .detalle-serie {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.contenedor-serie .detalle-serie .seleccionar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+
+.contenedor-serie .detalle-serie .seleccionar label {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.contenedor-serie .detalle-serie .seleccionar select {
+  border: 0.125rem solid black;
+  border-radius: 0.3125rem;
+  padding: 0.3125rem;
+}
+
+.contenedor-serie .detalle-serie .genero, .actores {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.contenedor-serie .detalle-serie .genero p {
+  font-size: 1.5em;
+}
+
+.contenedor-serie .detalle-serie .actores a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.contenedor-serie .detalle-serie p {
+  font-size: 1.25em;
+}
+
+.series-similares {
+  width: 100%;
+  height: auto;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.series-similares .grilla-series {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin: auto;
+  margin-left: 1.875rem;
+  margin-top: 4.0625rem;
+  width: 95%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.series-similares .grilla-series img {
+  width: 100%;
+  height: auto;
+  max-height: 15.625rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.series-similares .grilla-series img:hover {
+  transform: scale(1.05);
+}
+
+.h1-similares {
+  margin-left: 1.875rem;
+}
+
+.footer {
+  text-align: center;
+  font-size: 1em;
+  padding: 0.125rem;
+  color: #666;
+}
+
+.footer-perfil .footer {
+  justify-content: flex-end;
+  margin-top: 23%;
+}
+
+.footer-contraseña .footer {
+  justify-content: flex-end;
+  margin-top: 30%;
+}
+
+.footer-registrarse .footer {
+  justify-content: flex-end;
+  margin-top: 19%;
+}
+
+.footer-vistadetallepelicula {
+  justify-content: flex-end;}

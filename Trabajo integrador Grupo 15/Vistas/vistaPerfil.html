@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil</title>
+    <link rel="stylesheet" href="../Estilos/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="PantallaPrincipal.html" class="nav-item">
+          <span><img src="../Imagenes/IconosHeader/Casa.png" alt="icon-house" /></span>
+          <span>Home</span>
+        </a>
+        <a href="VistaDetalleSerie.html" class="nav-item">
+          <span><img src="../Imagenes/IconosHeader/Serie.png" alt="icon-series" /></span>
+          <span>Series</span>
+        </a>
+
+        <a href="VistaDetallePelicula.html" class="nav-item">
+          <span><img src="../Imagenes/IconosHeader/Pelicula.png" alt="icon-pelicula"/></span>
+          <span>Peliculas</span>
+        </a>
+
+        <a href="vistaPerfil.html" class="nav-item">
+          <span><img src="../Imagenes/IconosHeader/Perfil.png" alt="iconperfil" /></span>
+          <span>Perfil</span>
+        </a>
+      </nav>
+    </header>
+    <div class="grid-contenedor">
+      <div class="box1">
+    <div class="register">
+    <img src="../Imagenes/Silueta.png" alt="Perfil">
+  </div>
+  </div>
+  <div class="box2">
+<div class="align-left">
+  <form>
+    <div class="contenedor">
+      <div class="form-login">
+        <div class="form-item">
+          <label for="email">E-mail</label>
+          <span>usuario@gmail.com</span>
+        </div>
+        <div class="form-item">
+          <label for="Password">Contraseña</label> 
+          <span>**********</span>
+        </div>
+        <div class="form-item">
+          <label for="password">Nueva contraseña</label>
+          <input type="password" placeholder="Contraseña">
+        </div>
+        <div class="form-item">
+          <label for="repeat-password">Repetir contraseña</label>
+          <input type="password" placeholder="Repetir contraseña">
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="botones-al-lado">
+    <div class="botones-derecha">
+<a class="boton-generico" href="VistaLogin.html">Guardar cambios</a>
+    </div>
+  </div>
+</div>
+</div>
+<div class="box3">
+  <div class="align-right">
+    <form>
+    <div class="contenedor">
+      <p>Métodos de pago</p>
+      <br>
+      <label><input type="radio" name="pago" id="tarjeta"> Tarjeta de crédito</label>
+      <section class="num-tarjeta">
+         <input type="text" placeholder="Número tarjeta">
+      <input type="text" size="3" maxlength="3" placeholder="XXX">
+      </section>
+      <section class="opciones-cupon">
+      <label><input type="radio" name="pago" id="cupon"> Cupón de pago</label>
+      <section class="cupon-opciones">
+        <label><input id="PagoFacil" type="checkbox" name="subcupon" value="PagoFacil"> Pago Fácil</label>
+        <label><input id="RapiPago" type="checkbox" name="subcupon" value="RapiPago"> RapiPago</label>
+      </section>
+    </section>
+    <section class="transferencia">
+      <label><input type="radio" name="pago" id="transferencia"> Transferencia Bancaria</label>
+  </section>
+      <section class="cupon-opciones">
+        <span>CBU: 12313123123123</span>
+      </section>
+    </div>
+    </form>
+    <div class="botones-izquierda">
+      <a class="boton-cancelar" href="index.html">Cancelar subscripcion</a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-perfil">
+<footer class="footer">
+  Creada por Pfeiffer Juan Pablo y Axel Deantonio
+    </footer>
+    </div>
+</body>
+</html>
