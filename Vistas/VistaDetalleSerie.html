@@ -1,48 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Catalogo series</title>
   <link rel="stylesheet" href="../Estilos/styles.css" />
+  <link rel="stylesheet" href="../Estilos/header.css">
+  <link rel="stylesheet" href="../Estilos/filtros.css">
+  <link rel="stylesheet" href="../Estilos/galeria.css">
 </head>
+
 <body>
-  <header>
-      <nav class="navbar">
-        <a href="PantallaPrincipal.html" class="nav-item">
-          <span><img src="../Imagenes/IconosHeader/Casa.png" alt="icon-house" /></span>
-          <span>Home</span>
-        </a>
-        <a href="VistaDetalleSerie.html" class="nav-item">
-          <span><img src="../Imagenes/IconosHeader/Serie.png" alt="icon-series" /></span>
-          <span>Series</span>
-        </a>
-        <a href="VistaDetallePelicula.html" class="nav-item">
-          <span><img src="../Imagenes/IconosHeader/Pelicula.png" alt="icon-pelicula"/></span>
-          <span>Peliculas</span>
-        </a>
-        <a href="vistaPerfil.html" class="nav-item">
-          <span><img src="../Imagenes/IconosHeader/Perfil.png" alt="iconperfil" /></span>
-          <span>Perfil</span>
-        </a>
-      </nav>
-    </header>
+  <header class="header">
+    <nav class="navbar">
+      <a href="PantallaPrincipal.html" class="nav-item">
+        <span><img src="../Imagenes/IconosHeader/Casa.png" alt="icon-house" /></span>
+        <span>Home</span>
+      </a>
+      <a href="VistaDetalleSerie.html" class="nav-item">
+        <span><img src="../Imagenes/IconosHeader/Serie.png" alt="icon-series" /></span>
+        <span>Series</span>
+      </a>
+      <a href="VistaDetallePelicula.html" class="nav-item">
+        <span><img src="../Imagenes/IconosHeader/Pelicula.png" alt="icon-pelicula" /></span>
+        <span>Peliculas</span>
+      </a>
+      <a href="vistaPerfil.html" class="nav-item">
+        <span><img src="../Imagenes/IconosHeader/Perfil.png" alt="iconperfil" /></span>
+        <span>Perfil</span>
+      </a>
+    </nav>
+  </header>
   <div class="filtros">
     <div class="filtros-izquierda">
-        <p>Categorias</p>
-        <select>
-          <option value="">Seleccionar categoria</option>
-          <option value="">Comedia</option>
-          <option value="">Drama</option>
-          <option value="">Terror</option>
-        </select>
-      </div>
+      <p>Categorias</p>
+      <select>
+        <option value="">Seleccionar categoria</option>
+        <option value="">Comedia</option>
+        <option value="">Drama</option>
+        <option value="">Terror</option>
+      </select>
+    </div>
     <div class="search">
       <img src="../Imagenes/search_24dp_E3E3E3.png" alt="icon-search">
       <input type="search" placeholder="Buscar por nombre">
     </div>
   </div>
-  <div class="galeria">
+  <div class="galeria-Series-Peliculas">
     <a href="../Series/Comedia/vistaSerieDivisionPalermo.html">
       <img src="../Imagenes/division palermo.jpg" alt="division palermo">
     </a>
@@ -90,7 +95,8 @@
     </a>
   </div>
   <footer class="footer">
-  Creada por Pfeiffer Juan Pablo y Axel Deantonio
-    </footer>
+    Creada por Pfeiffer Juan Pablo y Axel Deantonio
+  </footer>
 </body>
+
 </html>

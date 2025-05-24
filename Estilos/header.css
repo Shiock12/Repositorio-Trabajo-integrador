@@ -72,8 +72,31 @@
         background-color: lightgray;
     }
 }
-/*Pc*/
+/*Pc chico*/
 @media screen and (min-width: 1280px) {
+    .header .navbar {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: auto;
+    }
+
+    .header .navbar .nav-item {
+        width: 100%;
+        display: flex;
+        text-decoration: none;
+        place-items: center;
+        padding: 0.313rem 8rem;
+        color: black;
+        border: 0.031rem solid black;
+    }
+
+    .header .navbar .nav-item:hover {
+        background-color: lightgray;
+    }
+}
+/*Pc grande*/
+@media screen and (min-width: 1920px) {
     .header .navbar {
         width: 100%;
         display: grid;
