@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Smartphones vertical*/
+@media screen and (min-width: 321px) {
+    .header .navbar {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .header .navbar .nav-item {
+        width: 100%;
+        display: flex;
+        text-decoration: none;
+        place-items: center;
+        padding: 0.313rem 9.375rem;
+        color: black;
+        border: 0.031rem solid black;
+    }
+
+    .header .navbar .nav-item:hover {
+        background-color: lightgray;
+    }
+}
+/*Smartphones horizontal*/
+/*Tablet vertical*/
+@media screen and (min-width: 667px) {
+    .header .navbar {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .header .navbar .nav-item {
+        width: 100%;
+        display: flex;
+        text-decoration: none;
+        place-items: center;
+        padding: 0.313rem 9.375rem;
+        color: black;
+        border: 0.031rem solid black;
+    }
+
+    .header .navbar .nav-item:hover {
+        background-color: lightgray;
+    }
+}
+/*Tablet horizontal*/
+@media screen and (min-width: 1024px) {
+    .header .navbar {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: auto;
+    }
+
+    .header .navbar .nav-item {
+        width: 100%;
+        display: flex;
+        text-decoration: none;
+        place-items: center;
+        padding: 0.313rem 5rem;
+        color: black;
+        border: 0.031rem solid black;
+    }
+
+    .header .navbar .nav-item:hover {
+        background-color: lightgray;
+    }
+}
+/*Pc*/
+@media screen and (min-width: 1280px) {
+    .header .navbar {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: auto;
+    }
+
+    .header .navbar .nav-item {
+        width: 100%;
+        display: flex;
+        text-decoration: none;
+        place-items: center;
+        padding: 0.313rem 12rem;
+        color: black;
+        border: 0.031rem solid black;
+    }
+
+    .header .navbar .nav-item:hover {
+        background-color: lightgray;
+    }
+}

@@ -5,27 +5,28 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-body { 
-  font-size: 70%; 
-} 
+body {
+  font-size: 70%;
+}
 
-p { 
+p {
   font-size: 1em;
-} 
+}
 
 @media screen and (min-width: 47em) {
   body {
-    font-size: 90%; 
-  } 
-  
+    font-size: 90%;
+  }
+
   @media screen and (min-width: 60em) {
     body {
       font-size: 100%;
-    } 
+    }
   }
 }
 
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }
@@ -42,13 +43,9 @@ body {
   border-radius: 0 0 1.25rem 1.25rem;
 }
 
-.header {
-  position: fixed;
-  background-color: white;
-}
-
 .contenedor {
-  max-width: 31.25rem; /* 500px */
+  max-width: 31.25rem;
+  /* 500px */
   margin: 0 auto;
   padding: 1.25rem;
 }
@@ -76,7 +73,8 @@ body {
 }
 
 .form-item label {
-  width: 9.375rem; /* 150px */
+  width: 9.375rem;
+  /* 150px */
   text-align: right;
   margin-right: 0.625rem;
 }
@@ -206,99 +204,6 @@ body {
   margin: 0 auto;
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-}
-
-.navbar .nav-item {
-  display: flex;
-  align-items: center;
-  text-align: center;
-  padding: 0.3125rem 12.7125rem; /* 5px 203.4px */
-}
-
-.navbar a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: black;
-  border-right: 0.0625rem solid black;
-  border-left: 0.0625rem solid black;
-  border-top: 0.0625rem solid black;
-  border-bottom: 0.0625rem solid black;
-}
-
-.navbar a:hover {
-  background-color: lightgray;
-}
-
-.filtros {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2.5rem;
-}
-
-.filtros-izquierda {
-  display: flex;
-  align-items: center;
-}
-
-.filtros-izquierda select {
-  margin: 0.625rem;
-  padding: 0.3125rem;
-  border: 0.125rem solid black;
-  border-radius: 0.3125rem;
-}
-
-.search {
-  display: flex;
-  align-items: center;
-  border: 0.125rem solid black;
-  border-radius: 1.25rem;
-  padding: 0.3125rem 0.625rem;
-  background-color: white;
-}
-
-.search input[type="search"] {
-  border: none;
-  outline: none;
-  box-shadow: none;
-  background: transparent;
-  margin-left: 0.625rem;
-}
-
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(5, 2fr);
-  gap: 1.25rem;
-  max-width: 62.5rem;
-  margin: auto;
-  margin-left: 18.75rem;
-  margin-top: 6.25rem;
-}
-
-.galeria img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.2);
-}
-
-.galeria a {
-  width: 15.625rem;
-  height: 10.5625rem;
-  display: block;
-  overflow: hidden;
-}
-
-.galeria img:hover,
-.galeria-pelicula img:hover {
-  transform: scale(1.05);
-}
-
 .iframe-a {
   display: flex;
   flex-direction: column;
@@ -372,6 +277,10 @@ body {
   margin-top: 4.375rem;
 }
 
+.galeria-pelicula img:hover {
+  transform: scale(1.05);
+}
+
 /* Vista de la serie */
 .contenedor-serie {
   display: flex;
@@ -413,7 +322,8 @@ body {
   padding: 0.3125rem;
 }
 
-.contenedor-serie .detalle-serie .genero, .actores {
+.contenedor-serie .detalle-serie .genero,
+.actores {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -471,13 +381,6 @@ body {
   margin-left: 1.875rem;
 }
 
-.footer {
-  text-align: center;
-  font-size: 1em;
-  padding: 0.125rem;
-  color: #666;
-}
-
 .footer-perfil .footer {
   justify-content: flex-end;
   margin-top: 23%;
@@ -494,4 +397,5 @@ body {
 }
 
 .footer-vistadetallepelicula {
-  justify-content: flex-end;}
+  justify-content: flex-end;
+}
