@@ -1,0 +1,15 @@
+@media screen and (min-width: 375px) {
+    .boton-comenzar-peli {
+        width: 100%;
+        padding: 0.625rem;
+        margin-top: 0.625rem;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: black;
+        background-color: lightskyblue;
+        border: 0.0625rem solid black;
+        border-radius: 0.3125rem;
+    }
+}
