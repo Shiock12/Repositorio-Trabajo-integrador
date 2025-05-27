@@ -2,86 +2,86 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bob Esponja</title>
- <link rel="stylesheet" href="../../Estilos/styles.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <a href="../../Vistas/PantallaPrincipal.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Casa.png" alt="icon-house" /></span>
-          <span>Home</span>
-        </a>
-        <a href="../../Vistas/VistaDetalleSerie.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Serie.png" alt="icon-series" /></span>
-          <span>Series</span>
-        </a>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bob Esponja</title>
+  <link rel="stylesheet" href="../../Estilos/styles.css" />
+  <link rel="stylesheet" href="../../Estilos/header.css" />
+  <link rel="stylesheet" href="../../Estilos/vistaDetalleSeriePelicula.css" />
+  <link rel="stylesheet" href="../../Estilos/botones.css">
+  <link rel="stylesheet" href="../../Estilos/footer.css" />
+</head>
 
-        <a href="../../Vistas/VistaDetallePelicula.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Pelicula.png" alt="icon-pelicula" /></span>
-          <span>Peliculas</span>
-        </a>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="../../Vistas/PantallaPrincipal.html" class="nav-item">
+        <span><img src="../../Imagenes/IconosHeader/Casa.png" alt="icon-house" /></span>
+        <span>Home</span>
+      </a>
+      <a href="../../Vistas/VistaDetalleSerie.html" class="nav-item">
+        <span><img src="../../Imagenes/IconosHeader/Serie.png" alt="icon-series" /></span>
+        <span>Series</span>
+      </a>
 
-        <a href="../../Vistas/vistaPerfil.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Perfil.png" alt="iconperfil" /></span>
-          <span>Perfil</span>
-        </a>
-      </nav>
-    </header>
-    <div class="contenedor-pelicula">
-        <div class="iframe-a">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/Whvm9CGDp2U?si=Q3Iw02GQl5M6Y2tJ"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <a href="https://www.youtube.com/watch?v=Whvm9CGDp2U" class="boton-comenzar-peli"
-                target="_blank">Comenzar</a>
-        </div>
-        <div class="detalle-pelicula">
-            <p><strong>Titulo:</strong> Bob Esponja - Squarepants movie</p>
-            <br />
-            <p><strong>Duracion:</strong> 87 minutos</p>
-            <br />
-            <p><strong>Genero:</strong> Comedia</p>
-            <br />
-            <p>
-                <strong>Doblajes:</strong>
-                <a href="https://es.wikipedia.org/wiki/Tom_Kenny" title="Tom Kenny">Tom Kenny -</a>
-                <a href="https://es.wikipedia.org/wiki/Bill_Fagerbakke" title="Bill Fagerbakke"> Bill Fagerbakke -</a>
-                <a href="https://es.wikipedia.org/wiki/Clancy_Brown" title="Clancy Brown">Clancy Brown -</a>
-                <a href="https://es.wikipedia.org/wiki/Rodger_Bumpass" title="Rodger Bumpass">Rodger Bumpass -</a>
-                <a href="https://es.wikipedia.org/wiki/Alec_Baldwin" title="Alec Baldwin"> Alec Baldwin -</a>
-                <a href="https://es.wikipedia.org/wiki/Scarlett_Johansson" title="Scarlett Johansson">Scarlett Johansson</a>
-            </p>
-            <br>
-                <p class="descripcion">Bob Esponja, Patricio, Calamardo y compañía están a punto de
-                    comenzar una nueva aventura, y es que para salvar su mundo, deberán venir al nuestro donde tendrán
-                    que hacer frente al malvado Alameda Jack.
-                </p>
-        </div>
+      <a href="../../Vistas/VistaDetallePelicula.html" class="nav-item">
+        <span><img src="../../Imagenes/IconosHeader/Pelicula.png" alt="icon-pelicula" /></span>
+        <span>Peliculas</span>
+      </a>
+
+      <a href="../../Vistas/vistaPerfil.html" class="nav-item">
+        <span><img src="../../Imagenes/IconosHeader/Perfil.png" alt="iconperfil" /></span>
+        <span>Perfil</span>
+      </a>
+    </nav>
+  </header>
+  <div class="pelicula-serie">
+    <div class="iframe-a">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Whvm9CGDp2U?si=Q3Iw02GQl5M6Y2tJ"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <a href="https://www.youtube.com/watch?v=Whvm9CGDp2U" class="boton-comenzar" target="_blank">Comenzar</a>
     </div>
-    <br>
-    <div class="series-similares">
-        <h1 class="h1-similares">Similares</h1>
-    <div class="galeria-pelicula">
-        <a href="VistaDetallePeliculaAmericanPie.html">
-            <img src="../../Imagenes/american-pie.jpg" alt="AmericanPie" />
-        </a>
-        <a href="VistaDetallePeliculaYDondeLasRubias.html">
-            <img src="../../Imagenes/rubias.jpg" alt="YDondeEstanLasRubias" />
-        </a>
-        <a href="VistaDetallePeliculaZootopia.html">
-            <img src="../../Imagenes/zootopia.jpeg" alt="Zootopia" />
-        </a>
-        <a href="VistaDetallePeliculaScaryMovie.html">
-            <img src="../../Imagenes/scarymovie.jpg" alt="ScaryMovie" />
-        </a>
+    <div class="detalle-pelicula-serie">
+      <p><strong>Titulo:</strong> Bob Esponja - Squarepants movie</p>
+      <p><strong>Duracion:</strong> 87 minutos</p>
+      <p><strong>Genero:</strong> Comedia</p>
+      <p>
+        <strong>Doblajes:</strong>
+        <a href="https://es.wikipedia.org/wiki/Tom_Kenny" title="Tom Kenny">Tom Kenny -</a>
+        <a href="https://es.wikipedia.org/wiki/Bill_Fagerbakke" title="Bill Fagerbakke"> Bill Fagerbakke -</a>
+        <a href="https://es.wikipedia.org/wiki/Clancy_Brown" title="Clancy Brown">Clancy Brown -</a>
+        <a href="https://es.wikipedia.org/wiki/Rodger_Bumpass" title="Rodger Bumpass">Rodger Bumpass -</a>
+        <a href="https://es.wikipedia.org/wiki/Alec_Baldwin" title="Alec Baldwin"> Alec Baldwin -</a>
+        <a href="https://es.wikipedia.org/wiki/Scarlett_Johansson" title="Scarlett Johansson">Scarlett Johansson</a>
+      </p>
+      <p class="descripcion-pelicula-serie">Bob Esponja, Patricio, Calamardo y compañía están a punto de
+        comenzar una nueva aventura, y es que para salvar su mundo, deberán venir al nuestro donde tendrán
+        que hacer frente al malvado Alameda Jack.
+      </p>
     </div>
+  </div>
+  <div class="peliculas-series-similares">
+    <h1>Similares</h1>
+    <div class="galeria-peliculas-series">
+      <a href="VistaDetallePeliculaAmericanPie.html">
+        <img src="../../Imagenes/american-pie.jpg" alt="AmericanPie" />
+      </a>
+      <a href="VistaDetallePeliculaYDondeLasRubias.html">
+        <img src="../../Imagenes/rubias.jpg" alt="YDondeEstanLasRubias" />
+      </a>
+      <a href="VistaDetallePeliculaZootopia.html">
+        <img src="../../Imagenes/zootopia.jpeg" alt="Zootopia" />
+      </a>
+      <a href="VistaDetallePeliculaScaryMovie.html">
+        <img src="../../Imagenes/scarymovie.jpg" alt="ScaryMovie" />
+      </a>
     </div>
-    <footer class="footer">
-  Creada por Pfeiffer Juan Pablo y Axel Deantonio
-    </footer>
+  </div>
+  <footer class="footer">
+    Creada por Pfeiffer Juan Pablo y Axel Deantonio
+  </footer>
 </body>
+
 </html>

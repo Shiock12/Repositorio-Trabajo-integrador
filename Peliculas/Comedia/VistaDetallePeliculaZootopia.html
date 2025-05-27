@@ -1,76 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zootopia</title>
-    <link rel="stylesheet" href="../../Estilos/styles.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <a href="../../Vistas/PantallaPrincipal.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Casa.png" alt="icon-house" /></span>
-          <span>Home</span>
-        </a>
-        <a href="../../Vistas/VistaDetalleSerie.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Serie.png" alt="icon-series" /></span>
-          <span>Series</span>
-        </a>
-        <a href="../../Vistas/VistaDetallePelicula.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Pelicula.png" alt="icon-pelicula" /></span>
-          <span>Peliculas</span>
-        </a>
-        <a href="../../Vistas/vistaPerfil.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Perfil.png" alt="iconperfil" /></span>
-          <span>Perfil</span>
-        </a>
-      </nav>
-    </header>
-    <div class="contenedor-pelicula">
-      <div class="iframe-a">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/xmwGekxPjwg?si=Lip-FBZY1J2taxfx"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-        <a
-          href="https://www.youtube.com/watch?v=xmwGekxPjwg"
-          class="boton-comenzar-peli"
-          target="_blank"
-          >Comenzar</a
-        >
-      </div>
-      <div class="detalle-pelicula">
-        <p><strong>Titulo:</strong> Zootopia</p>
-        <br />
-        <p><strong>Duracion:</strong> 108 minutos</p>
-        <br />
-        <p><strong>Genero:</strong> Comedia</p>
-        <br />
-        <p>
-          <strong>Doblajes:</strong>
-          <a href="https://es.wikipedia.org/wiki/Ginnifer_Goodwin" title="Ginnifer Goodwin"> Ginnifer Goodwin -</a>
-          <a href="https://es.wikipedia.org/wiki/Jason_Bateman" title="Jason Bateman"> Jason Bateman -</a>
-          <a href="https://es.wikipedia.org/wiki/Idris_Elba" title="Idris Elba"> Idris Elba -</a>
-          <a href="https://es.wikipedia.org/wiki/Jenny_Slate" title="Jenny Slate"> Jenny Slate -</a>
-          <a href="https://es.wikipedia.org/wiki/Nate_Torrence" title="Nate Torrence"> Nate Torrence -</a>
-          <a href="https://es.wikipedia.org/wiki/Bonnie_Hunt" title="Bonnie Hunt"> Bonnie Hunt -</a>
-          <a href="https://es.wikipedia.org/wiki/Shakira" title="Eddie Vélez"> Shakira</a>
-        </p>
-        <br>
-            <p class="descripcion">Zootopia es una metrópolis reluciente poblada por mamíferos antropomórficos, dividida en varios distritos, entre ellos Sahara Square , Tundratown , Little Rodentia y Rainforest District .</p>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zootopia</title>
+  <link rel="stylesheet" href="../../Estilos/styles.css" />
+  <link rel="stylesheet" href="../../Estilos/header.css" />
+  <link rel="stylesheet" href="../../Estilos/vistaDetalleSeriePelicula.css" />
+  <link rel="stylesheet" href="../../Estilos/botones.css">
+  <link rel="stylesheet" href="../../Estilos/footer.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="../../Vistas/PantallaPrincipal.html" class="nav-item">
+        <span><img src="../../Imagenes/IconosHeader/Casa.png" alt="icon-house" /></span>
+        <span>Home</span>
+      </a>
+      <a href="../../Vistas/VistaDetalleSerie.html" class="nav-item">
+        <span><img src="../../Imagenes/IconosHeader/Serie.png" alt="icon-series" /></span>
+        <span>Series</span>
+      </a>
+      <a href="../../Vistas/VistaDetallePelicula.html" class="nav-item">
+        <span><img src="../../Imagenes/IconosHeader/Pelicula.png" alt="icon-pelicula" /></span>
+        <span>Peliculas</span>
+      </a>
+      <a href="../../Vistas/vistaPerfil.html" class="nav-item">
+        <span><img src="../../Imagenes/IconosHeader/Perfil.png" alt="iconperfil" /></span>
+        <span>Perfil</span>
+      </a>
+    </nav>
+  </header>
+  <div class="pelicula-serie">
+    <div class="iframe-a">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/xmwGekxPjwg?si=Lip-FBZY1J2taxfx"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <a href="https://www.youtube.com/watch?v=xmwGekxPjwg" class="boton-comenzar" target="_blank">Comenzar</a>
     </div>
-    <br>
-    <div class="series-similares">
-      <h1 class="h1-similares">Similares</h1>
-    <div class="galeria-pelicula">
+    <div class="detalle-pelicula-serie">
+      <p><strong>Titulo:</strong> Zootopia</p>
+      <p><strong>Duracion:</strong> 108 minutos</p>
+      <p><strong>Genero:</strong> Comedia</p>
+      <p>
+        <strong>Doblajes:</strong>
+        <a href="https://es.wikipedia.org/wiki/Ginnifer_Goodwin" title="Ginnifer Goodwin"> Ginnifer Goodwin -</a>
+        <a href="https://es.wikipedia.org/wiki/Jason_Bateman" title="Jason Bateman"> Jason Bateman -</a>
+        <a href="https://es.wikipedia.org/wiki/Idris_Elba" title="Idris Elba"> Idris Elba -</a>
+        <a href="https://es.wikipedia.org/wiki/Jenny_Slate" title="Jenny Slate"> Jenny Slate -</a>
+        <a href="https://es.wikipedia.org/wiki/Nate_Torrence" title="Nate Torrence"> Nate Torrence -</a>
+        <a href="https://es.wikipedia.org/wiki/Bonnie_Hunt" title="Bonnie Hunt"> Bonnie Hunt -</a>
+        <a href="https://es.wikipedia.org/wiki/Shakira" title="Eddie Vélez"> Shakira</a>
+      </p>
+      <p class="descripcion-pelicula-serie">Zootopia es una metrópolis reluciente poblada por mamíferos antropomórficos,
+        dividida en
+        varios distritos, entre ellos Sahara Square , Tundratown , Little Rodentia y Rainforest District .</p>
+    </div>
+  </div>
+  <div class="peliculas-series-similares">
+    <h1>Similares</h1>
+    <div class="galeria-peliculas-series">
       <a href="VistaDetallePeliculaAmericanPie.html">
         <img src="../..//Imagenes/american-pie.jpg" alt="AmericanPie" />
       </a>
@@ -84,9 +76,10 @@
         <img src="../../Imagenes/scarymovie.jpg" alt="ScaryMovie" />
       </a>
     </div>
-    </div>
-    <footer class="footer">
-  Creada por Pfeiffer Juan Pablo y Axel Deantonio
-    </footer>
-  </body>
+  </div>
+  <footer class="footer">
+    Creada por Pfeiffer Juan Pablo y Axel Deantonio
+  </footer>
+</body>
+
 </html>
