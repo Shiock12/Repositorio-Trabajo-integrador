@@ -5,41 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prision Break</title>
-    <link rel="stylesheet" href="../../Estilos/styles.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <a href="../../Vistas/PantallaPrincipal.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Casa.png" alt="icon-house" /></span>
-          <span>Home</span>
-        </a>
-        <a href="../../Vistas/VistaDetalleSerie.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Serie.png" alt="icon-series" /></span>
-          <span>Series</span>
-        </a>
+    <link rel="stylesheet" href="../../Estilos/styles.css">
+    <link rel="stylesheet" href="../../Estilos/header.css">
+    <link rel="stylesheet" href="../../Estilos/botones.css">
+    <link rel="stylesheet" href="../../Estilos/elegirTemCap.css">
+    <link rel="stylesheet" href="../../Estilos/vistaDetalleSeriePelicula.css">
+    <link rel="stylesheet" href="../../Estilos/footer.css">
+</head>
 
-        <a href="../../Vistas/VistaDetallePelicula.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Pelicula.png" alt="icon-pelicula" /></span>
-          <span>Peliculas</span>
-        </a>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="../../Vistas/PantallaPrincipal.html" class="nav-item">
+                <span><img src="../../Imagenes/IconosHeader/Casa.png" alt="icon-house" /></span>
+                <span>Home</span>
+            </a>
+            <a href="../../Vistas/VistaDetalleSerie.html" class="nav-item">
+                <span><img src="../../Imagenes/IconosHeader/Serie.png" alt="icon-series" /></span>
+                <span>Series</span>
+            </a>
 
-        <a href="../../Vistas/vistaPerfil.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Perfil.png" alt="iconperfil" /></span>
-          <span>Perfil</span>
-        </a>
-      </nav>
+            <a href="../../Vistas/VistaDetallePelicula.html" class="nav-item">
+                <span><img src="../../Imagenes/IconosHeader/Pelicula.png" alt="icon-pelicula" /></span>
+                <span>Peliculas</span>
+            </a>
+
+            <a href="../../Vistas/vistaPerfil.html" class="nav-item">
+                <span><img src="../../Imagenes/IconosHeader/Perfil.png" alt="iconperfil" /></span>
+                <span>Perfil</span>
+            </a>
+        </nav>
     </header>
-    <div class="contenedor-serie">
+    <div class="pelicula-serie">
         <div class="iframe-a">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/_RhU7Ne21bc?si=iTf92UysEzdVe9ra" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <a class="boton-comenzar-peli" href="https://www.youtube.com/watch?v=_RhU7Ne21bc">Comenzar</a>
+            <iframe src="https://www.youtube.com/embed/_RhU7Ne21bc?si=iTf92UysEzdVe9ra" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <a class="boton-comenzar" href="https://www.youtube.com/watch?v=_RhU7Ne21bc">Comenzar</a>
         </div>
-        <div class="detalle-serie">
-            <div class="genero">
-                <h2>Titulo:</h2>
-                <p>Prision Break</p>
-            </div>
+        <div class="detalle-pelicula-serie">
             <div class="seleccionar">
                 <div>
                     <label for="temporadas">Temporadas:</label>
@@ -66,27 +71,25 @@
                     </select>
                 </div>
             </div>
-            <div class="genero">
-                <h2>Genero:</h2>
-                <p>Drama</p>
-            </div>
-            <div class="actores">
-                <h2>Actores:</h2>
+            <p><strong>Titulo:</strong> Prision Break</p>
+            <p><strong>Genero:</strong> Drama</p>
+            <p>
+                <strong>Actores:</strong>
                 <a href="https://es.wikipedia.org/wiki/Dominic_Purcell">Dominic Purcell -</a>
                 <a href="https://es.wikipedia.org/wiki/Wentworth_Miller">Wentworth Miller -</a>
                 <a href="https://es.wikipedia.org/wiki/Robin_Tunney">Robin Tunney -</a>
                 <a href="https://es.wikipedia.org/wiki/Peter_Stormare">Peter Stormare -</a>
                 <a href="https://es.wikipedia.org/wiki/Amaury_Nolasco">Amaury Nolasco </a>
-            </div>
-            <p class="descripcion">
-                Dicen que es imposible escapar de la Penitenciaría Estatal Fox River. Se equivocan. Wentworth Miller protagoniza esta emocionante serie de acción.
+            </p>
+            <p class="descripcion-pelicula-serie">
+                Dicen que es imposible escapar de la Penitenciaría Estatal Fox River. Se equivocan. Wentworth Miller
+                protagoniza esta emocionante serie de acción.
             </p>
         </div>
     </div>
-    <br>
-    <div class="series-similares">
-        <h1 class="h1-similares">Similares</h1>
-        <div class="grilla-series">
+    <div class="peliculas-series-similares">
+        <h1>Similares</h1>
+        <div class="galeria-peliculas-series">
             <a href="vistaSerieLegado.html">
                 <img src="../../Imagenes/el legado.jpg" alt="legado">
             </a>
@@ -102,7 +105,8 @@
         </div>
     </div>
     <footer class="footer">
-  Creada por Pfeiffer Juan Pablo y Axel Deantonio
+        Creada por Pfeiffer Juan Pablo y Axel Deantonio
     </footer>
 </body>
+
 </html>

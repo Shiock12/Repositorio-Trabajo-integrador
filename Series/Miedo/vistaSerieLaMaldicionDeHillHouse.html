@@ -5,44 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Maldicion de Hill House</title>
-    <link rel="stylesheet" href="../../Estilos/styles.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <a href="../../Vistas/PantallaPrincipal.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Casa.png" alt="icon-house" /></span>
-          <span>Home</span>
-        </a>
-        <a href="../../Vistas/VistaDetalleSerie.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Serie.png" alt="icon-series" /></span>
-          <span>Series</span>
-        </a>
+    <link rel="stylesheet" href="../../Estilos/styles.css">
+    <link rel="stylesheet" href="../../Estilos/header.css">
+    <link rel="stylesheet" href="../../Estilos/botones.css">
+    <link rel="stylesheet" href="../../Estilos/elegirTemCap.css">
+    <link rel="stylesheet" href="../../Estilos/vistaDetalleSeriePelicula.css">
+    <link rel="stylesheet" href="../../Estilos/footer.css">
+</head>
 
-        <a href="../../Vistas/VistaDetallePelicula.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Pelicula.png" alt="icon-pelicula" /></span>
-          <span>Peliculas</span>
-        </a>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="../../Vistas/PantallaPrincipal.html" class="nav-item">
+                <span><img src="../../Imagenes/IconosHeader/Casa.png" alt="icon-house" /></span>
+                <span>Home</span>
+            </a>
+            <a href="../../Vistas/VistaDetalleSerie.html" class="nav-item">
+                <span><img src="../../Imagenes/IconosHeader/Serie.png" alt="icon-series" /></span>
+                <span>Series</span>
+            </a>
 
-        <a href="../../Vistas/vistaPerfil.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Perfil.png" alt="iconperfil" /></span>
-          <span>Perfil</span>
-        </a>
-      </nav>
+            <a href="../../Vistas/VistaDetallePelicula.html" class="nav-item">
+                <span><img src="../../Imagenes/IconosHeader/Pelicula.png" alt="icon-pelicula" /></span>
+                <span>Peliculas</span>
+            </a>
+
+            <a href="../../Vistas/vistaPerfil.html" class="nav-item">
+                <span><img src="../../Imagenes/IconosHeader/Perfil.png" alt="iconperfil" /></span>
+                <span>Perfil</span>
+            </a>
+        </nav>
     </header>
-    <div class="contenedor-serie">
+    <div class="pelicula-serie">
         <div class="iframe-a">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/mTvNeafShH0?si=oTrE6MjRbiWlSCIk"
-                title="YouTube video player" frameborder="0"
+            <iframe src="https://www.youtube.com/embed/mTvNeafShH0?si=oTrE6MjRbiWlSCIk" title="YouTube video player"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <a class="boton-comenzar-peli" href="https://www.youtube.com/watch?v=mTvNeafShH0">Comenzar</a>
+            <a class="boton-comenzar" href="https://www.youtube.com/watch?v=mTvNeafShH0">Comenzar</a>
         </div>
-        <div class="detalle-serie">
-            <div class="genero">
-                <h2>Titulo:</h2>
-                <p>La Maldicion de Hill House</p>
-            </div>
+        <div class="detalle-pelicula-serie">
             <div class="seleccionar">
                 <div>
                     <label for="temporadas">Temporadas:</label>
@@ -69,25 +71,24 @@
                     </select>
                 </div>
             </div>
-            <div class="genero">
-                <h2>Genero:</h2>
-                <p>Miedo</p>
-            </div>
-            <div class="actores">
-                <h2>Actores:</h2>
+            <p><strong>Titulo:</strong> La Maldicion de Hill House</p>
+            <p><strong>Genero:</strong> Terror</p>
+            <p>
+                <strong>Actores:</strong>
                 <a href="https://es.wikipedia.org/wiki/Michiel_Huisman">Michiel Huisman -</a>
                 <a href="https://es.wikipedia.org/wiki/Carla_Gugino">Carla Gugino -</a>
                 <a href="https://es.wikipedia.org/wiki/Henry_Thomas">Henry Thomas -</a>
                 <a href="https://es.wikipedia.org/wiki/Elizabeth_Reaser">Elizabeth Reaser -</a>
                 <a href="https://es.wikipedia.org/wiki/Oliver_Jackson-Cohen">Oliver Jackson-Cohen</a>
-            </div>
-            <p class="descripcion">La historia sigue a los cinco hermanos Crain, quienes se reúnen como adultos para enfrentar los traumas de su infancia, vivida en la famosa casa embrujada, Hill House.</p>
+            </p>
+            <p class="descripcion-pelicula-serie">La historia sigue a los cinco hermanos Crain, quienes se reúnen como
+                adultos para
+                enfrentar los traumas de su infancia, vivida en la famosa casa embrujada, Hill House.</p>
         </div>
     </div>
-    <br>
-    <div class="series-similares">
-        <h1 class="h1-similares">Similares</h1>
-        <div class="grilla-series">
+    <div class="peliculas-series-similares">
+        <h1>Similares</h1>
+        <div class="galeria-peliculas-series">
             <a href="vistaSerieBlackSummer.html">
                 <img src="../../Imagenes/black summer.jpg" alt="Black Summer">
             </a>
@@ -103,7 +104,8 @@
         </div>
     </div>
     <footer class="footer">
-  Creada por Pfeiffer Juan Pablo y Axel Deantonio
+        Creada por Pfeiffer Juan Pablo y Axel Deantonio
     </footer>
 </body>
+
 </html>

@@ -5,41 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legado</title>
-    <link rel="stylesheet" href="../../Estilos/styles.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <a href="../../Vistas/PantallaPrincipal.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Casa.png" alt="icon-house" /></span>
-          <span>Home</span>
-        </a>
-        <a href="../../Vistas/VistaDetalleSerie.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Serie.png" alt="icon-series" /></span>
-          <span>Series</span>
-        </a>
+    <link rel="stylesheet" href="../../Estilos/styles.css">
+    <link rel="stylesheet" href="../../Estilos/header.css">
+    <link rel="stylesheet" href="../../Estilos/botones.css">
+    <link rel="stylesheet" href="../../Estilos/elegirTemCap.css">
+    <link rel="stylesheet" href="../../Estilos/vistaDetalleSeriePelicula.css">
+    <link rel="stylesheet" href="../../Estilos/footer.css">
+</head>
 
-        <a href="../../Vistas/VistaDetallePelicula.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Pelicula.png" alt="icon-pelicula" /></span>
-          <span>Peliculas</span>
-        </a>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="../../Vistas/PantallaPrincipal.html" class="nav-item">
+                <span><img src="../../Imagenes/IconosHeader/Casa.png" alt="icon-house" /></span>
+                <span>Home</span>
+            </a>
+            <a href="../../Vistas/VistaDetalleSerie.html" class="nav-item">
+                <span><img src="../../Imagenes/IconosHeader/Serie.png" alt="icon-series" /></span>
+                <span>Series</span>
+            </a>
 
-        <a href="../../Vistas/vistaPerfil.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Perfil.png" alt="iconperfil" /></span>
-          <span>Perfil</span>
-        </a>
-      </nav>
+            <a href="../../Vistas/VistaDetallePelicula.html" class="nav-item">
+                <span><img src="../../Imagenes/IconosHeader/Pelicula.png" alt="icon-pelicula" /></span>
+                <span>Peliculas</span>
+            </a>
+
+            <a href="../../Vistas/vistaPerfil.html" class="nav-item">
+                <span><img src="../../Imagenes/IconosHeader/Perfil.png" alt="iconperfil" /></span>
+                <span>Perfil</span>
+            </a>
+        </nav>
     </header>
-    <div class="contenedor-serie">
+    <div class="pelicula-serie">
         <div class="iframe-a">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/UKfLu1Ocnlw?si=c6GUEfUL_JWCpYbZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <a class="boton-comenzar-peli" href="https://www.youtube.com/watch?v=UKfLu1Ocnlw">Comenzar</a>
+            <iframe src="https://www.youtube.com/embed/UKfLu1Ocnlw?si=c6GUEfUL_JWCpYbZ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <a class="boton-comenzar" href="https://www.youtube.com/watch?v=UKfLu1Ocnlw">Comenzar</a>
         </div>
-        <div class="detalle-serie">
-            <div class="genero">
-                <h2>Titulo:</h2>
-                <p>Legado</p>
-            </div>
+        <div class="detalle-pelicula-serie">
             <div class="seleccionar">
                 <div>
                     <label for="temporadas">Temporadas:</label>
@@ -66,28 +71,26 @@
                     </select>
                 </div>
             </div>
-            <div class="genero">
-                <h2>Genero:</h2>
-                <p>Drama</p>
-            </div>
-            <div class="actores">
-                <h2>Actores:</h2>
+            <p><strong>Titulo:</strong> Legado</p>  
+            <p><strong>Genero:</strong> Drama</p>
+            <p>
+                <strong>Actores:</strong>
                 <a href="https://es.wikipedia.org/wiki/Jos%C3%A9_Coronado">José Coronado -</a>
                 <a href="https://es.wikipedia.org/wiki/Bel%C3%A9n_Cuesta">Belén Cuesta -</a>
                 <a href="https://es.wikipedia.org/wiki/Diego_Mart%C3%ADn_(actor)">Diego Martín -</a>
                 <a href="https://es.wikipedia.org/wiki/Natalia_Huarte">Natalia Huarte -</a>
                 <a href="https://es.wikipedia.org/wiki/Maria_Morera">María Morera -</a>
                 <a href="https://es.wikipedia.org/wiki/Susi_S%C3%A1nchez">Susi Sánchez </a>
-            </div>
-            <p class="descripcion">
-                El escándalo golpea a una familia cuando un magnate de los medios descubre que su imperio está corrompido hasta la médula. ¿Destruirá a sus propios hijos para salvar su legado?
+            </p>
+            <p class="descripcion-pelicula-serie">
+                El escándalo golpea a una familia cuando un magnate de los medios descubre que su imperio está
+                corrompido hasta la médula. ¿Destruirá a sus propios hijos para salvar su legado?
             </p>
         </div>
     </div>
-    <br>
-    <div class="series-similares">
-        <h1 class="h1-similares">Similares</h1>
-        <div class="grilla-series">
+    <div class="peliculas-series-similares">
+        <h1>Similares</h1>
+        <div class="galeria-peliculas-series">
             <a href="vistaSerieElJardinero.html">
                 <img src="../../Imagenes/el jardinero.jpg" alt="el jardinero">
             </a>
@@ -103,7 +106,8 @@
         </div>
     </div>
     <footer class="footer">
-  Creada por Pfeiffer Juan Pablo y Axel Deantonio
+        Creada por Pfeiffer Juan Pablo y Axel Deantonio
     </footer>
 </body>
+
 </html>

@@ -215,24 +215,6 @@ body {
   flex-direction: column;
   gap: 2em;
 }
-
-.contenedor-serie .detalle-serie .seleccionar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3em;
-}
-
-.contenedor-serie .detalle-serie .seleccionar label {
-  font-weight: bold;
-  font-size: 1.5em;
-}
-
-.contenedor-serie .detalle-serie .seleccionar select {
-  border: 0.125rem solid black;
-  border-radius: 0.3125rem;
-  padding: 0.3125rem;
-}
-
 .contenedor-serie .detalle-serie .genero,
 .actores {
   display: flex;

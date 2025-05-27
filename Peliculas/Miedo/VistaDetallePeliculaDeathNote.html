@@ -1,67 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Death Note</title>
-       <link rel="stylesheet" href="../../Estilos/styles.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <a href="../../Vistas/PantallaPrincipal.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Casa.png" alt="icon-house" /></span>
-          <span>Home</span>
-        </a>
-        <a href="../../Vistas/VistaDetalleSerie.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Serie.png" alt="icon-series" /></span>
-          <span>Series</span>
-        </a>
 
-        <a href="../../Vistas/VistaDetallePelicula.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Pelicula.png" alt="icon-pelicula" /></span>
-          <span>Peliculas</span>
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Death Note</title>
+  <link rel="stylesheet" href="../../Estilos/styles.css" />
+  <link rel="stylesheet" href="../../Estilos/header.css">
+  <link rel="stylesheet" href="../../Estilos/vistaDetalleSeriePelicula.css">
+  <link rel="stylesheet" href="../../Estilos/footer.css">
+  <link rel="stylesheet" href="../../Estilos/botones.css">
+</head>
 
-        <a href="../../Vistas/vistaPerfil.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Perfil.png" alt="iconperfil" /></span>
-          <span>Perfil</span>
-        </a>
-      </nav>
-    </header>
-    <div class="contenedor-pelicula">
-      <div class="iframe-a">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/gvxNaSIB_WI?si=R_sCIHWyt89a-S5Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-         <a
-          href="https://www.youtube.com/watch?v=gvxNaSIB_WI"
-          class="boton-comenzar-peli"
-          target="_blank"
-          >Comenzar</a
-        >
-      </div>
-      <div class="detalle-pelicula">
-        <p><strong>Titulo:</strong> Death Note</p>
-        <br />
-        <p><strong>Duracion:</strong> 100 minutos</p>
-        <br />
-        <p><strong>Genero:</strong> Terror</p>
-        <br />
-        <p>
-          <strong>Actores:</strong>
-          <a href="https://es.wikipedia.org/wiki/Nat_Wolff" title="Nat Wolff"> Nat Wolff -</a>
-          <a href="https://es.wikipedia.org/wiki/Margaret_Qualley" title="Margaret Qualley"> Margaret Qualley -</a>
-          <a href="https://es.wikipedia.org/wiki/Shea_Whigham" title="Shea Whigham"> Shea Whigham -</a>
-          <a href="https://es.wikipedia.org/w/index.php?title=Paul_Nakauchi&action=edit&redlink=1" title="Paul Nakauchi"> Paul Nakauchi -</a>
-          <a href="https://es.wikipedia.org/wiki/Willem_Dafoe" title="Willem Dafoe"> Willem Dafoe</a>
-        </p>
-        <br>
-          <p class="descripcion">Embriagado por el poder de un cuaderno sobrenatural, un joven comienza a matar a quienes considera indignos de vivir.</p>
-      </div>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="../../Vistas/PantallaPrincipal.html" class="nav-item">
+        <span><img src="../../Imagenes/IconosHeader/Casa.png" alt="icon-house" /></span>
+        <span>Home</span>
+      </a>
+      <a href="../../Vistas/VistaDetalleSerie.html" class="nav-item">
+        <span><img src="../../Imagenes/IconosHeader/Serie.png" alt="icon-series" /></span>
+        <span>Series</span>
+      </a>
+      <a href="../../Vistas/VistaDetallePelicula.html" class="nav-item">
+        <span><img src="../../Imagenes/IconosHeader/Pelicula.png" alt="icon-pelicula" /></span>
+        <span>Peliculas</span>
+      </a>
+      <a href="../../Vistas/vistaPerfil.html" class="nav-item">
+        <span><img src="../../Imagenes/IconosHeader/Perfil.png" alt="iconperfil" /></span>
+        <span>Perfil</span>
+      </a>
+    </nav>
+  </header>
+  <div class="pelicula-serie">
+    <div class="iframe-a">
+      <iframe src="https://www.youtube.com/embed/gvxNaSIB_WI?si=R_sCIHWyt89a-S5Z"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <a href="https://www.youtube.com/watch?v=gvxNaSIB_WI" class="boton-comenzar" target="_blank">Comenzar</a>
     </div>
-    <br>
-    <div class="series-similares">
-     <h1 class="h1-similares">Similares</h1>
-    <div class="galeria-pelicula">
+    <div class="detalle-pelicula-serie">
+      <p><strong>Titulo:</strong> Death Note</p>
+      <p><strong>Duracion:</strong> 100 minutos</p>
+      <p><strong>Genero:</strong> Terror</p>
+      <p>
+        <strong>Actores:</strong>
+        <a href="https://es.wikipedia.org/wiki/Nat_Wolff" title="Nat Wolff"> Nat Wolff -</a>
+        <a href="https://es.wikipedia.org/wiki/Margaret_Qualley" title="Margaret Qualley"> Margaret Qualley -</a>
+        <a href="https://es.wikipedia.org/wiki/Shea_Whigham" title="Shea Whigham"> Shea Whigham -</a>
+        <a href="https://es.wikipedia.org/w/index.php?title=Paul_Nakauchi&action=edit&redlink=1" title="Paul Nakauchi">
+          Paul Nakauchi -</a>
+        <a href="https://es.wikipedia.org/wiki/Willem_Dafoe" title="Willem Dafoe"> Willem Dafoe</a>
+      </p>
+      <p class="descripcion-pelicula-serie">Embriagado por el poder de un cuaderno sobrenatural, un joven comienza a matar a quienes
+        considera indignos de vivir.</p>
+    </div>
+  </div>
+  <div class="peliculas-series-similares">
+    <h1>Similares</h1>
+    <div class="galeria-peliculas-series">
       <a href="VistaDetallePeliculaNOP.html">
         <img src="../../Imagenes/no.jpg" alt="¡NOP!" />
       </a>
@@ -75,9 +74,10 @@
         <img src="../../Imagenes/el_exorcismo.jpg" alt="ElUltimoExorcismoII" />
       </a>
     </div>
-    </div>
-    <footer class="footer">
-  Creada por Pfeiffer Juan Pablo y Axel Deantonio
-    </footer>
-  </body>
+  </div>
+  <footer class="footer">
+    Creada por Pfeiffer Juan Pablo y Axel Deantonio
+  </footer>
+</body>
+
 </html>

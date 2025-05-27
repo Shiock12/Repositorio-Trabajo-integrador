@@ -1,0 +1,14 @@
+.pelicula-serie .detalle-pelicula-serie .seleccionar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+}
+.pelicula-serie .detalle-pelicula-serie .seleccionar label {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.pelicula-serie .detalle-pelicula-serie .seleccionar select {
+  border: 0.125rem solid black;
+  border-radius: 0.3125rem;
+  padding: 0.3125rem;
+}

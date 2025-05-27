@@ -1,68 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>El Aura</title>
-    <link rel="stylesheet" href="../../Estilos/styles.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <a href="../../Vistas/PantallaPrincipal.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Casa.png" alt="icon-house" /></span>
-          <span>Home</span>
-        </a>
-        <a href="../../Vistas/VistaDetalleSerie.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Serie.png" alt="icon-series" /></span>
-          <span>Series</span>
-        </a>
 
-        <a href="../../Vistas/VistaDetallePelicula.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Pelicula.png" alt="icon-pelicula" /></span>
-          <span>Peliculas</span>
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Aura</title>
+  <link rel="stylesheet" href="../../Estilos/styles.css" />
+  <link rel="stylesheet" href="../../Estilos/header.css">
+  <link rel="stylesheet" href="../../Estilos/vistaDetalleSeriePelicula.css">
+  <link rel="stylesheet" href="../../Estilos/footer.css">
+  <link rel="stylesheet" href="../../Estilos/botones.css">
+</head>
 
-        <a href="../../Vistas/vistaPerfil.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Perfil.png" alt="iconperfil" /></span>
-          <span>Perfil</span>
-        </a>
-      </nav>
-    </header>
-    <div class="contenedor-pelicula">
-      <div class="iframe-a">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/zE-PhxHi618?si=i1wQobjT2fOLGctW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <a
-          href="https://www.youtube.com/watch?v=zE-PhxHi618"
-          class="boton-comenzar-peli"
-          target="_blank"
-          >Comenzar</a
-        >
-      </div>
-      <div class="detalle-pelicula">
-        <p><strong>Titulo:</strong> El Aura</p>
-        <br />
-        <p><strong>Duracion:</strong> 138 minutos</p>
-        <br />
-        <p><strong>Genero:</strong> Drama</p>
-        <br />
-        <p>
-          <strong>Actores:</strong>
-          <a href="https://es.wikipedia.org/wiki/Ricardo_Dar%C3%ADn" title="Ricardo Darín"> Ricardo Darín -</a>
-          <a href="https://es.wikipedia.org/wiki/Dolores_Fonzi" title="Dolores Fonzi"> Dolores Fonzi -</a>
-          <a href="https://es.wikipedia.org/wiki/Alejandro_Awada" title="Alejandro Awada"> Alejandro Awada -</a>
-          <a href="https://es.wikipedia.org/wiki/Pablo_Cedr%C3%B3n" title="Pablo Cedrón"> Pablo Cedrón -</a>
-          <a href="https://es.wikipedia.org/wiki/Nahuel_P%C3%A9rez_Biscayart" title="Nahuel Pérez Biscayart"> Nahuel Pérez Biscayart -</a>
-          <a href="https://es.wikipedia.org/wiki/Jorge_D%27El%C3%ADa" title="Jorge D'Elía"> Jorge D'Elía</a>
-        </p>
-        <br>
-          <p class="descripcion">Esteban, un hombre reservado y solitario, está obsesionado con la idea de cometer el atraco perfecto, un sueño que finalmente se convierte en realidad cuando se ve involucrado en un robo a una fábrica.</p>
-          </div>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="../../Vistas/PantallaPrincipal.html" class="nav-item">
+        <span><img src="../../Imagenes/IconosHeader/Casa.png" alt="icon-house" /></span>
+        <span>Home</span>
+      </a>
+      <a href="../../Vistas/VistaDetalleSerie.html" class="nav-item">
+        <span><img src="../../Imagenes/IconosHeader/Serie.png" alt="icon-series" /></span>
+        <span>Series</span>
+      </a>
+
+      <a href="../../Vistas/VistaDetallePelicula.html" class="nav-item">
+        <span><img src="../../Imagenes/IconosHeader/Pelicula.png" alt="icon-pelicula" /></span>
+        <span>Peliculas</span>
+      </a>
+
+      <a href="../../Vistas/vistaPerfil.html" class="nav-item">
+        <span><img src="../../Imagenes/IconosHeader/Perfil.png" alt="iconperfil" /></span>
+        <span>Perfil</span>
+      </a>
+    </nav>
+  </header>
+  <div class="pelicula-serie">
+    <div class="iframe-a">
+      <iframe src="https://www.youtube.com/embed/zE-PhxHi618?si=i1wQobjT2fOLGctW"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <a href="https://www.youtube.com/watch?v=zE-PhxHi618" class="boton-comenzar" target="_blank">Comenzar</a>
     </div>
-    <br>
-    <div class="series-similares">
-      <h1 class="h1-similares">Similares</h1>
-    <div class="galeria-pelicula">
+    <div class="detalle-pelicula-serie">
+      <p><strong>Titulo:</strong> El Aura</p>
+      <p><strong>Duracion:</strong> 138 minutos</p>
+      <p><strong>Genero:</strong> Drama</p>
+      <p>
+        <strong>Actores:</strong>
+        <a href="https://es.wikipedia.org/wiki/Ricardo_Dar%C3%ADn" title="Ricardo Darín"> Ricardo Darín -</a>
+        <a href="https://es.wikipedia.org/wiki/Dolores_Fonzi" title="Dolores Fonzi"> Dolores Fonzi -</a>
+        <a href="https://es.wikipedia.org/wiki/Alejandro_Awada" title="Alejandro Awada"> Alejandro Awada -</a>
+        <a href="https://es.wikipedia.org/wiki/Pablo_Cedr%C3%B3n" title="Pablo Cedrón"> Pablo Cedrón -</a>
+        <a href="https://es.wikipedia.org/wiki/Nahuel_P%C3%A9rez_Biscayart" title="Nahuel Pérez Biscayart"> Nahuel Pérez
+          Biscayart -</a>
+        <a href="https://es.wikipedia.org/wiki/Jorge_D%27El%C3%ADa" title="Jorge D'Elía"> Jorge D'Elía</a>
+      </p>
+      <p class="descripcion-pelicula-serie">Esteban, un hombre reservado y solitario, está obsesionado con la idea de cometer el atraco
+        perfecto, un sueño que finalmente se convierte en realidad cuando se ve involucrado en un robo a una fábrica.
+      </p>
+    </div>
+  </div>
+  <div class="peliculas-series-similares">
+    <h1>Similares</h1>
+    <div class="galeria-peliculas-series">
       <a href="VistaDetallePeliculaFatherhood.html">
         <img src="../../Imagenes/paternidad.jpg" alt="Fatherhood" />
       </a>
@@ -75,10 +77,11 @@
       <a href="VistaDetallePeliculaDosPapas.html">
         <img src="../../Imagenes/dospapas.jpg" alt="DosPapas" />
       </a>
-      </div>
     </div>
-    <footer class="footer">
-  Creada por Pfeiffer Juan Pablo y Axel Deantonio
-    </footer>
-  </body>
+  </div>
+  <footer class="footer">
+    Creada por Pfeiffer Juan Pablo y Axel Deantonio
+  </footer>
+</body>
+
 </html>

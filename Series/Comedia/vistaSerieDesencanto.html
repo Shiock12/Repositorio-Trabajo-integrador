@@ -5,44 +5,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desencanto</title>
-    <link rel="stylesheet" href="../../Estilos/styles.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <a href="../../Vistas/PantallaPrincipal.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Casa.png" alt="icon-house" /></span>
-          <span>Home</span>
-        </a>
-        <a href="../../Vistas/VistaDetalleSerie.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Serie.png" alt="icon-series" /></span>
-          <span>Series</span>
-        </a>
+    <link rel="stylesheet" href="../../Estilos/styles.css"/>
+    <link rel="stylesheet" href="../../Estilos/header.css">
+    <link rel="stylesheet" href="../../Estilos/botones.css">
+    <link rel="stylesheet" href="../../Estilos/elegirTemCap.css">
+    <link rel="stylesheet" href="../../Estilos/vistaDetalleSeriePelicula.css">
+    <link rel="stylesheet" href="../../Estilos/footer.css">
+</head>
 
-        <a href="../../Vistas/VistaDetallePelicula.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Pelicula.png" alt="icon-pelicula" /></span>
-          <span>Peliculas</span>
-        </a>
-
-        <a href="../../Vistas/vistaPerfil.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Perfil.png" alt="iconperfil" /></span>
-          <span>Perfil</span>
-        </a>
-      </nav>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="../../Vistas/PantallaPrincipal.html" class="nav-item">
+                <span><img src="../../Imagenes/IconosHeader/Casa.png" alt="icon-house" /></span>
+                <span>Home</span>
+            </a>
+            <a href="../../Vistas/VistaDetalleSerie.html" class="nav-item">
+                <span><img src="../../Imagenes/IconosHeader/Serie.png" alt="icon-series" /></span>
+                <span>Series</span>
+            </a>
+            <a href="../../Vistas/VistaDetallePelicula.html" class="nav-item">
+                <span><img src="../../Imagenes/IconosHeader/Pelicula.png" alt="icon-pelicula" /></span>
+                <span>Peliculas</span>
+            </a>
+            <a href="../../Vistas/vistaPerfil.html" class="nav-item">
+                <span><img src="../../Imagenes/IconosHeader/Perfil.png" alt="iconperfil" /></span>
+                <span>Perfil</span>
+            </a>
+        </nav>
     </header>
-    <div class="contenedor-serie">
+    <div class="pelicula-serie">
         <div class="iframe-a">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/aTtinse4RWQ?si=6Xori9Tw5HxlMbZy"
+            <iframe src="https://www.youtube.com/embed/aTtinse4RWQ?si=6Xori9Tw5HxlMbZy"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <a class="boton-comenzar-peli" href="https://www.youtube.com/watch?v=aTtinse4RWQ">Comenzar</a>
+            <a class="boton-comenzar" href="https://www.youtube.com/watch?v=aTtinse4RWQ">Comenzar</a>
         </div>
-        <div class="detalle-serie">
-            <div class="genero">
-                <h2>Titulo:</h2>
-                <p>(Des)encanto</p>
-            </div>
+        <div class="detalle-pelicula-serie">
             <div class="seleccionar">
                 <div>
                     <label for="temporadas">Temporadas:</label>
@@ -69,26 +69,24 @@
                     </select>
                 </div>
             </div>
-            <div class="genero">
-                <h2>Genero:</h2>
-                <p>Comedia</p>
-            </div>
-            <div class="actores">
-                <h2>Doblaje:</h2>
+            <p><strong>Titulo:</strong> (Des)encanto</p>  
+            <p><strong>Genero:</strong> Comedia</p>
+            <p>
+                <strong>Doblaje:</strong>
                 <a href="https://es.wikipedia.org/wiki/Abbi_Jacobson">Abbi Jacobson -</a>
                 <a href="https://es.wikipedia.org/wiki/Eric_Andr%C3%A9">Eric André -</a>
                 <a href="https://es.wikipedia.org/wiki/Nat_Faxon">Nat Faxon -</a>
                 <a href="https://es.wikipedia.org/wiki/Maurice_LaMarche">Maurice LaMarche -</a>
                 <a href="https://es.wikipedia.org/wiki/Tress_MacNeille">Tress MacNeille -</a>
                 <a href="https://es.wikipedia.org/wiki/John_DiMaggio">John DiMaggio</a>
-            </div>
-            <p class="descripcion">En un mundo lleno de magia, travesuras y juegos de palabras, la rebelde princesa Bean se transforma en una aventurera temeraria con ayuda de sus amigos elfos y demonios.</p>
+            </p>
+            <p class="descripcion-pelicula-serie">En un mundo lleno de magia, travesuras y juegos de palabras, la rebelde princesa Bean
+                se transforma en una aventurera temeraria con ayuda de sus amigos elfos y demonios.</p>
         </div>
     </div>
-    <br>
-    <div class="series-similares">
-        <h1 class="h1-similares">Similares</h1>
-        <div class="grilla-series">
+    <div class="peliculas-series-similares">
+        <h1>Similares</h1>
+        <div class="galeria-peliculas-series">
             <a href="vistaSerieDivisionPalermo.html">
                 <img src="../../Imagenes/division palermo.jpg" alt="division palermo">
             </a>
@@ -104,7 +102,8 @@
         </div>
     </div>
     <footer class="footer">
-  Creada por Pfeiffer Juan Pablo y Axel Deantonio
+        Creada por Pfeiffer Juan Pablo y Axel Deantonio
     </footer>
 </body>
+
 </html>

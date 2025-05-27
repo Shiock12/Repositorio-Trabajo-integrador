@@ -2,76 +2,80 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Los dos Papas</title>
-    <link rel="stylesheet" href="../../Estilos/styles.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <a href="../../Vistas/PantallaPrincipal.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Casa.png" alt="icon-house" /></span>
-          <span>Home</span>
-        </a>
-        <a href="../../Vistas/VistaDetalleSerie.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Serie.png" alt="icon-series" /></span>
-          <span>Series</span>
-        </a>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Los dos Papas</title>
+  <link rel="stylesheet" href="../../Estilos/styles.css" />
+  <link rel="stylesheet" href="../../Estilos/header.css">
+  <link rel="stylesheet" href="../../Estilos/vistaDetalleSeriePelicula.css">
+  <link rel="stylesheet" href="../../Estilos/footer.css">
+  <link rel="stylesheet" href="../../Estilos/botones.css">
+</head>
 
-        <a href="../../Vistas/VistaDetallePelicula.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Pelicula.png" alt="icon-pelicula" /></span>
-          <span>Peliculas</span>
-        </a>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="../../Vistas/PantallaPrincipal.html" class="nav-item">
+        <span><img src="../../Imagenes/IconosHeader/Casa.png" alt="icon-house" /></span>
+        <span>Home</span>
+      </a>
+      <a href="../../Vistas/VistaDetalleSerie.html" class="nav-item">
+        <span><img src="../../Imagenes/IconosHeader/Serie.png" alt="icon-series" /></span>
+        <span>Series</span>
+      </a>
 
-        <a href="../../Vistas/vistaPerfil.html" class="nav-item">
-          <span><img src="../../Imagenes/IconosHeader/Perfil.png" alt="iconperfil" /></span>
-          <span>Perfil</span>
-        </a>
-      </nav>
-    </header>
-    <div class="contenedor-pelicula">
-        <div class="iframe-a">
-           <iframe width="560" height="315" src="https://www.youtube.com/embed/epf-XMQ5Q8M?si=BP1XfOp1i9lu0PEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <a href="https://www.youtube.com/watch?v=epf-XMQ5Q8M" class="boton-comenzar-peli"
-                target="_blank">Comenzar</a>
-        </div>
-        <div class="detalle-pelicula">
-            <p><strong>Titulo:</strong> Los dos ppas </p>
-            <br />
-            <p><strong>Duracion:</strong> 125 minutos</p>
-            <br />
-            <p><strong>Genero:</strong> Drama </p>
-            <br />
-            <p>
-                <strong>Actores:</strong>
-                <a href="https://es.wikipedia.org/wiki/Anthony_Hopkins" title="Anthony Hopkins">Anthony Hopkins -</a>
-                <a href="https://es.wikipedia.org/wiki/Jonathan_Pryce" title="Jonathan Pryce">Jonathan Pryce </a>
-            </p>
-            <br>
-                <p class="descripcion">Anthony Hopkins y Jonathan Pryce protagonizan este retrato íntimo de un momento clave en la historia de la Iglesia católica.</p>
-        </div>
+      <a href="../../Vistas/VistaDetallePelicula.html" class="nav-item">
+        <span><img src="../../Imagenes/IconosHeader/Pelicula.png" alt="icon-pelicula" /></span>
+        <span>Peliculas</span>
+      </a>
+
+      <a href="../../Vistas/vistaPerfil.html" class="nav-item">
+        <span><img src="../../Imagenes/IconosHeader/Perfil.png" alt="iconperfil" /></span>
+        <span>Perfil</span>
+      </a>
+    </nav>
+  </header>
+  <div class="pelicula-serie">
+    <div class="iframe-a">
+      <iframe src="https://www.youtube.com/embed/epf-XMQ5Q8M?si=BP1XfOp1i9lu0PEc"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <a href="https://www.youtube.com/watch?v=epf-XMQ5Q8M" class="boton-comenzar" target="_blank">Comenzar</a>
     </div>
-    <br>
-    <div class="series-similares">
-        <h1 class="h1-similares">Similares</h1>
-    <div class="galeria-pelicula">
-        <a href="VistaDetallePeliculaFatherhood.html">
-            <img src="../../Imagenes/paternidad.jpg" alt="Fatherhood" />
-        </a>
-        <a href="VistaDetallePeliculainseparables.html">
-            <img src="../../Imagenes/inseparables.jpg" alt="Inseparables" />
-        </a>
-        <a href="VistaDetallePeliculaBallena.html">
-            <img src="../../Imagenes/ballena.jpg" alt="LaBallena" />
-        </a>
-        <a href="VistaDetallePeliculaElAura.html">
-            <img src="../../Imagenes/elaura2.jpg" alt="ElAura" />
-        </a>
-        </div>
+    <div class="detalle-pelicula-serie">
+      <p><strong>Titulo:</strong> Los dos ppas </p>
+      <p><strong>Duracion:</strong> 125 minutos</p>
+      <p><strong>Genero:</strong> Drama </p>
+      <p>
+        <strong>Actores:</strong>
+        <a href="https://es.wikipedia.org/wiki/Anthony_Hopkins" title="Anthony Hopkins">Anthony Hopkins -</a>
+        <a href="https://es.wikipedia.org/wiki/Jonathan_Pryce" title="Jonathan Pryce">Jonathan Pryce </a>
+      </p>
+      <p class="descripcion-pelicula-serie">Anthony Hopkins y Jonathan Pryce protagonizan este retrato íntimo de un momento clave en la
+        historia de la Iglesia católica.</p>
     </div>
-    <footer class="footer">
-  Creada por Pfeiffer Juan Pablo y Axel Deantonio
-    </footer>
+  </div>
+  <div class="peliculas-series-similares">
+    <h1>Similares</h1>
+    <div class="galeria-peliculas-series">
+      <a href="VistaDetallePeliculaFatherhood.html">
+        <img src="../../Imagenes/paternidad.jpg" alt="Fatherhood" />
+      </a>
+      <a href="VistaDetallePeliculainseparables.html">
+        <img src="../../Imagenes/inseparables.jpg" alt="Inseparables" />
+      </a>
+      <a href="VistaDetallePeliculaBallena.html">
+        <img src="../../Imagenes/ballena.jpg" alt="LaBallena" />
+      </a>
+      <a href="VistaDetallePeliculaElAura.html">
+        <img src="../../Imagenes/elaura2.jpg" alt="ElAura" />
+      </a>
+    </div>
+  </div>
+  <footer class="footer">
+    Creada por Pfeiffer Juan Pablo y Axel Deantonio
+  </footer>
 </body>
+
 </html>
