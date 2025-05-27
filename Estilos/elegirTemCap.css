@@ -1,14 +1,69 @@
-.pelicula-serie .detalle-pelicula-serie .seleccionar {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3em;
+/*Smartphones vertical*/
+@media screen and (min-width: 320px) {
+  .pelicula-serie .detalle-pelicula-serie .seleccionar {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.25rem;
+  }
+  .pelicula-serie .detalle-pelicula-serie .seleccionar .temporadas,
+  .capitulos{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .pelicula-serie .detalle-pelicula-serie .seleccionar label {
+    font-weight: bold;
+    font-size: 1.52em;
+  }
+  .pelicula-serie .detalle-pelicula-serie .seleccionar select {
+    border: 0.125rem solid black;
+    border-radius: 0.3125rem;
+    padding: 0.3125rem;
+  }
 }
-.pelicula-serie .detalle-pelicula-serie .seleccionar label {
-  font-weight: bold;
-  font-size: 1.5em;
+/*Smartphones horizontal*/
+/*Tablets vertical*/
+@media screen and (min-width: 667px) {
+  .pelicula-serie .detalle-pelicula-serie .seleccionar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 1.25rem;
+  }
+  .pelicula-serie .detalle-pelicula-serie .seleccionar .temporadas, 
+  .capitulos{
+    gap: 1.25rem;
+  }
+  .pelicula-serie .detalle-pelicula-serie .seleccionar label {
+    align-content: center;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  .pelicula-serie .detalle-pelicula-serie .seleccionar select {
+    border: 0.125rem solid black;
+    border-radius: 0.3125rem;
+    padding: 0.3125rem;
+  }
 }
-.pelicula-serie .detalle-pelicula-serie .seleccionar select {
-  border: 0.125rem solid black;
-  border-radius: 0.3125rem;
-  padding: 0.3125rem;
+/*PC*/
+@media screen and (min-width: 1280px) {
+  .pelicula-serie .detalle-pelicula-serie .seleccionar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 1.875rem 0;
+  }
+  .pelicula-serie .detalle-pelicula-serie .seleccionar .temporadas, 
+  .capitulos{
+    gap: 1.25rem;
+  }
+  .pelicula-serie .detalle-pelicula-serie .seleccionar label {
+    align-content: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  .pelicula-serie .detalle-pelicula-serie .seleccionar select {
+    border: 0.125rem solid black;
+    border-radius: 0.3125rem;
+    padding: 0.3125rem;
+  }
 }
