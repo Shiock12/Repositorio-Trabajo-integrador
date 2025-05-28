@@ -1,0 +1,7 @@
+@media screen and (min-width: 375){
+    .grilla-main{
+        display: grid;
+        grid-template-rows: 25% 75%;
+        
+    }
+}

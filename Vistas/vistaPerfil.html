@@ -1,111 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Perfil</title>
-    <link rel="stylesheet" href="../Estilos/styles.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar">
-        <a href="PantallaPrincipal.html" class="nav-item">
-          <span><img src="../Imagenes/IconosHeader/Casa.png" alt="icon-house" /></span>
-          <span>Home</span>
-        </a>
-        <a href="VistaDetalleSerie.html" class="nav-item">
-          <span><img src="../Imagenes/IconosHeader/Serie.png" alt="icon-series" /></span>
-          <span>Series</span>
-        </a>
 
-        <a href="VistaDetallePelicula.html" class="nav-item">
-          <span><img src="../Imagenes/IconosHeader/Pelicula.png" alt="icon-pelicula"/></span>
-          <span>Peliculas</span>
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil</title>
+  <link rel="stylesheet" href="../Estilos/styles.css">
+  <link rel="stylesheet" href="../Estilos/header.css">
+  <link rel="stylesheet" href="../Estilos/vistaPerfil.css">
+  <link rel="stylesheet" href="../Estilos/footer.css">
+  <link rel="stylesheet" href="../Estilos/botones.css">
+</head>
 
-        <a href="vistaPerfil.html" class="nav-item">
-          <span><img src="../Imagenes/IconosHeader/Perfil.png" alt="iconperfil" /></span>
-          <span>Perfil</span>
-        </a>
-      </nav>
-    </header>
-    <div class="grid-contenedor">
-      <div class="box1">
-    <div class="register">
-    <img src="../Imagenes/Silueta.png" alt="Perfil">
-  </div>
-  </div>
-  <div class="box2">
-<div class="align-left">
-  <form>
-    <div class="contenedor">
-      <div class="form-login">
-        <div class="form-item">
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="PantallaPrincipal.html" class="nav-item">
+        <span><img src="../Imagenes/IconosHeader/Casa.png" alt="icon-house" /></span>
+        <span>Home</span>
+      </a>
+      <a href="VistaDetalleSerie.html" class="nav-item">
+        <span><img src="../Imagenes/IconosHeader/Serie.png" alt="icon-series" /></span>
+        <span>Series</span>
+      </a>
+
+      <a href="VistaDetallePelicula.html" class="nav-item">
+        <span><img src="../Imagenes/IconosHeader/Pelicula.png" alt="icon-pelicula" /></span>
+        <span>Peliculas</span>
+      </a>
+
+      <a href="vistaPerfil.html" class="nav-item">
+        <span><img src="../Imagenes/IconosHeader/Perfil.png" alt="iconperfil" /></span>
+        <span>Perfil</span>
+      </a>
+    </nav>
+  </header>
+  <div class="grilla-main">
+    <div class="icono-usuario">
+      <img class="icono" src="../Imagenes/Silueta.png" alt="icono-perfil">
+      <p>nombre de usuario</p>
+    </div>
+    <form class="formulario">
+      <section class="form-a">
+        <div class="campo">
           <label for="email">E-mail</label>
-          <span>usuario@gmail.com</span>
+          <input type="email" name="email" id="email" required>
         </div>
-        <div class="form-item">
-          <label for="Password">Contraseña</label> 
-          <span>**********</span>
+        <div class="campo">
+          <label for="password">contraseña</label>
+          <input type="password" name="password" id="password" required>
         </div>
-        <div class="form-item">
-          <label for="password">Nueva contraseña</label>
-          <input type="password" placeholder="Contraseña">
+        <div class="campo">
+          <label for="nueva-contraseña">nueva contraseña</label>
+          <input type="text" name="nueva-contraseña" id="nueva-contraseña" required>
         </div>
-        <div class="form-item">
-          <label for="repeat-password">Repetir contraseña</label>
-          <input type="password" placeholder="Repetir contraseña">
+        <div class="campo">
+          <label for="repetir-contraseña">repetir contraseña</label>
+          <input type="text" name="repetir-contraseña" id="repetir-contraseña" required>
         </div>
-      </div>
-    </div>
-  </form>
-  <div class="botones-al-lado">
-    <div class="botones-derecha">
-<a class="boton-generico" href="../index.html">Guardar cambios</a>
-    </div>
-  </div>
-</div>
-</div>
-<div class="box3">
-  <div class="align-right">
-    <form>
-    <div class="contenedor">
-      <p>Métodos de pago</p>
-      <br>
-      <label><input type="radio" name="pago" id="tarjeta"> Tarjeta de crédito</label>
-      <section class="num-tarjeta">
-         <input type="text" placeholder="Número tarjeta">
-      <input type="text" size="3" maxlength="3" placeholder="XXX">
       </section>
-      <section class="opciones-cupon">
-      <label><input type="radio" name="pago" id="cupon"> Cupón de pago</label>
-      <section class="cupon-opciones">
-        <label><input id="PagoFacil" type="checkbox" name="subcupon" value="PagoFacil"> Pago Fácil</label>
-        <label><input id="RapiPago" type="checkbox" name="subcupon" value="RapiPago"> RapiPago</label>
+      <section class="form-b">
+        <p>Método de pago</p>
+        <div>
+          <input type="radio" name="metodo-de-pago" id="metodo-de-pago" required>
+          <label for="metodo-de-pago">Tarjeta de crédito</label>
+          <div class="numero-de-tarjeta">
+            <input type="text" name="numero-de-tarjeta" id="numero-de-tarjeta" required>
+            <input type="text" size="3" maxlength="3" name="codigo-de-seguridad" id="codigo-de-seguridad" required>
+          </div>
+        </div>
+        <div>
+          <input type="radio" name="metodo-de-pago" id="metodo-de-pago" required>
+          <label for="metodo-de-pago">Cupón de pago</label>
+          <div class="cupon-de-pago">
+            <input type="checkbox" name="cupon-de-pago" id="cupon-de-pago" required>
+            <label for="cupon-de-pago">Pago facil</label>
+            <input type="checkbox" name="cupon-de-pago" id="cupon-de-pago" required>
+            <label for="cupon-de-pago">RapiPago</label>
+          </div>
+        </div>
+        <div>
+          <input type="radio" name="metodo-de-pago" id="metodo-de-pago" required>
+          <label for="metodo-de-pago">Transferencia bancaria</label>
+          <div class="cbu">
+            <p>CBU: 2183909411100018971375</p>
+          </div>
+        </div>
       </section>
-    </section>
-    <section class="transferencia">
-      <label><input type="radio" name="pago" id="transferencia"> Transferencia Bancaria</label>
-  </section>
-      <section class="cupon-opciones">
-        <span>CBU: 12313123123123</span>
-      </section>
-    </div>
     </form>
-    <div class="botones-izquierda">
-      <a class="boton-cancelar" href="../index.html">Cancelar subscripcion</a>
-    </div>
   </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="footer-perfil">
-<footer class="footer">
-  Creada por Pfeiffer Juan Pablo y Axel Deantonio
-    </footer>
-    </div>
+  <section class="botones">
+    <a class="btn-primario" href="">Guardar cambios</a>
+    <a class="btn-secundario" href="">Cancelar subscripcion</a>
+  </section>
+  <footer class="footer">
+    Creada por Pfeiffer Juan Pablo y Axel Deantonio
+  </footer>
 </body>
+
 </html>
