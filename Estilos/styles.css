@@ -92,10 +92,6 @@ body {
   display: inline-block;
 }
 
-.boton-cancelar {
-  background-color: orangered;
-}
-
 .form-login a:not(.boton-iniciar-sesion) {
   text-align: center;
   color: blue;
@@ -107,87 +103,9 @@ body {
   flex-direction: column;
   text-align: center;
 }
-
-.botones-al-lado {
-  display: flex;
-  justify-content: right;
-  margin-right: 0.625rem;
-  margin-top: 6.25rem;
-}
-
-.botones-al-lado a {
-  margin: 0 0.625rem;
-  width: 12.5rem;
-}
-
-.botones-izquierda {
-  margin-top: 2.0625rem;
-  margin-left: 0.9375rem;
-  width: 70%;
-}
-
-.register {
-  margin: 1.25rem;
-  display: inline-block;
-  width: fit-content;
-  overflow: hidden;
-}
-
-.register img {
-  width: 9.375rem;
-  height: auto;
-}
-
-.align-left,
-.align-right {
-  display: inline-block;
-  width: 48%;
-  vertical-align: top;
-}
-
 .uso-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.625rem;
   align-items: start;
-}
-
-.grid-contenedor {
-  display: grid;
-  grid-template-columns: 12.5rem 1fr 1fr;
-  gap: 0.625rem;
-  grid-auto-rows: auto;
-  text-align: center;
-  font-size: 1.1875rem;
-}
-
-.grid-contenedor .box2 {
-  margin-top: 1.25rem;
-}
-
-.grid-contenedor .box3 {
-  text-align: left;
-}
-
-.num-tarjeta {
-  margin: 0.625rem;
-  padding: 0.625rem;
-}
-
-.opciones-cupon {
-  align-items: left;
-  margin-top: 1.25rem;
-}
-
-.cupon-opciones {
-  margin-top: 1.25rem;
-  margin-left: 1.25rem;
-}
-
-.transferencia {
-  margin-top: 1.25rem;
-}
-
-.botones-derecha {
-  margin: 0 auto;
 }

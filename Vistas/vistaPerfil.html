@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Perfil</title>
   <link rel="stylesheet" href="../Estilos/styles.css">
-  <link rel="stylesheet" href="../Estilos/header.css">
   <link rel="stylesheet" href="../Estilos/vistaPerfil.css">
+  <link rel="stylesheet" href="../Estilos/header.css">
   <link rel="stylesheet" href="../Estilos/footer.css">
   <link rel="stylesheet" href="../Estilos/botones.css">
 </head>
@@ -38,13 +38,13 @@
   <div class="grilla-main">
     <div class="icono-usuario">
       <img class="icono" src="../Imagenes/Silueta.png" alt="icono-perfil">
-      <p>nombre de usuario</p>
+      <p>Nombre de Usuario</p>
     </div>
     <form class="formulario">
       <section class="form-a">
         <div class="campo">
           <label for="email">E-mail</label>
-          <input type="email" name="email" id="email" required>
+          <input type="email" name="email" id="email" autocomplete="additional-name" required>
         </div>
         <div class="campo">
           <label for="password">contraseña</label>
@@ -60,29 +60,33 @@
         </div>
       </section>
       <section class="form-b">
-        <p>Método de pago</p>
+        <strong>Método de pago</strong>
         <div>
-          <input type="radio" name="metodo-de-pago" id="metodo-de-pago" required>
-          <label for="metodo-de-pago">Tarjeta de crédito</label>
-          <div class="numero-de-tarjeta">
+          <input type="radio" name="metodo-de-pago" id="tarjeta-de-credito" required>
+          <label for="tarjeta-de-credito">Tarjeta de crédito</label>
+          <div class="campo">
             <input type="text" name="numero-de-tarjeta" id="numero-de-tarjeta" required>
             <input type="text" size="3" maxlength="3" name="codigo-de-seguridad" id="codigo-de-seguridad" required>
           </div>
         </div>
         <div>
-          <input type="radio" name="metodo-de-pago" id="metodo-de-pago" required>
-          <label for="metodo-de-pago">Cupón de pago</label>
-          <div class="cupon-de-pago">
-            <input type="checkbox" name="cupon-de-pago" id="cupon-de-pago" required>
-            <label for="cupon-de-pago">Pago facil</label>
-            <input type="checkbox" name="cupon-de-pago" id="cupon-de-pago" required>
-            <label for="cupon-de-pago">RapiPago</label>
+          <input type="radio" name="metodo-de-pago" id="cupon-de-pago" required>
+          <label for="cupon-de-pago">Cupón de pago</label>
+          <div class="campo-cupon-de-pago">
+            <div>
+              <input type="checkbox" name="cupon-de-pago" id="pago-facil" required>
+              <label for="pago-facil">Pago facil</label>
+            </div>
+            <div>
+              <input type="checkbox" name="cupon-de-pago" id="rapipago" required>
+              <label for="rapipago">RapiPago</label>
+            </div>
           </div>
         </div>
         <div>
           <input type="radio" name="metodo-de-pago" id="metodo-de-pago" required>
           <label for="metodo-de-pago">Transferencia bancaria</label>
-          <div class="cbu">
+          <div class="campo">
             <p>CBU: 2183909411100018971375</p>
           </div>
         </div>

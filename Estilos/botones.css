@@ -12,4 +12,22 @@
         border: 0.0625rem solid black;
         border-radius: 0.3125rem;
     }
+    .btn-primario{
+        padding: 10px;
+        background-color: green;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+    }
+    .btn-secundario{
+        padding: 10px;
+        background-color: orangered;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+    }
 }
