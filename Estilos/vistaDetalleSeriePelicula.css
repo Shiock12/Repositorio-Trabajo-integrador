@@ -1,3 +1,5 @@
+
+
 /*Smartphones vertical*/
 @media screen and (min-width: 320px) {
   .pelicula-serie {
@@ -66,7 +68,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0.625rem 0.625rem 0 0.625rem;
+    padding: 3rem 3rem 0 3rem;
     gap: 1.875rem;
   }
   .pelicula-serie .iframe-a {
@@ -128,7 +130,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 0.625rem;
+    padding: 3rem;
     gap: 1.875rem;
   }
   .pelicula-serie .iframe-a {
@@ -189,9 +191,11 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 0.625rem;
+    padding: 3rem;
     gap: 1.875rem;
   }
+
+
   .pelicula-serie .iframe-a {
     width: 100%;
     display: flex;

@@ -14,7 +14,282 @@
     }
     .btn-primario{
         padding: 10px;
-        background-color: green;
+        background-color: lightgreen;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+    }
+    .btn-secundario{
+        padding: 10px;
+        background-color: orangered;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+
+/*Smartphones vertical*/
+/*Movil S*/
+@media screen and (min-width: 320px) {
+    .boton-comenzar {
+        width: 100%;
+        padding: 0.625rem;
+        margin-top: 0.625rem;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: black;
+        background-color: lightskyblue;
+        border: 0.0625rem solid black;
+        border-radius: 0.3125rem;
+    }
+    .btn-primario{
+        padding: 10px;
+        background-color: lightgreen;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+    }
+    .btn-secundario{
+        padding: 10px;
+        background-color: orangered;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+/*Movil M*/
+@media screen and (min-width: 375px) {
+    .boton-comenzar {
+        width: 100%;
+        padding: 0.625rem;
+        margin-top: 0.625rem;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: black;
+        background-color: lightskyblue;
+        border: 0.0625rem solid black;
+        border-radius: 0.3125rem;
+    }
+    .btn-primario{
+        padding: 10px;
+        background-color: lightgreen;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+    }
+    .btn-secundario{
+        padding: 10px;
+        background-color: orangered;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 0px) {
+    .boton-comenzar {
+        width: 100%;
+        padding: 0.625rem;
+        margin-top: 0.625rem;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: black;
+        background-color: lightskyblue;
+        border: 0.0625rem solid black;
+        border-radius: 0.3125rem;
+    }
+    .btn-primario{
+        padding: 10px;
+        background-color: lightgreen;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+    }
+    .btn-secundario{
+        padding: 10px;
+        background-color: orangered;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+/*Movil L*/
+@media screen and (min-width: 425px) {
+   .boton-comenzar {
+        width: 100%;
+        padding: 0.625rem;
+        margin-top: 0.625rem;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: black;
+        background-color: lightskyblue;
+        border: 0.0625rem solid black;
+        border-radius: 0.3125rem;
+    }
+    .btn-primario{
+        padding: 10px;
+        background-color: lightgreen;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+    }
+    .btn-secundario{
+        padding: 10px;
+        background-color: orangered;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+/*Smartphones horizontal*/
+/*Tablet vertical*/
+@media screen and (min-width: 667px) {
+    .boton-comenzar {
+        width: 100%;
+        padding: 0.625rem;
+        margin-top: 0.625rem;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: black;
+        background-color: lightskyblue;
+        border: 0.0625rem solid black;
+        border-radius: 0.3125rem;
+    }
+    .btn-primario{
+        padding: 10px;
+        background-color: lightgreen;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+    }
+    .btn-secundario{
+        padding: 10px;
+        background-color: orangered;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+/*Tablet horizontal*/
+@media screen and (min-width: 1024px) {
+    .boton-comenzar {
+        width: 100%;
+        padding: 0.625rem;
+        margin-top: 0.625rem;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: black;
+        background-color: lightskyblue;
+        border: 0.0625rem solid black;
+        border-radius: 0.3125rem;
+    }
+    .btn-primario{
+        padding: 10px;
+        background-color: lightgreen;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+    }
+    .btn-secundario{
+        padding: 10px;
+        background-color: orangered;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+/*Pc chico*/
+@media screen and (min-width: 1280px) {
+    .boton-comenzar {
+        width: 100%;
+        padding: 0.625rem;
+        margin-top: 0.625rem;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: black;
+        background-color: lightskyblue;
+        border: 0.0625rem solid black;
+        border-radius: 0.3125rem;
+    }
+    .btn-primario{
+        padding: 10px;
+        background-color: lightgreen;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+    }
+    .btn-secundario{
+        padding: 10px;
+        background-color: orangered;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+/*Pc grande*/
+@media screen and (min-width: 1920px) {
+   .boton-comenzar {
+        width: 100%;
+        padding: 0.625rem;
+        margin-top: 0.625rem;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: black;
+        background-color: lightskyblue;
+        border: 0.0625rem solid black;
+        border-radius: 0.3125rem;
+    }
+    .btn-primario{
+        padding: 10px;
+        background-color: lightgreen;
         color: black;
         border: 1px solid black;
         border-radius: 5px;
