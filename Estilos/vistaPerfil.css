@@ -1,64 +1,76 @@
 /*Smartphone vertical*/
-@media screen and (min-width: 320px){
-    .grilla-main{
+@media screen and (min-width: 320px) {
+    .grilla-main {
         display: grid;
         grid-template-rows: 1fr auto;
         gap: 30px;
         font-size: 18px;
-         padding: 3rem;
+        padding: 3rem;
     }
-    .grilla-main .icono-usuario{
+
+    .grilla-main .icono-usuario {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .grilla-main .icono-usuario p{
+
+    .grilla-main .icono-usuario p {
         font-weight: bold;
     }
-    .grilla-main .icono-usuario .icono{
+
+    .grilla-main .icono-usuario .icono {
         width: auto;
         height: 90%;
     }
-    .grilla-main .formulario{
+
+    .grilla-main .formulario {
         display: flex;
         flex-direction: column;
         margin-top: 20px;
         gap: 40px;
     }
-    .grilla-main .formulario .form-a{
+
+    .grilla-main .formulario .form-a {
         display: flex;
         justify-items: center;
         flex-direction: column;
         gap: 10px;
     }
-    .grilla-main .formulario .form-a .campo{
+
+    .grilla-main .formulario .form-a .campo {
         display: flex;
         justify-content: end;
     }
-    .grilla-main .formulario .form-a .campo input{
+
+    .grilla-main .formulario .form-a .campo input {
         margin-left: 30px;
     }
-    .grilla-main .formulario .form-b{
+
+    .grilla-main .formulario .form-b {
         display: flex;
         justify-items: center;
         flex-direction: column;
         gap: 10px;
     }
-    .grilla-main .formulario .form-b .campo{
+
+    .grilla-main .formulario .form-b .campo {
         display: flex;
         margin-top: 10px;
         margin-left: 30px;
     }
-    .grilla-main .formulario .form-b .campo-cupon-de-pago{
+
+    .grilla-main .formulario .form-b .campo-cupon-de-pago {
         display: flex;
         flex-direction: row;
         margin-left: 30px;
         gap: 20px;
     }
-    .grilla-main .formulario .form-b .campo input{
+
+    .grilla-main .formulario .form-b .campo input {
         margin-right: 10px;
     }
-    .botones{
+
+    .botones {
         display: flex;
         flex-direction: column;
         font-size: 18px;
@@ -70,68 +82,88 @@
 
 
 }
+
 /*Smartphone horizontal*/
 /*Tablets vertical*/
-@media screen and (min-width: 667px){
-    .grilla-main{
+@media screen and (min-width: 667px) {
+    .grilla-main {
         display: grid;
         grid-template-rows: 1fr auto;
         gap: 30px;
         font-size: 18px;
-         padding: 3rem;
+        padding: 3rem;
     }
-    .grilla-main .icono-usuario{
+
+    .grilla-main .icono-usuario {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .grilla-main .icono-usuario p{
+
+    .grilla-main .icono-usuario p {
         font-weight: bold;
     }
-    .grilla-main .icono-usuario .icono{
+
+    .grilla-main .icono-usuario .icono {
         width: auto;
         height: 90%;
     }
-    .grilla-main .formulario{
-        display: flex;
-        flex-direction: row;
+
+    .grilla-main .formulario {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
         margin-top: 20px;
         gap: 25px;
     }
-    .grilla-main .formulario .form-a{
+
+    .grilla-main .formulario .form-a {
+        grid-column: 1;
+        grid-row: 1;
         display: flex;
         justify-items: center;
         flex-direction: column;
         gap: 10px;
     }
-    .grilla-main .formulario .form-a .campo{
+
+    .grilla-main .formulario .form-a .campo {
         display: flex;
         justify-content: end;
     }
-    .grilla-main .formulario .form-a .campo input{
+
+    .grilla-main .formulario .form-a .campo input {
         margin-left: 30px;
     }
-    .grilla-main .formulario .form-b{
+
+    .grilla-main .formulario .form-b {
+        grid-column: 2;
+        grid-row: 1;
         display: flex;
         justify-items: center;
         flex-direction: column;
         gap: 10px;
     }
-    .grilla-main .formulario .form-b .campo{
+
+    .grilla-main .formulario .form-b .campo {
         display: flex;
         margin-top: 10px;
         margin-left: 30px;
     }
-    .grilla-main .formulario .form-b .campo-cupon-de-pago{
+
+    .grilla-main .formulario .form-b .campo-cupon-de-pago {
         display: flex;
         flex-direction: row;
         margin-left: 30px;
         gap: 20px;
     }
-    .grilla-main .formulario .form-b .campo input{
+
+    .grilla-main .formulario .form-b .campo input {
         margin-right: 10px;
     }
-    .botones{
+
+    .botones {
+        grid-column: 1/ 3;
+        grid-row: 2;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -140,10 +172,11 @@
         gap: 10px;
     }
 }
+
 /*Tablets horizontal*/
 /*PC chicas*/
-@media screen and (min-width: 1024px){
-    .grilla-main{
+@media screen and (min-width: 1024px) {
+    .grilla-main {
         display: grid;
         grid-template-columns: 1fr 3fr;
         grid-template-rows: auto;
@@ -151,57 +184,76 @@
         font-size: 18px;
         padding: 3rem;
     }
-    .grilla-main .icono-usuario{
+
+    .grilla-main .icono-usuario {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .grilla-main .icono-usuario p{
+
+    .grilla-main .icono-usuario p {
         font-weight: bold;
     }
-    .grilla-main .icono-usuario .icono{
+
+    .grilla-main .icono-usuario .icono {
         width: auto;
         height: 90%;
     }
-    .grilla-main .formulario{
-        display: flex;
-        flex-direction: row;
+
+    .grilla-main .formulario {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
         margin-top: 40px;
     }
-    .grilla-main .formulario .form-a{
+
+    .grilla-main .formulario .form-a {
+        grid-column: 1;
+        grid-row: 1;
         display: flex;
         flex-direction: column;
         justify-items: end;
         gap: 10px;
     }
-    .grilla-main .formulario .form-a .campo{
+
+    .grilla-main .formulario .form-a .campo {
         display: flex;
         justify-content: end;
     }
-    .grilla-main .formulario .form-a .campo input{
+
+    .grilla-main .formulario .form-a .campo input {
         margin-left: 30px;
     }
-    .grilla-main .formulario .form-b{
+
+    .grilla-main .formulario .form-b {
+        grid-column: 2;
+        grid-row: 1;
         display: flex;
         justify-content: center;
         flex-direction: column;
         gap: 10px;
     }
-    .grilla-main .formulario .form-b .campo{
+
+    .grilla-main .formulario .form-b .campo {
         display: flex;
         margin-top: 10px;
         margin-left: 30px;
     }
-    .grilla-main .formulario .form-b .campo-cupon-de-pago{
+
+    .grilla-main .formulario .form-b .campo-cupon-de-pago {
         display: flex;
         flex-direction: row;
         margin-left: 30px;
         gap: 20px;
     }
-    .grilla-main .formulario .form-b .campo input{
+
+    .grilla-main .formulario .form-b .campo input {
         margin-right: 10px;
     }
-    .botones{
+
+    .botones {
+        grid-column: 1/3;
+        grid-row: 2;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -210,71 +262,85 @@
         gap: 100px;
     }
 }
+
 /*Pc Grandes*/
-@media screen and (min-width: 1280px){
-    .grilla-main{
+@media screen and (min-width: 1280px) {
+    .grilla-main {
         display: grid;
         grid-template-columns: 1fr 3fr;
         grid-template-rows: auto;
         gap: 30px;
         font-size: 25px;
-         padding: 3rem;
+        padding: 3rem;
     }
-    .grilla-main .icono-usuario{
-        grid-column: 1;
-        grid-row: 1;
+
+    .grilla-main .icono-usuario {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .grilla-main .icono-usuario p{
+
+    .grilla-main .icono-usuario p {
         font-weight: bold;
     }
-    .grilla-main .icono-usuario .icono{
+
+    .grilla-main .icono-usuario .icono {
         width: auto;
         height: 90%;
     }
-    .grilla-main .formulario{
-        grid-column: 2;
-        grid-row: 1;
-        display: flex;
-        flex-direction: row;
-        margin-top: 40px;
-        gap: 100px;
+
+    .grilla-main .formulario {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        margin-top: 80px;
+        margin-right: 80px;
     }
-    .grilla-main .formulario .form-a{
+
+    .grilla-main .formulario .form-a {
+        grid-column: 1;
+        grid-row: 1;
         display: flex;
         flex-direction: column;
         align-items: end;
         gap: 10px;
     }
-    .grilla-main .formulario .form-a .campo{
+
+    .grilla-main .formulario .form-a .campo {
         display: flex;
         justify-content: end;
     }
-    .grilla-main .formulario .form-a .campo input{
+
+    .grilla-main .formulario .form-a .campo input {
         margin-left: 30px;
     }
-    .grilla-main .formulario .form-b{
+
+    .grilla-main .formulario .form-b {
+        grid-column: 2;
+        grid-row: 1;
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
-    .grilla-main .formulario .form-b .campo{
+
+    .grilla-main .formulario .form-b .campo {
         display: flex;
         margin-top: 10px;
         margin-left: 30px;
     }
-    .grilla-main .formulario .form-b .campo-cupon-de-pago{
+
+    .grilla-main .formulario .form-b .campo-cupon-de-pago {
         display: flex;
         flex-direction: row;
         margin-left: 30px;
         gap: 20px;
     }
-    .grilla-main .formulario .form-b .campo input{
+
+    .grilla-main .formulario .form-b .campo input {
         margin-right: 10px;
     }
-    .botones{
+
+    .botones {
         grid-column: 1 / 3;
         grid-row: 2;
         display: flex;
