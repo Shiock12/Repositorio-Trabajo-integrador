@@ -12,8 +12,8 @@ const MENSAJES_DE_ERROR = {
   REPETIR_CONTRASEÑA: "la constraseña es requerida",
   REPETIR_CONTRASEÑA_INVALIDA: "la constraseña debe ser igual a la anterior",
   METODO_DE_PAGO: "seleccione una opcion",
-  NUMERO_DE_TARJETA:"ingrese un numero de tarjeta valido",
-  CODIGO_DE_SEGURIDAD:"ingrese un codigo de seguridad valido",
+  NUMERO_DE_TARJETA: "ingrese un numero de tarjeta valido",
+  CODIGO_DE_SEGURIDAD: "ingrese un codigo de seguridad valido",
   CUPON_DE_PAGO: "seleccione una opcion"
 };
 
@@ -41,6 +41,9 @@ function registerValidate() {
     const contraseña = registerForm.querySelector("#contraseña").value.trim();
     const repetirContraseña = registerForm.querySelector("#repetir-contraseña").value.trim();
     const metodoDePago = document.querySelector('input[name="metodo-de-pago"]:checked');
+    const numeroDeTarjeta = document.getElementById("numero-de-tarjeta").value;
+    const codigoDeSeguridad = document.getElementById("codigo-de-seguridad").value;
+    const cuponDePago = document.querySelector('input[name="opcion-de-cupon"]:checked')
 
     //Mensajes de error
     const nombreError = registerForm.querySelector('.js-nombre-error');
@@ -51,7 +54,6 @@ function registerValidate() {
     const repetirContraseñaError = registerForm.querySelector('.js-repetir-contraseña-error');
     const metodoDePagoError = registerForm.querySelector('.js-metodo-de-pago-error');
     const numeroDeTarjetaError = registerForm.querySelector('.js-numero-de-tarjeta-error');
-    const codigoDeSeguridadError = registerForm.querySelector('.js-codigo-de-seguridad-error');
     const cuponDePagoError = registerForm.querySelector('.js-cupon-de-pago');
 
     //Reseteo de los mensajes de error
@@ -63,7 +65,6 @@ function registerValidate() {
     repetirContraseñaError.textContent = "";
     metodoDePagoError.textContent = "";
     numeroDeTarjetaError.textContent = "";
-    codigoDeSeguridadError.textContent = "";
     cuponDePagoError.textContent = "";
 
     let isFormValid = true;
@@ -127,30 +128,46 @@ function registerValidate() {
       metodoDePagoError.textContent = MENSAJES_DE_ERROR.METODO_DE_PAGO;
       isFormValid = false;
 
-    }else if(metodoDePago.value === "tarjeta-de-credito"){
+    } else if (metodoDePago.value === "tarjeta-de-credito") {
 
-      const numeroDeTarjeta = document.querySelector('input[name="numero-de-tarjeta"]')
-      const codigoDeSeguridad = document.querySelector('input[name="codigo-de-seguridad"]')
+      function validarTarjeta(tarjeta) {
+        const numeros = tarjeta.split('').map(Number);
+        const suma = numeros.slice(0, 15).reduce((acc, num) => acc + num, 0);
+        const ultimo = numeros[15];
 
-      if(!EXPRESIONES_REGULARES.NUMEROS.test(numeroDeTarjeta)){
+        let esValida = false;
+
+        if ((suma % 2 === 0 && ultimo % 2 === 1) || (suma % 2 === 1 && ultimo % 2 === 0)) {
+          esValida = true;
+        }
+
+        return esValida;
+      }
+
+      if (!EXPRESIONES_REGULARES.NUMEROS.test(numeroDeTarjeta)) {
         numeroDeTarjetaError.textContent = MENSAJES_DE_ERROR.NUMERO_DE_TARJETA;
         isFormValid = false;
-      }else if(numeroDeTarjeta < 16){
+      } else if (numeroDeTarjeta.length < 16) {
+        numeroDeTarjetaError.textContent = MENSAJES_DE_ERROR.NUMERO_DE_TARJETA;
+        isFormValid = false;
+      } else if (!validarTarjeta(numeroDeTarjeta)) {
         numeroDeTarjetaError.textContent = MENSAJES_DE_ERROR.NUMERO_DE_TARJETA;
         isFormValid = false;
       }
 
-      if(!EXPRESIONES_REGULARES.NUMEROS.test(codigoDeSeguridad)){
-        codigoDeSeguridadError.textContent = MENSAJES_DE_ERROR.CODIGO_DE_SEGURIDAD;
+      if (!EXPRESIONES_REGULARES.NUMEROS.test(codigoDeSeguridad)) {
+        numeroDeTarjetaError.textContent = MENSAJES_DE_ERROR.CODIGO_DE_SEGURIDAD;
         isFormValid = false;
-      }else if(codigoDeSeguridad.value === 0o0){
-        codigoDeSeguridadError.textContent = MENSAJES_DE_ERROR.CODIGO_DE_SEGURIDAD;
+      } else if (codigoDeSeguridad.length < 3) {
+        numeroDeTarjetaError.textContent = MENSAJES_DE_ERROR.CODIGO_DE_SEGURIDAD;
+        isFormValid = false;
+      } else if (codigoDeSeguridad === "000") {
+        numeroDeTarjetaError.textContent = MENSAJES_DE_ERROR.CODIGO_DE_SEGURIDAD;
         isFormValid = false;
       }
 
-    }else if(metodoDePago.value === "cupon-de-pago"){
-      const cuponDePago = document.querySelector('input[name="opcion-de-cupon"]:checked')
-      if(!cuponDePago){
+    } else if (metodoDePago.value === "cupon-de-pago") {
+      if (!cuponDePago) {
         cuponDePagoError.textContent = MENSAJES_DE_ERROR.CUPON_DE_PAGO;
         isFormValid = false
       }
@@ -166,97 +183,49 @@ function registerValidate() {
         submitBtn.textContent = "Guardar cambios";
         mensaje.textContent = "¡formulario enviado exitosamente!";
 
-        setTimeout(function (){
-          mensaje.textContent = "";
-        }, 2000);   }
+        let nuevoUsuario;
+        if (metodoDePago.value === "tarjeta-de-credito") {
+          nuevoUsuario = {
+            nombre: nombre,
+            apellido: apellido,
+            email: email,
+            nombreDeUsuario: nombreDeUsuario,
+            contraseña: contraseña,
+            metodoDePago: metodoDePago.value,
+            numeroDeTarjeta: numeroDeTarjeta,
+            codigoDeSeguridad: codigoDeSeguridad,
+          }
+        } else if (metodoDePago.value === "cupon-de-pago") {
+          nuevoUsuario = {
+            nombre: nombre,
+            apellido: apellido,
+            email: email,
+            nombreDeUsuario: nombreDeUsuario,
+            contraseña: contraseña,
+            metodoDePago: metodoDePago.value,
+            cuponDePago: cuponDePago.value,
+          }
+        } else {
+          nuevoUsuario = {
+            nombre: nombre,
+            apellido: apellido,
+            email: email,
+            nombreDeUsuario: nombreDeUsuario,
+            contraseña: contraseña,
+            metodoDePago: metodoDePago.value,
+          }
+        }
 
-    if (isFormValid) {
-      submitBtn.disabled = true;
-      submitBtn.textContent = "Enviando...";
+        let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+        usuarios.push(nuevoUsuario);
+        localStorage.setItem("usuarios", JSON.stringify(usuarios));
+        console.log(JSON.parse(localStorage.getItem("usuarios")) || []);
 
-      setTimeout(function () {
-        registerForm.reset();
-        submitBtn.disabled = false;
-        submitBtn.textContent = "Guardar cambios";
-        mensaje.textContent = "¡formulario enviado exitosamente!";
-
-        setTimeout(function (){
+        setTimeout(function () {
           mensaje.textContent = "";
         }, 2000);
       }, 1000);
     }
   });
 }
-
 registerValidate();
-
-      }, 1000);
-    }
-  });
-}
-
-registerValidate();
-
-
-
-
-
-
-
-/*
-document.querySelector(".formulario").addEventListener("submit", function (event){
-  event.preventDefault(); // Evita recargar la página
-
-  //Guardar datos del usuario a registrarse
-
-  const nombre = document.getElementById("Nombre").value.trim();
-  const apellido = document.getElementById("Apellido").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const usuario = document.getElementById("user").value.trim();
-  const contraseña = document.getElementById("nueva-contraseña").value.trim();
-  const repetirContraseña = document.getElementById("repetir-contraseña").value.trim();
-
-  if (!nombre || !apellido || !email || !usuario || !contraseña || !repetirContraseña) {
-    alert("Por favor completá todos los campos obligatorios.");
-    return;
-  }
-
-  //Validar contraseñas coincidan
-  if (contraseña !== repetirContraseña) {
-    alert("Las contraseñas no coinciden");
-    return;
-  }
-
-  //Obtiene los usuarios ya creados del localstorage
-  const usuariosGuardados = JSON.parse(localStorage.getItem("usuarios")) || [];
-
-
-  const usuarioExistente = usuariosGuardados.some(u => u.username === usuario);
-  if (usuarioExistente) {
-    alert("Este usuario ya existe. Por favor, elija otro")
-    return;
-  }
-
-  const mailexistente = mailguardado.some(u => u.email === email);
-  if (usuarioExistente) {
-    alert("Este mail ya esta registrado.")
-    return;
-  }
-
-  //Agrego un nuevo elemento al array de usuarios
-  usuariosGuardados.push({
-    username: usuario,
-    password: contraseña,
-    nombre: nombre,
-    apellido: apellido,
-    email: email
-  });
-
-  //Guardar el nuevo usuario en el localstorage
-  localStorage.setItem("usuarios", JSON.stringify(usuariosGuardados));
-  alert("Usuario registrado correctamente");
-
-  window.location.href = "../index.html"; //Volver al index
-
-})
-*/
