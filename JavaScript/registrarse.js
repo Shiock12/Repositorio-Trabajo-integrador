@@ -168,7 +168,28 @@ function registerValidate() {
 
         setTimeout(function (){
           mensaje.textContent = "";
+        }, 2000);   }
+
+    if (isFormValid) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Enviando...";
+
+      setTimeout(function () {
+        registerForm.reset();
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Guardar cambios";
+        mensaje.textContent = "¡formulario enviado exitosamente!";
+
+        setTimeout(function (){
+          mensaje.textContent = "";
         }, 2000);
+      }, 1000);
+    }
+  });
+}
+
+registerValidate();
+
       }, 1000);
     }
   });
