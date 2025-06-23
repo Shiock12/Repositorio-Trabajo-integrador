@@ -6,89 +6,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Registrarse</title>
   <link rel="stylesheet" href="../Estilos/styles.css">
-  <link rel="stylesheet" href="../Estilos/vistaPerfil.css">
   <link rel="stylesheet" href="../Estilos/footer.css">
   <link rel="stylesheet" href="../Estilos/botones.css">
   <link rel="stylesheet" href="../Estilos/registrarse.css">
 </head>
 
 <body>
-  <p class="registrarse">Registrarse</p>
-  <div class="grilla-main">
-    <div class="contenedor-izquierda">
-    <form class="formulario" action="../index.html">
-      <section class="form-a">
-        <div class="campo">
-          <label for="name">Nombre</label>
-          <input type="text" name="text" id="Nombre" required placeholder="Nombre">
-        </div>
-        <div class="campo">
-          <label for="Apellido">Apellido</label>
-          <input type="text" name="text" id="Apellido" required placeholder="Apellido">
-        </div>
-        <div class="campo">
-          <label for="nueva-contraseña">E-mail</label>
-          <input type="email" name="email" id="email" required placeholder="Ingrese email">
-        </div>
-         <div class="campo">
-          <label for="user-name">Nombre de usuario</label>
-          <input type="text" id="user" required placeholder="Ingrese usuario">
-        </div>
-        <div class="campo">
-          <label for="repetir-contraseña">Contraseña</label>
-          <input type="password"  id="nueva-contraseña" required placeholder="Contraseña">
-        </div>
-         <div class="campo">
-          <label for="nueva-contraseña">Repetir Contraseña</label>
-          <input type="password" id="repetir-contraseña" required placeholder="Repetir contraseña">
-        </div>
-        </div>
-      </section>
-      <div class="contenedor-derecha">
-      <section class="form-b">
-        <strong>Método de pago</strong>
-        <div>
-          <input type="radio" name="metodo-de-pago" id="tarjeta-de-credito" required>
-          <label for="tarjeta-de-credito">Tarjeta de crédito</label>
+  <main>
+    <p class="registrarse">Registrarse</p>
+    <form class="formulario" id="register-form" method="get" novalidate>
+      <div class="grilla-formulario">
+        <section class="form-a">
           <div class="campo">
-            <input type="text" name="numero-de-tarjeta" id="numero-de-tarjeta" required>
-            <input type="text" size="3" maxlength="3" name="codigo-de-seguridad" id="codigo-de-seguridad" required>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="text" id="nombre" placeholder="Nombre">
           </div>
-        </div>
-        <div>
-          <input type="radio" name="metodo-de-pago" id="cupon-de-pago" required>
-          <label for="cupon-de-pago">Cupón de pago</label>
-          <div class="campo-cupon-de-pago">
-            <div>
-              <input type="checkbox" name="cupon-de-pago" id="pago-facil">
-              <label for="pago-facil">Pago facil</label>
-            </div>
-            <div>
-              <input type="checkbox" name="cupon-de-pago" id="rapipago">
-              <label for="rapipago">RapiPago</label>
+          <div class="error js-nombre-error"></div>
+          <div class="campo">
+            <label for="apellido">Apellido</label>
+            <input type="text" name="text" id="apellido" placeholder="Apellido">
+          </div>
+          <div class="error js-apellido-error"></div>
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Ingrese email">
+          </div>
+          <div class="error js-email-error"></div>
+          <div class="campo">
+            <label for="usuario">Nombre de usuario</label>
+            <input type="text" id="usuario" placeholder="Ingrese usuario">
+          </div>
+          <div class="error js-nombre-de-usuario-error"></div>
+          <div class="campo">
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="contraseña" placeholder="Contraseña">
+          </div>
+          <div class="error js-contraseña-error"></div>
+          <div class="campo">
+            <label for="repetir-contraseña">Repetir Contraseña</label>
+            <input type="password" id="repetir-contraseña" placeholder="Repetir contraseña">
+          </div>
+          <div class="error js-repetir-contraseña-error"></div>
+        </section>
+        <section class="form-b">
+          <strong>Método de pago</strong>
+
+          <div>
+            <input type="radio" id="tarjeta-de-credito" name="metodo-de-pago" value="tarjeta-de-credito">
+            <label for="tarjeta-de-credito">Tarjeta de crédito</label>
+            <div class="campo">
+              <input type="text" name="numero-de-tarjeta" id="numero-de-tarjeta" maxlength="16">
+              <div class="error js-numero-de-tarjeta-error"></div>
+              <input class="codigo-de-seguridad" type="text" name="codigo-de-seguridad" id="codigo-de-seguridad" maxlength="3">
+              <div class="error js-codigo-de-seguridad-error"></div>
             </div>
           </div>
-        </div>
-        <div>
-          <input type="radio" name="metodo-de-pago" id="metodo-de-pago" required>
-          <label for="metodo-de-pago">Transferencia bancaria</label>
-          <div class="campo">
-            <p>CBU: 2183909411100018971375</p>
+
+          <div>
+            <input type="radio" id="cupon-de-pago" name="metodo-de-pago" value="cupon-de-pago">
+            <label for="cupon-de-pago">Cupón de pago</label>
+            
+            <div class="campo-cupon-de-pago">
+              <div>
+                <input type="radio" name="opcion-de-cupon" id="pago-facil" value="Pago-Facil">
+                <label for="pago-facil">Pago facil</label>
+              </div>
+              <div>
+                <input type="radio" name="opcion-de-cupon" id="rapipago" value="RapiPago">
+                <label for="rapipago">RapiPago</label>
+              </div>
+            </div>
+            <div class="error js-cupon-de-pago"></div>
           </div>
+
+          <div>
+            <input type="radio" id="transferencia-bancaria" name="metodo-de-pago" value="transferencia-bancaria">
+            <label for="transferencia-bancaria">Transferencia bancaria</label>
+            <div class="campo">
+              <p>CBU: 2183909411100018971375</p>
+            </div>
+          </div>
+          <div class="error js-metodo-de-pago-error"></div>
+        </section>
+        <div class="botones">
+          <button type="submit" class="btn-primario js-submit-btn">Guardar cambios</button>
+          <a class="btn-secundario" href="../index.html">Cancelar subscripcion</a>
         </div>
-      </section>
-      <div class="botones">
-             <button type="submit" class="btn-primario" >Guardar cambios</button>
-        <a class="btn-secundario" href="../index.html">Cancelar subscripcion</a>
-        </div>
+        <div class="mensaje-exitoso js-mensaje"></div>
       </div>
-  </div>
     </form>
-  </div>
+  </main>
+
   <footer class="footer">
     Creada por Pfeiffer Juan Pablo y Axel Deantonio
-    <script src="../JavaScript/registrarse.js"></script>
   </footer>
+
+  <script src="../JavaScript/registrarse.js"></script>
 </body>
 
 </html>
