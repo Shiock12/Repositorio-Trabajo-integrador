@@ -1,21 +1,49 @@
-console.log("hola");
+const MENSAJES_DE_ERROR = {
+  NOMBRE: "el nombre es requerido",
+  NOMBRE_INVALIDO: "no se permiten valores numericos",
+  APELLIDO: "el apellido es requerido",
+  APELLIDO_INVALIDO: "no se permiten valores numericos",
+  EMAIL: "el email es requerido",
+  EMAIL_NO_VALIDO: "el email no es valido",
+  NOMBRE_DE_USUARIO: "el nombre de usuario es requerido",
+  NOMBRE_DE_USUARIO_INVALIDO: "el nombre de usuario no es valido",
+  CONTRASEÑA: "la contraseña es requerida",
+  CONTRASEÑA_INVALIDA: "la contraseña debe tener ente 6 y 8 caracteres ( mínimo 2 letras, 2 números y 2 caracteres especiales)",
+  REPETIR_CONTRASEÑA: "la constraseña es requerida",
+  REPETIR_CONTRASEÑA_INVALIDA: "la constraseña debe ser igual a la anterior",
+  METODO_DE_PAGO: "seleccione una opcion",
+  NUMERO_DE_TARJETA: "ingrese un numero de tarjeta valido",
+  CODIGO_DE_SEGURIDAD: "ingrese un codigo de seguridad valido",
+  CUPON_DE_PAGO: "seleccione una opcion"
+};
 
-document.querySelector(".formulario").addEventListener("submit", function (event) {
-  event.preventDefault(); // Evita recargar la página
+const EXPRESIONES_REGULARES = {
+  EMAIL: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
+  LETRAS: /^[a-zA-Z\s]+$/,
+  NUMEROS: /^\d+$/,
+  LETRAS_Y_NUMEROS: /^[a-zA-Z0-9]+$/,
+  CONTRASEÑA: /^(?=(?:.*[A-Za-z]){2,})(?=(?:.*\d){2,})(?=(?:.*[^A-Za-z\d]){2,}).{6,8}$/
+};
 
-//Guardar datos del usuario a registrarse
+function registerValidate() {
+  const registerForm = document.getElementById("register-form");
+  const submitBtn = registerForm.querySelector(".js-submit-btn");
+  const mensaje = document.querySelector(".js-mensaje");
 
-const nombre = document.getElementById("Nombre").value.trim();
-const apellido = document.getElementById("Apellido").value.trim();
-const email = document.getElementById("email").value.trim();
-const usuario = document.getElementById("user").value.trim();
-const contraseña = document.getElementById("nueva-contraseña").value.trim();
-const repetirContraseña = document.getElementById("repetir-contraseña").value.trim();
+  registerForm.addEventListener('submit', function (event) {
+    event.preventDefault();
 
- if (!nombre || !apellido || !email || !usuario || !contraseña || !repetirContraseña) {
-    alert("Por favor completá todos los campos obligatorios.");
-    return;
-  } 
+    //Imputs para validar
+    const nombre = registerForm.querySelector("#nombre").value.trim();
+    const apellido = registerForm.querySelector("#apellido").value.trim();
+    const email = registerForm.querySelector("#email").value.trim();
+    const nombreDeUsuario = registerForm.querySelector("#usuario").value.trim();
+    const contraseña = registerForm.querySelector("#contraseña").value.trim();
+    const repetirContraseña = registerForm.querySelector("#repetir-contraseña").value.trim();
+    const metodoDePago = document.querySelector('input[name="metodo-de-pago"]:checked');
+    const numeroDeTarjeta = document.getElementById("numero-de-tarjeta").value;
+    const codigoDeSeguridad = document.getElementById("codigo-de-seguridad").value;
+    const cuponDePago = document.querySelector('input[name="opcion-de-cupon"]:checked')
 
     //Mensajes de error
     const nombreError = registerForm.querySelector('.js-nombre-error');
@@ -148,6 +176,7 @@ const repetirContraseña = document.getElementById("repetir-contraseña").value.
     if (isFormValid) {
       submitBtn.disabled = true;
       submitBtn.textContent = "Enviando...";
+
       
       setTimeout(function () {
         registerForm.reset();
@@ -200,50 +229,4 @@ const repetirContraseña = document.getElementById("repetir-contraseña").value.
     }
   });
 }
-
-//Obtiene los usuarios ya creados del localstorage
-const usuariosGuardados = JSON.parse(localStorage.getItem("usuarios")) || [];
-
-
-const usuarioExistente = usuariosGuardados.some(u => u.username === usuario);
-if(usuarioExistente){
-    alert("Este usuario ya existe. Por favor, elija otro")
-    return;
-}
-
-const mailexistente = usuariosGuardados.some(u => u.email === email);
-if (mailexistente) {
-  alert("Este mail ya está registrado.");
-  return;
-}
-
-let metodoPago = "";
-if(document.getElementById("tarjeta-de-credito").checked){
-  metodoPago = "tarjeta";
-}
-else if (document.getElementById("cupon-de-pago").checked){
-  metodoPago = "cupon";
-}
-else if (document.getElementById("transferencia").checked){
-  metodoPago = "transferencia";
-}
-
-//Agrego un nuevo elemento al array de usuarios
-  const nuevoUsuario = {
-    username: usuario,
-    password: contraseña,
-    nombre: nombre,
-    apellido: apellido,
-    email: email,
-    metodoPago : metodoPago
-  }
-    //Guardar el nuevo usuario en el localstorage
-    localStorage.setItem("usuarios", JSON.stringify(usuariosGuardados));
-    alert("Usuario registrado correctamente");
-
-    // Usuario que inicie sesion ultimo
-    localStorage.setItem("usuarioActivo", JSON.stringify(nuevoUsuario));
-
-    window.location.href = "../index.html"; //Volver al index
-
-})
+registerValidate();

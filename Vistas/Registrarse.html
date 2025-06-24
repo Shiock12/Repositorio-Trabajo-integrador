@@ -13,6 +13,7 @@
 
 <body>
   <main>
+
     <p class="registrarse">Registrarse</p>
     <form class="formulario" id="register-form" method="get" novalidate>
       <div class="grilla-formulario">
@@ -50,21 +51,21 @@
         </section>
         <section class="form-b">
           <strong>Método de pago</strong>
-
           <div>
             <input type="radio" id="tarjeta-de-credito" name="metodo-de-pago" value="tarjeta-de-credito">
             <label for="tarjeta-de-credito">Tarjeta de crédito</label>
             <div class="campo">
               <input type="text" name="numero-de-tarjeta" id="numero-de-tarjeta" maxlength="16">
-              <input class="codigo-de-seguridad" type="text" name="codigo-de-seguridad" id="codigo-de-seguridad" maxlength="3">
+              <input class="codigo-de-seguridad" type="text" name="codigo-de-seguridad" id="codigo-de-seguridad"
+                maxlength="3">
             </div>
-              <div class="error js-numero-de-tarjeta-error"></div>
+            <div class="error js-numero-de-tarjeta-error"></div>
           </div>
 
           <div>
             <input type="radio" id="cupon-de-pago" name="metodo-de-pago" value="cupon-de-pago">
             <label for="cupon-de-pago">Cupón de pago</label>
-            
+
             <div class="campo-cupon-de-pago">
               <div>
                 <input type="radio" name="opcion-de-cupon" id="pago-facil" value="Pago-Facil">
@@ -91,25 +92,14 @@
           <button type="submit" class="btn-primario js-submit-btn">Guardar cambios</button>
           <a class="btn-secundario" href="../index.html">Cancelar subscripcion</a>
         </div>
-        <div>
-          <input type="radio" name="metodo-de-pago" id="transferencia" required>
-          <label for="metodo-de-pago">Transferencia bancaria</label>
-          <div class="campo">
-            <p>CBU: 2183909411100018971375</p>
-          </div>
-        </div>
-      </section>
-      <div class="botones">
-             <button type="submit" class="btn-primario" >Guardar cambios</button>
-        <a class="btn-secundario" href="../index.html">Cancelar subscripcion</a>
-        </div>
         <div class="mensaje-exitoso js-mensaje"></div>
       </div>
     </form>
   </main>
   <footer class="footer">
-    Creada por Pfeiffer Juan Pablo y Axel Deantonio
+    Creada por Pfeiffer Juan Pablo - Axel Deantonio - Luis Spataro
   </footer>
   <script src="../JavaScript/registrarse.js"></script>
 </body>
+
 </html>
