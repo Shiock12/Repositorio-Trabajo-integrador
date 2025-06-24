@@ -14,7 +14,7 @@ function verificarCampos() {
 usernameinput.addEventListener("input", verificarCampos);
 passwordinput.addEventListener("input", verificarCampos);
 
-// ✅ Agregamos la validación del usuario al enviar el formulario
+// Agregamos la validación del usuario al enviar el formulario
 document.querySelector("form").addEventListener("submit", function (event) {
     event.preventDefault(); // No enviar formulario
 
