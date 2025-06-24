@@ -33,23 +33,41 @@ if(usuarioExistente){
     return;
 }
 
-const mailexistente = mailguardado.some(u => u.email === email);
-if(usuarioExistente){
-    alert("Este mail ya esta registrado.")
-    return;
+const mailexistente = usuariosGuardados.some(u => u.email === email);
+if (mailexistente) {
+  alert("Este mail ya está registrado.");
+  return;
+}
+
+let metodoPago = "";
+if(document.getElementById("tarjeta-de-credito").checked){
+  metodoPago = "tarjeta";
+}
+else if (document.getElementById("cupon-de-pago").checked){
+  metodoPago = "cupon";
+}
+else if (document.getElementById("transferencia").checked){
+  metodoPago = "transferencia";
 }
 
 //Agrego un nuevo elemento al array de usuarios
-usuariosGuardados.push ({
+  const nuevoUsuario = {
     username: usuario,
     password: contraseña,
     nombre: nombre,
     apellido: apellido,
-    email: email});
+    email: email,
+    metodoPago : metodoPago
+  }
+
+  usuariosGuardados.push(nuevoUsuario);
 
     //Guardar el nuevo usuario en el localstorage
     localStorage.setItem("usuarios", JSON.stringify(usuariosGuardados));
     alert("Usuario registrado correctamente");
+
+    // Usuario que inicie sesion ultimo
+    localStorage.setItem("usuarioActivo", JSON.stringify(nuevoUsuario));
 
     window.location.href = "../index.html"; //Volver al index
 
