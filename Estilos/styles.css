@@ -99,10 +99,6 @@ body {
   margin-top: 0.3125rem;
 }
 
-.recuperar-contraseña {
-  flex-direction: column;
-  text-align: center;
-}
 .uso-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

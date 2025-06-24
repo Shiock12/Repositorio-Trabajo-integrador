@@ -176,7 +176,7 @@ function registerValidate() {
     if (isFormValid) {
       submitBtn.disabled = true;
       submitBtn.textContent = "Enviando...";
-
+      
       setTimeout(function () {
         registerForm.reset();
         submitBtn.disabled = false;

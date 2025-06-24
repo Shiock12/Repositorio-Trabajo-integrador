@@ -2,40 +2,42 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RecuperarContraseña</title>
-    <link rel="stylesheet" href="../Estilos/styles.css">
-    <link rel="stylesheet" href="../Estilos/botones.css">
-    <link rel="stylesheet" href="../Estilos/footer.css">
-    <link rel="stylesheet" href="../Estilos/recuperarcontraseña.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recuperar Contraseña</title>
+  <link rel="stylesheet" href="../Estilos/styles.css">
+  <link rel="stylesheet" href="../Estilos/botones.css">
+  <link rel="stylesheet" href="../Estilos/footer.css">
+  <link rel="stylesheet" href="../Estilos/recuperarcontraseña.css">
 </head>
-<form action="../index.html">
-<div class="recuperar-contraseña">
-  <h1>Recuperar contraseña</h1>
-  <div class="contenedor">
-    <div class="form-login">
-      <div class="form-item">
+
+<body>
+  <main>
+    <h1>Recuperar contraseña</h1>
+    <form class="recuperar-contraseña-form" id="recuperar-contraseña-form" method="get" novalidate>
+      <div class="campo">
         <label for="email">E-mail</label>
-        <input type="email" name="email" id="email" placeholder="Ingrese email" required>
+        <input type="email" name="email" id="email">
       </div>
-      <div class="form-item">
-        <label for="username">Nombre de usuario</label>
-        <input type="text" placeholder="Ingrese nombre de usuario" required>
+      <div class="error js-email-error"></div>
+      <div class="campo">
+        <label for="nombreDeUsuario">Nombre de Usuario</label>
+        <input type="text" name="nombreDeUsuario" id="nombreDeUsuario">
       </div>
-    </div>
-    <br>
-    <br>
-       <button type="submit" class="btn-primario" >Enviar email</button>
-      <a class="btn-secundario" href="../index.html">Cancelar</a>
-    </div>
-  </div>
-</div>
-</form>
-<div class="footer-contraseña">
-<footer class="footer">
-  Creada por Pfeiffer Juan Pablo y Axel Deantonio
-    </footer>
-    </div>
+      <div class="error js-nombre-de-usuario-error"></div>
+      <div class="botones">
+        <button type="submit" class="btn-primario js-submit-btn">Enviar email</button>
+        <a class="btn-secundario" href="../index.html">Cancelar</a>
+      </div>
+      <div class="mensaje-exitoso js-mensaje"></div>
+    </form>
+  </main>
+
+  <footer class="footer">
+    Creada por Pfeiffer Juan Pablo y Axel Deantonio
+  </footer>
+
+  <script src="../JavaScript/recuperarContraseña.js"></script>
 </body>
+
 </html>

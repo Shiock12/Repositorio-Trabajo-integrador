@@ -1,3 +1,42 @@
-.btn-secundario{
-    font-size: 14px;
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.recuperar-contraseña-form {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.recuperar-contraseña-form .error {
+    margin: 1rem auto;
+    color: red;
+    font-size: 0.8rem;
+}
+
+.recuperar-contraseña-form .mensaje-exitoso {
+    margin: 0 auto;
+    color: green;
+    font-size: 1rem;
+}
+
+.recuperar-contraseña-form .campo {
+    display: flex;
+    justify-content: end;
+    font-size: 1.5em;
+}
+
+.recuperar-contraseña-form .campo input {
+    height: 25px;
+    margin-left: 80px;
+}
+
+.recuperar-contraseña-form .botones {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin: 3rem 0;
 }
