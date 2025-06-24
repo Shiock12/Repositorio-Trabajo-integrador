@@ -59,9 +59,6 @@ else if (document.getElementById("transferencia").checked){
     email: email,
     metodoPago : metodoPago
   }
-
-  usuariosGuardados.push(nuevoUsuario);
-
     //Guardar el nuevo usuario en el localstorage
     localStorage.setItem("usuarios", JSON.stringify(usuariosGuardados));
     alert("Usuario registrado correctamente");
