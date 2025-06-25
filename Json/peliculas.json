@@ -485,5 +485,743 @@
       ],
       "sinopsis": "La secuela tiene lugar años después del mortal allanamiento de morada inicial, en los que Norman Nordstrom vive en una discreta calma hasta que sus pecados del pasado le alcanzan."
     }
+  ],
+  "Series": [
+    {
+      "id": "desencanto",
+      "titulo": "(Des)encanto",
+      "genero": "Comedia",
+      "iframe": "https://www.youtube.com/embed/aTtinse4RWQ?si=6Xori9Tw5HxlMbZy",
+      "video_link": "https://www.youtube.com/watch?v=aTtinse4RWQ",
+      "actores": [
+        {
+          "nombre": "Abbi Jacobson",
+          "wikipedia": "https://es.wikipedia.org/wiki/Abbi_Jacobson"
+        },
+        {
+          "nombre": "Eric André",
+          "wikipedia": "https://es.wikipedia.org/wiki/Eric_Andr%C3%A9"
+        },
+        {
+          "nombre": "Nat Faxon",
+          "wikipedia": "https://es.wikipedia.org/wiki/Nat_Faxon"
+        },
+        {
+          "nombre": "Maurice LaMarche",
+          "wikipedia": "https://es.wikipedia.org/wiki/Maurice_LaMarche"
+        },
+        {
+          "nombre": "Tress MacNeille",
+          "wikipedia": "https://es.wikipedia.org/wiki/Tress_MacNeille"
+        },
+        {
+          "nombre": "John DiMaggio",
+          "wikipedia": "https://es.wikipedia.org/wiki/John_DiMaggio"
+        }
+      ],
+      "sinopsis": "En un mundo lleno de magia, travesuras y juegos de palabras, la rebelde princesa Bean se transforma en una aventurera temeraria con ayuda de sus amigos elfos y demonios.",
+      "temporadas": [
+        "Temporada 1",
+        "Temporada 2",
+        "Temporada 3",
+        "Temporada 4",
+        "Temporada 5"
+      ],
+      "capitulos": [
+        "Capitulo 1",
+        "Capitulo 2",
+        "Capitulo 3",
+        "Capitulo 4",
+        "Capitulo 5",
+        "Capitulo 6",
+        "Capitulo 7",
+        "Capitulo 8",
+        "Capitulo 9"
+      ]
+    },
+    {
+      "id": "division-palermo",
+      "titulo": "División Palermo",
+      "genero": "Comedia",
+      "iframe": "https://www.youtube.com/embed/Ozz-5rWXoI0?si=iB-hwjSQwR6Y9h_I",
+      "video_link": "https://www.youtube.com/watch?v=Ozz-5rWXoI0",
+      "actores": [
+        {
+          "nombre": "Santiago Korovsky",
+          "wikipedia": "https://es.wikipedia.org/wiki/Santiago_Korovsky"
+        },
+        {
+          "nombre": "Daniel Hendler",
+          "wikipedia": "https://es.wikipedia.org/wiki/Daniel_Hendler"
+        },
+        {
+          "nombre": "Pilar Gamboa",
+          "wikipedia": "https://es.wikipedia.org/wiki/Pilar_Gamboa"
+        },
+        {
+          "nombre": "Marcelo Subiotto",
+          "wikipedia": "https://es.wikipedia.org/wiki/Marcelo_Subiotto"
+        },
+        {
+          "nombre": "Martín Garabal",
+          "wikipedia": "https://es.wikipedia.org/wiki/Mart%C3%ADn_Garabal"
+        },
+        {
+          "nombre": "Charo López",
+          "wikipedia": "https://es.wikipedia.org/wiki/Charo_L%C3%B3pez_(actriz_argentina)"
+        }
+      ],
+      "sinopsis": "Un grupo de civiles es reclutado para conformar una especie de guardia urbana para servir a la comunidad y a su vez resulta ser una operación de marketing para mejorar la pésima imagen que tienen actualmente las fuerzas de seguridad; sin embargo, los miembros de este nuevo escuadrón pronto descubren que tienen que hacer frente a una banda criminal liderada por unos extraños narcotraficantes.",
+      "temporadas": [
+        "Temporada 1",
+        "Temporada 2",
+        "Temporada 3",
+        "Temporada 4",
+        "Temporada 5"
+      ],
+      "capitulos": [
+        "Capítulo 1",
+        "Capítulo 2",
+        "Capítulo 3",
+        "Capítulo 4",
+        "Capítulo 5",
+        "Capítulo 6",
+        "Capítulo 7",
+        "Capítulo 8",
+        "Capítulo 9"
+      ]
+    },
+    {
+      "id": "on-my-block",
+      "titulo": "On My Block",
+      "genero": "Comedia",
+      "iframe": "https://www.youtube.com/embed/H65irEWSg9k?si=Q0OvcyankaOacMBL",
+      "video_link": "https://www.youtube.com/watch?v=H65irEWSg9k",
+      "actores": [
+        {
+          "nombre": "Sierra Capri",
+          "wikipedia": "https://es.wikipedia.org/wiki/Sierra_Capri"
+        },
+        {
+          "nombre": "Jason Genao",
+          "wikipedia": "https://en.wikipedia.org/wiki/Jason_Genao"
+        },
+        {
+          "nombre": "Brett Gray",
+          "wikipedia": "https://en.wikipedia.org/wiki/Brett_Gray"
+        },
+        {
+          "nombre": "Diego Tinoco",
+          "wikipedia": "https://es.wikipedia.org/wiki/Diego_Tinoco_(actor)"
+        },
+        {
+          "nombre": "Jessica Marie Garcia",
+          "wikipedia": "https://es.wikipedia.org/wiki/Jessica_Marie_Garcia"
+        },
+        {
+          "nombre": "Julio Macias",
+          "wikipedia": "https://es.wikipedia.org/wiki/Julio_Macias"
+        }
+      ],
+      "sinopsis": "En un barrio conflictivo de Los Ángeles, cuatro jóvenes ven puesta a prueba su amistad de por vida cuando comienzan la escuela preparatoria.",
+      "temporadas": [
+        "Temporada 1",
+        "Temporada 2",
+        "Temporada 3",
+        "Temporada 4",
+        "Temporada 5"
+      ],
+      "capitulos": [
+        "Capítulo 1",
+        "Capítulo 2",
+        "Capítulo 3",
+        "Capítulo 4",
+        "Capítulo 5",
+        "Capítulo 6",
+        "Capítulo 7",
+        "Capítulo 8",
+        "Capítulo 9"
+      ]
+    },
+    {
+      "id": "the-office",
+      "titulo": "The Office (EE.UU)",
+      "genero": "Comedia",
+      "iframe": "https://www.youtube.com/embed/tNcDHWpselE?si=2CMno0vYlXX24R6T",
+      "video_link": "https://www.youtube.com/watch?v=tNcDHWpselE",
+      "actores": [
+        {
+          "nombre": "Steve Carell",
+          "wikipedia": "https://es.wikipedia.org/wiki/Steve_Carell"
+        },
+        {
+          "nombre": "Rainn Wilson",
+          "wikipedia": "https://es.wikipedia.org/wiki/Rainn_Wilson"
+        },
+        {
+          "nombre": "John Krasinski",
+          "wikipedia": "https://es.wikipedia.org/wiki/John_Krasinski"
+        },
+        {
+          "nombre": "Jenna Fischer",
+          "wikipedia": "https://es.wikipedia.org/wiki/Jenna_Fischer"
+        },
+        {
+          "nombre": "B. J. Novak",
+          "wikipedia": "https://es.wikipedia.org/wiki/B._J._Novak"
+        },
+        {
+          "nombre": "Ed Helms",
+          "wikipedia": "https://es.wikipedia.org/wiki/Ed_Helms"
+        }
+      ],
+      "sinopsis": "Esta exitosa comedia narra las flaquezas de los oficinistas descontentos —liderados por el iluso jefe Michael Scott— en la empresa de papel Dunder Mifflin.",
+      "temporadas": [
+        "Temporada 1",
+        "Temporada 2",
+        "Temporada 3",
+        "Temporada 4",
+        "Temporada 5"
+      ],
+      "capitulos": [
+        "Capítulo 1",
+        "Capítulo 2",
+        "Capítulo 3",
+        "Capítulo 4",
+        "Capítulo 5",
+        "Capítulo 6",
+        "Capítulo 7",
+        "Capítulo 8",
+        "Capítulo 9"
+      ]
+    },
+    {
+      "id": "un-hombre-infiltrado",
+      "titulo": "Un Hombre Infiltrado",
+      "genero": "Comedia",
+      "iframe": "https://www.youtube.com/embed/ddmBGDfrjko?si=WtGqicskZTOOGMC6",
+      "video_link": "https://www.youtube.com/watch?v=ddmBGDfrjko",
+      "actores": [
+        {
+          "nombre": "Ted Danson",
+          "wikipedia": "https://es.wikipedia.org/wiki/Ted_Danson"
+        },
+        {
+          "nombre": "Mary Elizabeth Ellis",
+          "wikipedia": "https://es.wikipedia.org/wiki/Mary_Elizabeth_Ellis"
+        },
+        {
+          "nombre": "Lilah Richcreek Estrada",
+          "wikipedia": "https://www.imdb.com/es/name/nm3499685/"
+        },
+        {
+          "nombre": "Stephanie Beatriz",
+          "wikipedia": "https://es.wikipedia.org/wiki/Stephanie_Beatriz"
+        }
+      ],
+      "sinopsis": "Un jubilado viudo (Ted Danson) encuentra un nuevo propósito de vida cuando una detective privada de San Francisco lo contrata para una misión de incógnito en un hogar de retiro.",
+      "temporadas": [
+        "Temporada 1",
+        "Temporada 2",
+        "Temporada 3",
+        "Temporada 4",
+        "Temporada 5"
+      ],
+      "capitulos": [
+        "Capítulo 1",
+        "Capítulo 2",
+        "Capítulo 3",
+        "Capítulo 4",
+        "Capítulo 5",
+        "Capítulo 6",
+        "Capítulo 7",
+        "Capítulo 8",
+        "Capítulo 9"
+      ]
+    },
+    {
+      "id": "el-jardinero",
+      "titulo": "El Jardinero",
+      "genero": "Drama",
+      "iframe": "https://www.youtube.com/embed/F__GiNn8c4U?si=a5VAL8dRlFBY9sel",
+      "video_link": "https://www.youtube.com/watch?v=F__GiNn8c4U",
+      "actores": [
+        {
+          "nombre": "Álvaro Rico",
+          "wikipedia": "https://es.wikipedia.org/wiki/%C3%81lvaro_Rico_(actor)"
+        },
+        {
+          "nombre": "Cecilia Suárez",
+          "wikipedia": "https://es.wikipedia.org/wiki/Cecilia_Su%C3%A1rez"
+        },
+        {
+          "nombre": "Catalina Sopelana",
+          "wikipedia": "https://en.wikipedia.org/wiki/Catalina_Sopelana"
+        },
+        {
+          "nombre": "Francis Lorenzo",
+          "wikipedia": "https://es.wikipedia.org/wiki/Francis_Lorenzo"
+        },
+        {
+          "nombre": "María Vázquez",
+          "wikipedia": "https://es.wikipedia.org/wiki/Mar%C3%ADa_V%C3%A1zquez"
+        }
+      ],
+      "sinopsis": "Hay un ingrediente secreto en los jardines florecidos de Elmer: los cuerpos de sus víctimas. Pero ahora que la policía le sigue el rastro, ¿podrá seguir saliéndose con la suya?",
+      "temporadas": [
+        "Temporada 1",
+        "Temporada 2",
+        "Temporada 3",
+        "Temporada 4",
+        "Temporada 5"
+      ],
+      "capitulos": [
+        "Capítulo 1",
+        "Capítulo 2",
+        "Capítulo 3",
+        "Capítulo 4",
+        "Capítulo 5",
+        "Capítulo 6",
+        "Capítulo 7",
+        "Capítulo 8",
+        "Capítulo 9"
+      ]
+    },
+    {
+      "id": "la-ley-de-los-audaces",
+      "titulo": "La ley de los Audaces",
+      "genero": "Drama",
+      "iframe": "https://www.youtube.com/embed/8pApNU09c_g?si=LGTVQW7syrkt95Ib",
+      "video_link": "https://www.youtube.com/watch?v=8pApNU09c_g",
+      "actores": [
+        {
+          "nombre": "Gabriel Macht",
+          "wikipedia": "https://es.wikipedia.org/wiki/Gabriel_Macht"
+        },
+        {
+          "nombre": "Patrick J. Adams",
+          "wikipedia": "https://es.wikipedia.org/wiki/Patrick_J._Adams"
+        },
+        {
+          "nombre": "Rick Hoffman",
+          "wikipedia": "https://es.wikipedia.org/wiki/Rick_Hoffman"
+        },
+        {
+          "nombre": "Meghan Markle",
+          "wikipedia": "https://es.wikipedia.org/wiki/Meghan_Markle"
+        },
+        {
+          "nombre": "Sarah Rafferty",
+          "wikipedia": "https://es.wikipedia.org/wiki/Sarah_Rafferty"
+        },
+        {
+          "nombre": "Gina Torres",
+          "wikipedia": "https://es.wikipedia.org/wiki/Gina_Torres"
+        }
+      ],
+      "sinopsis": "Mike Ross, un joven brillante, pero que nunca terminó la universidad, impresiona a un hábil abogado y consigue trabajo en un prestigioso bufete.",
+      "temporadas": [
+        "Temporada 1",
+        "Temporada 2",
+        "Temporada 3",
+        "Temporada 4",
+        "Temporada 5"
+      ],
+      "capitulos": [
+        "Capítulo 1",
+        "Capítulo 2",
+        "Capítulo 3",
+        "Capítulo 4",
+        "Capítulo 5",
+        "Capítulo 6",
+        "Capítulo 7",
+        "Capítulo 8",
+        "Capítulo 9"
+      ]
+    },
+    {
+      "id": "legado",
+      "titulo": "Legado",
+      "genero": "Drama",
+      "iframe": "https://www.youtube.com/embed/UKfLu1Ocnlw?si=c6GUEfUL_JWCpYbZ",
+      "video_link": "https://www.youtube.com/watch?v=UKfLu1Ocnlw",
+      "actores": [
+        {
+          "nombre": "José Coronado",
+          "wikipedia": "https://es.wikipedia.org/wiki/Jos%C3%A9_Coronado"
+        },
+        {
+          "nombre": "Belén Cuesta",
+          "wikipedia": "https://es.wikipedia.org/wiki/Bel%C3%A9n_Cuesta"
+        },
+        {
+          "nombre": "Diego Martín",
+          "wikipedia": "https://es.wikipedia.org/wiki/Diego_Mart%C3%ADn_(actor)"
+        },
+        {
+          "nombre": "Natalia Huarte",
+          "wikipedia": "https://es.wikipedia.org/wiki/Natalia_Huarte"
+        },
+        {
+          "nombre": "María Morera",
+          "wikipedia": "https://es.wikipedia.org/wiki/Maria_Morera"
+        },
+        {
+          "nombre": "Susi Sánchez",
+          "wikipedia": "https://es.wikipedia.org/wiki/Susi_S%C3%A1nchez"
+        }
+      ],
+      "sinopsis": "El escándalo golpea a una familia cuando un magnate de los medios descubre que su imperio está corrompido hasta la médula. ¿Destruirá a sus propios hijos para salvar su legado?",
+      "temporadas": [
+        "Temporada 1",
+        "Temporada 2",
+        "Temporada 3",
+        "Temporada 4",
+        "Temporada 5"
+      ],
+      "capitulos": [
+        "Capítulo 1",
+        "Capítulo 2",
+        "Capítulo 3",
+        "Capítulo 4",
+        "Capítulo 5",
+        "Capítulo 6",
+        "Capítulo 7",
+        "Capítulo 8",
+        "Capítulo 9"
+      ]
+    },
+    {
+      "id": "prision_break",
+      "titulo": "Prision Break",
+      "genero": "Drama",
+      "iframe": "https://www.youtube.com/embed/_RhU7Ne21bc?si=iTf92UysEzdVe9ra",
+      "video_link": "https://www.youtube.com/watch?v=_RhU7Ne21bc",
+      "actores": [
+        {
+          "nombre": "Dominic Purcell",
+          "wikipedia": "https://es.wikipedia.org/wiki/Dominic_Purcell"
+        },
+        {
+          "nombre": "Wentworth Miller",
+          "wikipedia": "https://es.wikipedia.org/wiki/Wentworth_Miller"
+        },
+        {
+          "nombre": "Robin Tunney",
+          "wikipedia": "https://es.wikipedia.org/wiki/Robin_Tunney"
+        },
+        {
+          "nombre": "Peter Stormare",
+          "wikipedia": "https://es.wikipedia.org/wiki/Peter_Stormare"
+        },
+        {
+          "nombre": "Amaury Nolasco",
+          "wikipedia": "https://es.wikipedia.org/wiki/Amaury_Nolasco"
+        }
+      ],
+      "sinopsis": "Dicen que es imposible escapar de la Penitenciaría Estatal Fox River. Se equivocan. Wentworth Miller protagoniza esta emocionante serie de acción.",
+      "temporadas": [
+        "Temporada 1",
+        "Temporada 2",
+        "Temporada 3",
+        "Temporada 4",
+        "Temporada 5"
+      ],
+      "capitulos": [
+        "Capítulo 1",
+        "Capítulo 2",
+        "Capítulo 3",
+        "Capítulo 4",
+        "Capítulo 5",
+        "Capítulo 6",
+        "Capítulo 7",
+        "Capítulo 8",
+        "Capítulo 9"
+      ]
+    },
+    {
+      "id": "stranger_things",
+      "titulo": "Stranger Things",
+      "genero": "Drama",
+      "iframe": "https://www.youtube.com/embed/32qjg3lg7gA?si=hvd90dalSRjx9yRv",
+      "video_link": "https://www.youtube.com/watch?v=32qjg3lg7gA",
+      "actores": [
+        {
+          "nombre": "Winona Ryder",
+          "wikipedia": "https://es.wikipedia.org/wiki/Winona_Ryder"
+        },
+        {
+          "nombre": "David Harbour",
+          "wikipedia": "https://es.wikipedia.org/wiki/David_Harbour"
+        },
+        {
+          "nombre": "Millie Bobby Brown",
+          "wikipedia": "https://es.wikipedia.org/wiki/Millie_Bobby_Brown"
+        },
+        {
+          "nombre": "Finn Wolfhard",
+          "wikipedia": "https://es.wikipedia.org/wiki/Finn_Wolfhard"
+        },
+        {
+          "nombre": "Gaten Matarazzo",
+          "wikipedia": "https://es.wikipedia.org/wiki/Gaten_Matarazzo"
+        }
+      ],
+      "sinopsis": "Después de la extraña desaparición de un niño, un pueblo se encuentra ante un misterio que revela experimentos secretos, fuerzas sobrenaturales y a una niña muy especial.",
+      "temporadas": [
+        "Temporada 1",
+        "Temporada 2",
+        "Temporada 3",
+        "Temporada 4",
+        "Temporada 5"
+      ],
+      "capitulos": [
+        "Capítulo 1",
+        "Capítulo 2",
+        "Capítulo 3",
+        "Capítulo 4",
+        "Capítulo 5",
+        "Capítulo 6",
+        "Capítulo 7",
+        "Capítulo 8",
+        "Capítulo 9"
+      ]
+    },
+    {
+      "id": "black_summer",
+      "titulo": "Black Summer",
+      "genero": "Terror",
+      "iframe": "https://www.youtube.com/embed/tQA1omPJN24?si=BQ42hXRwmX6__UmB",
+      "video_link": "https://www.youtube.com/watch?v=tQA1omPJN24",
+      "actores": [
+        {
+          "nombre": "Jaime King",
+          "wikipedia": "https://es.wikipedia.org/wiki/Jaime_King"
+        },
+        {
+          "nombre": "Justin Chu Cary",
+          "wikipedia": "https://es.wikipedia.org/wiki/Justin_Chu_Cary"
+        },
+        {
+          "nombre": "Christine Lee",
+          "wikipedia": "https://en.wikipedia.org/wiki/Christine_Lee_(lawyer)"
+        },
+        {
+          "nombre": "Sal Velez Jr.",
+          "wikipedia": "https://www.imdb.com/es/name/nm2020648/"
+        },
+        {
+          "nombre": "Kelsey Flower",
+          "wikipedia": "https://www.imdb.com/es/name/nm6667897/"
+        }
+      ],
+      "sinopsis": "Rose, Spears, Ryan y Lance encuentran un refugio, pero no están solos. Dejarse llevar por el corazón y no escuchar razones ya no perdona.",
+      "temporadas": [
+        "Temporada 1",
+        "Temporada 2",
+        "Temporada 3",
+        "Temporada 4",
+        "Temporada 5"
+      ],
+      "capitulos": [
+        "Capitulo 1",
+        "Capitulo 2",
+        "Capitulo 3",
+        "Capitulo 4",
+        "Capitulo 5",
+        "Capitulo 6",
+        "Capitulo 7",
+        "Capitulo 8",
+        "Capitulo 9"
+      ]
+    },
+    {
+      "id": "dahmer",
+      "titulo": "Dahmer",
+      "genero": "Terror",
+      "iframe": "https://www.youtube.com/embed/OjUL6j2Az3Q?si=-kcIwgWgAGfmiFDb",
+      "video_link": "https://www.youtube.com/watch?v=OjUL6j2Az3Q",
+      "actores": [
+        {
+          "nombre": "Evan Peters",
+          "wikipedia": "https://es.wikipedia.org/wiki/Evan_Peters"
+        },
+        {
+          "nombre": "Richard Jenkins",
+          "wikipedia": "https://es.wikipedia.org/wiki/Richard_Jenkins"
+        },
+        {
+          "nombre": "Niecy Nash",
+          "wikipedia": "https://es.wikipedia.org/wiki/Niecy_Nash"
+        },
+        {
+          "nombre": "Molly Ringwald",
+          "wikipedia": "https://es.wikipedia.org/wiki/Molly_Ringwald"
+        },
+        {
+          "nombre": "Michael Learned",
+          "wikipedia": "https://es.wikipedia.org/wiki/Michael_Learned"
+        }
+      ],
+      "sinopsis": "Evan Peters y el escritor Ryan Murphy se reúnen para producir esta perturbadora serie sobre uno de los asesinos seriales más intrigantes de Estados Unidos.",
+      "temporadas": [
+        "Temporada 1",
+        "Temporada 2",
+        "Temporada 3",
+        "Temporada 4",
+        "Temporada 5"
+      ],
+      "capitulos": [
+        "Capitulo 1",
+        "Capitulo 2",
+        "Capitulo 3",
+        "Capitulo 4",
+        "Capitulo 5",
+        "Capitulo 6",
+        "Capitulo 7",
+        "Capitulo 8",
+        "Capitulo 9"
+      ]
+    },
+    {
+      "id": "felicidad_intensa",
+      "titulo": "Felicidad Intensa",
+      "genero": "Terror",
+      "iframe": "https://www.youtube.com/embed/gqhUlldiLEo?si=v-J0RIx2ATf2hMLj",
+      "video_link": "https://www.youtube.com/watch?v=gqhUlldiLEo",
+      "actores": [
+        {
+          "nombre": "Han Hyo-joo",
+          "wikipedia": "https://es.wikipedia.org/wiki/Han_Hyo-joo"
+        },
+        {
+          "nombre": "Park Hyung-sik",
+          "wikipedia": "https://es.wikipedia.org/wiki/Park_Hyung-sik"
+        },
+        {
+          "nombre": "Cho Woo-jin",
+          "wikipedia": "https://es.wikipedia.org/wiki/Jo_Woo-jin"
+        }
+      ],
+      "sinopsis": "Los residentes de un rascacielos luchan por sobrevivir cuando el brote de una enfermedad mortal transforma a los infectados en zombies sedientos de sangre.",
+      "temporadas": [
+        "Temporada 1",
+        "Temporada 2",
+        "Temporada 3",
+        "Temporada 4",
+        "Temporada 5"
+      ],
+      "capitulos": [
+        "Capitulo 1",
+        "Capitulo 2",
+        "Capitulo 3",
+        "Capitulo 4",
+        "Capitulo 5",
+        "Capitulo 6",
+        "Capitulo 7",
+        "Capitulo 8",
+        "Capitulo 9"
+      ]
+    },
+    {
+      "id": "la_maldicion_de_hill_house",
+      "titulo": "La Maldicion de Hill House",
+      "genero": "Terror",
+      "iframe": "https://www.youtube.com/embed/mTvNeafShH0?si=oTrE6MjRbiWlSCIk",
+      "video_link": "https://www.youtube.com/watch?v=mTvNeafShH0",
+      "actores": [
+        {
+          "nombre": "Michiel Huisman",
+          "wikipedia": "https://es.wikipedia.org/wiki/Michiel_Huisman"
+        },
+        {
+          "nombre": "Carla Gugino",
+          "wikipedia": "https://es.wikipedia.org/wiki/Carla_Gugino"
+        },
+        {
+          "nombre": "Henry Thomas",
+          "wikipedia": "https://es.wikipedia.org/wiki/Henry_Thomas"
+        },
+        {
+          "nombre": "Elizabeth Reaser",
+          "wikipedia": "https://es.wikipedia.org/wiki/Elizabeth_Reaser"
+        },
+        {
+          "nombre": "Oliver Jackson-Cohen",
+          "wikipedia": "https://es.wikipedia.org/wiki/Oliver_Jackson-Cohen"
+        }
+      ],
+      "sinopsis": "La historia sigue a los cinco hermanos Crain, quienes se reúnen como adultos para enfrentar los traumas de su infancia, vivida en la famosa casa embrujada, Hill House.",
+      "temporadas": [
+        "Temporada 1",
+        "Temporada 2",
+        "Temporada 3",
+        "Temporada 4",
+        "Temporada 5"
+      ],
+      "capitulos": [
+        "Capitulo 1",
+        "Capitulo 2",
+        "Capitulo 3",
+        "Capitulo 4",
+        "Capitulo 5",
+        "Capitulo 6",
+        "Capitulo 7",
+        "Capitulo 8",
+        "Capitulo 9"
+      ]
+    },
+    {
+      "id": "the_walking_dead",
+      "titulo": "The Walking Dead",
+      "genero": "Terror",
+      "iframe": "https://www.youtube.com/embed/sfAc2U20uyg?si=jnq5YiZ-FZIbQJmt",
+      "video_link": "https://www.youtube.com/watch?v=sfAc2U20uyg",
+      "actores": [
+        {
+          "nombre": "Andrew Lincoln",
+          "wikipedia": "https://es.wikipedia.org/wiki/Andrew_Lincoln"
+        },
+        {
+          "nombre": "Jon Bernthal",
+          "wikipedia": "https://es.wikipedia.org/wiki/Jon_Bernthal"
+        },
+        {
+          "nombre": "Sarah Wayne Callies",
+          "wikipedia": "https://es.wikipedia.org/wiki/Sarah_Wayne_Callies"
+        },
+        {
+          "nombre": "Laurie Holden",
+          "wikipedia": "https://es.wikipedia.org/wiki/Laurie_Holden"
+        },
+        {
+          "nombre": "Jeffrey DeMunn",
+          "wikipedia": "https://es.wikipedia.org/wiki/Jeffrey_DeMunn"
+        },
+        {
+          "nombre": "Steven Yeun",
+          "wikipedia": "https://es.wikipedia.org/wiki/Steven_Yeun"
+        }
+      ],
+      "sinopsis": "Es un nuevo mundo… compartido con hambrientos antropófagos. Un grupo de sobrevivientes debe luchar contra zombis y contra ellos mismos en esta intensa serie de terror.",
+      "temporadas": [
+        "Temporada 1",
+        "Temporada 2",
+        "Temporada 3",
+        "Temporada 4",
+        "Temporada 5"
+      ],
+      "capitulos": [
+        "Capitulo 1",
+        "Capitulo 2",
+        "Capitulo 3",
+        "Capitulo 4",
+        "Capitulo 5",
+        "Capitulo 6",
+        "Capitulo 7",
+        "Capitulo 8",
+        "Capitulo 9"
+      ]
+    }
   ]
 }
