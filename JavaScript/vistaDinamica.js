@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-    //Obtiene el parámetro id de la URL
+    
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get('id');
 
@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Crea datos en el HTML
             document.title = pelicula.titulo; 
 
             // Título, duración, género, descripción
@@ -33,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('genero').textContent = pelicula.genero;
             document.getElementById('descripcion').textContent = pelicula.sinopsis;
 
-            // Iframe con trailer y botón "Comenzar"
+            // Iframe con trailer y boton
             const iframeContainer = document.getElementById('iframe-container');
             iframeContainer.innerHTML = `<iframe width="560" height="315" src="${pelicula.iframe}" title="Trailer de ${pelicula.titulo}" frameborder="0" allowfullscreen></iframe><a href="${pelicula.video_link}" class="boton-comenzar" target="_blank" rel="noopener noreferrer">Comenzar</a>`;
 
