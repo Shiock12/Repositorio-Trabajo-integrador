@@ -1,0 +1,489 @@
+{
+  "Peliculas": [
+    {
+      "id": "american-pie-2",
+      "titulo": "American Pie 2",
+      "duracion": "106 minutos",
+      "genero": "Comedia",
+      "iframe": "https://www.youtube.com/embed/FLWu4KewJlU?si=z9xKLkCTbFXarBxh",
+      "video_link": "https://www.youtube.com/watch?v=FLWu4KewJlU",
+      "actores": [
+        {
+          "nombre": "Jason Biggs",
+          "wikipedia": "https://es.wikipedia.org/wiki/Jason_Biggs"
+        },
+        {
+          "nombre": "Shannon Elizabeth",
+          "wikipedia": "https://es.wikipedia.org/wiki/Shannon_Elizabeth"
+        },
+        {
+          "nombre": "Lisa Arturo",
+          "wikipedia": "https://es.wikipedia.org/wiki/Lisa_Arturo"
+        },
+        {
+          "nombre": "Alyson Hannigan",
+          "wikipedia": "https://es.wikipedia.org/wiki/Alyson_Hannigan"
+        },
+        {
+          "nombre": "Chris Klein",
+          "wikipedia": "https://es.wikipedia.org/wiki/Chris_Klein_(actor)"
+        },
+        {
+          "nombre": "Thomas Ian Nicholas",
+          "wikipedia": "https://es.wikipedia.org/wiki/Thomas_Ian_Nicholas"
+        }
+      ],
+      "sinopsis": "Sigue a Jim y sus amigos mientras se reúnen en su casa de playa durante el verano, después de su primer año en la universidad. La película explora sus intentos de tener el mejor verano, buscando nuevas experiencias sexuales y relaciones."
+    },
+    {
+      "id": "bob-esponja",
+      "titulo": "Bob Esponja - Squarepants movie",
+      "duracion": "87 minutos",
+      "genero": "Comedia",
+      "iframe": "https://www.youtube.com/embed/Whvm9CGDp2U?si=Q3Iw02GQl5M6Y2tJ",
+      "video_link": "https://www.youtube.com/watch?v=Whvm9CGDp2U",
+      "actores": [
+        {
+          "nombre": "Tom Kenny",
+          "wikipedia": "https://es.wikipedia.org/wiki/Tom_Kenny"
+        },
+        {
+          "nombre": "Bill Fagerbakke",
+          "wikipedia": "https://es.wikipedia.org/wiki/Bill_Fagerbakke"
+        },
+        {
+          "nombre": "Clancy Brown",
+          "wikipedia": "https://es.wikipedia.org/wiki/Clancy_Brown"
+        },
+        {
+          "nombre": "Rodger Bumpass",
+          "wikipedia": "https://es.wikipedia.org/wiki/Rodger_Bumpass"
+        },
+        {
+          "nombre": "Alec Baldwin",
+          "wikipedia": "https://es.wikipedia.org/wiki/Alec_Baldwin"
+        },
+        {
+          "nombre": "Scarlett Johansson",
+          "wikipedia": "https://es.wikipedia.org/wiki/Scarlett_Johansson"
+        }
+      ],
+      "sinopsis": "Bob Esponja, Patricio, Calamardo y compañía están a punto de comenzar una nueva aventura, y es que para salvar su mundo, deberán venir al nuestro donde tendrán que hacer frente al malvado Alameda Jack."
+    },
+    {
+      "id": "scary-movie-5",
+      "titulo": "Scary Movie 5",
+      "duracion": "80 minutos",
+      "genero": "Comedia",
+      "iframe": "https://www.youtube.com/embed/RMDZ8M47j0I?si=-3tmubJbQh7tcHdi&start=128",
+      "video_link": "https://www.youtube.com/watch?v=HTLPULt0eJ4",
+      "actores": [
+        {
+          "nombre": "Ashley Tisdale",
+          "wikipedia": "https://es.wikipedia.org/wiki/Ashley_Tisdale"
+        },
+        {
+          "nombre": "Simon Rex",
+          "wikipedia": "https://es.wikipedia.org/wiki/Simon_Rex"
+        },
+        {
+          "nombre": "Lindsay Lohan",
+          "wikipedia": "https://es.wikipedia.org/wiki/Lindsay_Lohan"
+        },
+        {
+          "nombre": "Charlie Sheen",
+          "wikipedia": "https://es.wikipedia.org/wiki/Charlie_Sheen"
+        },
+        {
+          "nombre": "Molly Shannon",
+          "wikipedia": "https://es.wikipedia.org/wiki/Molly_Shannon"
+        },
+        {
+          "nombre": "Erica Ash",
+          "wikipedia": "https://es.wikipedia.org/wiki/Erica_Ash"
+        }
+      ],
+      "sinopsis": "Una pareja comienza a experimentar una actividad inusual tras traer a casa a su hijo recién nacido del hospital. Con la ayuda de cámaras de vigilancia doméstica y un equipo de expertos, descubren que un demonio maligno los acecha."
+    },
+    {
+      "id": "y-donde-estan-las-rubias",
+      "titulo": "Y dónde están las rubias",
+      "duracion": "109 minutos",
+      "genero": "Comedia",
+      "iframe": "https://www.youtube.com/embed/aeVkbNka9HM?si=C3jyy9CpE8AeSBaW",
+      "video_link": "https://www.youtube.com/watch?v=aeVkbNka9HM&t=7s",
+      "actores": [
+        {
+          "nombre": "Shawn Wayans",
+          "wikipedia": "https://es.wikipedia.org/wiki/Shawn_Wayans"
+        },
+        {
+          "nombre": "Marlon Wayans",
+          "wikipedia": "https://es.wikipedia.org/wiki/Marlon_Wayans"
+        },
+        {
+          "nombre": "Jaime King",
+          "wikipedia": "https://es.wikipedia.org/wiki/Jaime_King"
+        },
+        {
+          "nombre": "Frankie Faison",
+          "wikipedia": "https://es.wikipedia.org/wiki/Frankie_Faison"
+        },
+        {
+          "nombre": "Lochlyn Munro",
+          "wikipedia": "https://es.wikipedia.org/wiki/Lochlyn_Munro"
+        },
+        {
+          "nombre": "John Heard",
+          "wikipedia": "https://es.wikipedia.org/wiki/John_Heard"
+        },
+        {
+          "nombre": "Terry Crews",
+          "wikipedia": "https://es.wikipedia.org/wiki/Terry_Crews"
+        }
+      ],
+      "sinopsis": "Dos agentes del FBI deshonrados se infiltran en un intento de proteger a las herederas de un hotel, las hermanas Wilson, de un complot de secuestro."
+    },
+    {
+      "id": "zootopia",
+      "titulo": "Zootopia",
+      "duracion": "108 minutos",
+      "genero": "Comedia",
+      "iframe": "https://www.youtube.com/embed/xmwGekxPjwg?si=Lip-FBZY1J2taxfx",
+      "video_link": "https://www.youtube.com/watch?v=xmwGekxPjwg",
+      "actores": [
+        {
+          "nombre": "Ginnifer Goodwin",
+          "wikipedia": "https://es.wikipedia.org/wiki/Ginnifer_Goodwin"
+        },
+        {
+          "nombre": "Jason Bateman",
+          "wikipedia": "https://es.wikipedia.org/wiki/Jason_Bateman"
+        },
+        {
+          "nombre": "Idris Elba",
+          "wikipedia": "https://es.wikipedia.org/wiki/Idris_Elba"
+        },
+        {
+          "nombre": "Jenny Slate",
+          "wikipedia": "https://es.wikipedia.org/wiki/Jenny_Slate"
+        },
+        {
+          "nombre": "Nate Torrence",
+          "wikipedia": "https://es.wikipedia.org/wiki/Nate_Torrence"
+        },
+        {
+          "nombre": "Bonnie Hunt",
+          "wikipedia": "https://es.wikipedia.org/wiki/Bonnie_Hunt"
+        },
+        {
+          "nombre": "Shakira",
+          "wikipedia": "https://es.wikipedia.org/wiki/Shakira"
+        }
+      ],
+      "sinopsis": "Zootopia es una metrópolis reluciente poblada por mamíferos antropomórficos, dividida en varios distritos, entre ellos Sahara Square, Tundratown, Little Rodentia y Rainforest District."
+    },
+    {
+      "id": "la-ballena",
+      "titulo": "La ballena",
+      "duracion": "117 minutos",
+      "genero": "Drama",
+      "iframe": "https://www.youtube.com/embed/nWiQodhMvz4?si=WZF47LlGvmrANrBc",
+      "video_link": "https://www.youtube.com/watch?v=ZQMdtjQnyo4",
+      "actores": [
+        {
+          "nombre": "Brendan Fraser",
+          "wikipedia": "https://es.wikipedia.org/wiki/Brendan_Fraser"
+        },
+        {
+          "nombre": "Sadie Sink",
+          "wikipedia": "https://es.wikipedia.org/wiki/Sadie_Sink"
+        },
+        {
+          "nombre": "Ty Simpkins",
+          "wikipedia": "https://es.wikipedia.org/wiki/Ty_Simpkins"
+        },
+        {
+          "nombre": "Hong Chau",
+          "wikipedia": "https://es.wikipedia.org/wiki/Hong_Chau"
+        },
+        {
+          "nombre": "Samantha Morton",
+          "wikipedia": "https://es.wikipedia.org/wiki/Samantha_Morton"
+        }
+      ],
+      "sinopsis": "Un solitario profesor de inglés con obesidad severa (Brendan Fraser) intenta reconectar con su hija adolescente en una última oportunidad de redención."
+    },
+    {
+      "id": "los-dos-papas",
+      "titulo": "Los dos papas",
+      "duracion": "125 minutos",
+      "genero": "Drama",
+      "iframe": "https://www.youtube.com/embed/epf-XMQ5Q8M?si=BP1XfOp1i9lu0PEc",
+      "video_link": "https://www.youtube.com/watch?v=epf-XMQ5Q8M",
+      "actores": [
+        {
+          "nombre": "Anthony Hopkins",
+          "wikipedia": "https://es.wikipedia.org/wiki/Anthony_Hopkins"
+        },
+        {
+          "nombre": "Jonathan Pryce",
+          "wikipedia": "https://es.wikipedia.org/wiki/Jonathan_Pryce"
+        }
+      ],
+      "sinopsis": "Anthony Hopkins y Jonathan Pryce protagonizan este retrato íntimo de un momento clave en la historia de la Iglesia católica."
+    },
+    {
+      "id": "el-aura",
+      "titulo": "El Aura",
+      "duracion": "138 minutos",
+      "genero": "Drama",
+      "iframe": "https://www.youtube.com/embed/zE-PhxHi618?si=i1wQobjT2fOLGctW",
+      "video_link": "https://www.youtube.com/watch?v=zE-PhxHi618",
+      "actores": [
+        {
+          "nombre": "Ricardo Darín",
+          "wikipedia": "https://es.wikipedia.org/wiki/Ricardo_Dar%C3%ADn"
+        },
+        {
+          "nombre": "Dolores Fonzi",
+          "wikipedia": "https://es.wikipedia.org/wiki/Dolores_Fonzi"
+        },
+        {
+          "nombre": "Alejandro Awada",
+          "wikipedia": "https://es.wikipedia.org/wiki/Alejandro_Awada"
+        },
+        {
+          "nombre": "Pablo Cedrón",
+          "wikipedia": "https://es.wikipedia.org/wiki/Pablo_Cedr%C3%B3n"
+        },
+        {
+          "nombre": "Nahuel Pérez Biscayart",
+          "wikipedia": "https://es.wikipedia.org/wiki/Nahuel_P%C3%A9rez_Biscayart"
+        },
+        {
+          "nombre": "Jorge D'Elía",
+          "wikipedia": "https://es.wikipedia.org/wiki/Jorge_D%27El%C3%ADa"
+        }
+      ],
+      "sinopsis": "Esteban, un hombre reservado y solitario, está obsesionado con la idea de cometer el atraco perfecto, un sueño que finalmente se convierte en realidad cuando se ve involucrado en un robo a una fábrica."
+    },
+    {
+      "id": "fatherhood",
+      "titulo": "Fatherhood",
+      "duracion": "109 minutos",
+      "genero": "Drama",
+      "iframe": "https://www.youtube.com/embed/T3mwUEoZdrI?si=tJ-GfGdKdsfdKAm7",
+      "video_link": "https://www.youtube.com/watch?v=T3mwUEoZdrI&t=2s",
+      "actores": [
+        {
+          "nombre": "Kevin Hart",
+          "wikipedia": "https://es.wikipedia.org/wiki/Kevin_Hart"
+        },
+        {
+          "nombre": "Alfre Woodard",
+          "wikipedia": "https://es.wikipedia.org/wiki/Alfre_Woodard"
+        },
+        {
+          "nombre": "Lil Rel Howery",
+          "wikipedia": "https://es.wikipedia.org/wiki/Lil_Rel_Howery"
+        },
+        {
+          "nombre": "Paul Reiser",
+          "wikipedia": "https://es.wikipedia.org/wiki/Paul_Reiser"
+        },
+        {
+          "nombre": "DeWanda Wise",
+          "wikipedia": "https://es.wikipedia.org/wiki/DeWanda_Wise"
+        },
+        {
+          "nombre": "Anthony Carrigan",
+          "wikipedia": "https://es.wikipedia.org/wiki/Anthony_Carrigan"
+        }
+      ],
+      "sinopsis": "Un papá novato y viudo les hace frente a las dudas, los miedos, el dolor y los pañales sucios al criar a su hija por su cuenta."
+    },
+    {
+      "id": "inseparables",
+      "titulo": "Inseparables",
+      "duracion": "107 minutos",
+      "genero": "Drama",
+      "iframe": "https://www.youtube.com/embed/CRImvPVA4Io?si=5Si3tBrivGrXv5J1",
+      "video_link": "https://www.youtube.com/watch?v=CRImvPVA4Io",
+      "actores": [
+        {
+          "nombre": "Rodrigo de la Serna",
+          "wikipedia": "https://es.wikipedia.org/wiki/Rodrigo_de_la_Serna"
+        },
+        {
+          "nombre": "Oscar Martínez",
+          "wikipedia": "https://es.wikipedia.org/wiki/Oscar_Mart%C3%ADnez"
+        },
+        {
+          "nombre": "Carla Peterson",
+          "wikipedia": "https://es.wikipedia.org/wiki/Carla_Peterson"
+        },
+        {
+          "nombre": "Alejandra Flechner",
+          "wikipedia": "https://es.wikipedia.org/wiki/Alejandra_Flechner"
+        },
+        {
+          "nombre": "Flavia Palmiero",
+          "wikipedia": "https://es.wikipedia.org/wiki/Flavia_Palmiero"
+        }
+      ],
+      "sinopsis": "Felipe, un acaudalado empresario que quedó tetrapléjico a causa de un accidente, busca un asistente terapéutico. Hay varios altamente cualificados, pero decide contratar al asistente de su jardinero, Tito, quien ha decidido dimitir."
+    },
+    {
+      "id": "death-note",
+      "titulo": "Death Note",
+      "duracion": "100 minutos",
+      "genero": "Terror",
+      "iframe": "https://www.youtube.com/embed/gvxNaSIB_WI?si=R_sCIHWyt89a-S5Z",
+      "video_link": "https://www.youtube.com/watch?v=gvxNaSIB_WI",
+      "actores": [
+        {
+          "nombre": "Nat Wolff",
+          "wikipedia": "https://es.wikipedia.org/wiki/Nat_Wolff"
+        },
+        {
+          "nombre": "Margaret Qualley",
+          "wikipedia": "https://es.wikipedia.org/wiki/Margaret_Qualley"
+        },
+        {
+          "nombre": "Shea Whigham",
+          "wikipedia": "https://es.wikipedia.org/wiki/Shea_Whigham"
+        },
+        {
+          "nombre": "Paul Nakauchi",
+          "wikipedia": "https://es.wikipedia.org/w/index.php?title=Paul_Nakauchi&action=edit&redlink=1"
+        },
+        {
+          "nombre": "Willem Dafoe",
+          "wikipedia": "https://es.wikipedia.org/wiki/Willem_Dafoe"
+        }
+      ],
+      "sinopsis": "Embriagado por el poder de un cuaderno sobrenatural, un joven comienza a matar a quienes considera indignos de vivir."
+    },
+    {
+      "id": "nop",
+      "titulo": "¡NOP!",
+      "duracion": "130 minutos",
+      "genero": "Terror",
+      "iframe": "https://www.youtube.com/embed/v0kTARdZah8?si=RfgGgLsTGGWDVSLW",
+      "video_link": "https://www.youtube.com/watch?v=v0kTARdZah8",
+      "actores": [
+        {
+          "nombre": "Daniel Kaluuya",
+          "wikipedia": "https://es.wikipedia.org/wiki/Daniel_Kaluuya"
+        },
+        {
+          "nombre": "Keke Palmer",
+          "wikipedia": "https://es.wikipedia.org/wiki/Keke_Palmer"
+        },
+        {
+          "nombre": "Steven Yeun",
+          "wikipedia": "https://es.wikipedia.org/wiki/Steven_Yeun"
+        },
+        {
+          "nombre": "Michael Wincott",
+          "wikipedia": "https://es.wikipedia.org/wiki/Michael_Wincott"
+        },
+        {
+          "nombre": "Brandon Perea",
+          "wikipedia": "https://es.wikipedia.org/wiki/Brandon_Perea"
+        },
+        {
+          "nombre": "Wrenn Schmidt",
+          "wikipedia": "https://es.wikipedia.org/wiki/Wrenn_Schmidt"
+        }
+      ],
+      "sinopsis": "Los cuidadores de un rancho de caballos de California se cruzan con una fuerza misteriosa que afecta el comportamiento humano y animal."
+    },
+    {
+      "id": "el_ultimo_exorcismo_ii",
+      "titulo": "El ultimo exorcismo II",
+      "duracion": "88 minutos",
+      "genero": "Terror",
+      "iframe": "https://www.youtube.com/embed/pkJPitRDVwQ?si=Pi5KfeB70jzu9U0O",
+      "video_link": "https://www.youtube.com/watch?v=pkJPitRDVwQ",
+      "actores": [
+        {
+          "nombre": "Ashley Bell",
+          "wikipedia": "https://en.wikipedia.org/wiki/Ashley_Bell_(actress)"
+        },
+        {
+          "nombre": "Julia Garner",
+          "wikipedia": "https://en.wikipedia.org/wiki/Julia_Garner"
+        },
+        {
+          "nombre": "Spencer Treat Clark",
+          "wikipedia": "https://en.wikipedia.org/wiki/Spencer_Treat_Clark"
+        },
+        {
+          "nombre": "Louis Herthum",
+          "wikipedia": "https://en.wikipedia.org/wiki/Louis_Herthum"
+        }
+      ],
+      "sinopsis": "Nell es encontrada sola y aterrorizada en una zona rural de Louisiana. De vuelta a la apacible Nueva Orleans, la joven se da cuenta de que hay fragmentos de los últimos meses que no logra recordar. Mientras Nell inicia el difícil proceso de rehacer su vida, el maléfico poder que la poseyó regresa con otro aterrador plan que hará de su primer exorcismo un mero ensayo de lo que está por venir."
+    },
+    {
+      "id": "verdad_o_reto",
+      "titulo": "Verdad o Reto",
+      "duracion": "100 minutos",
+      "genero": "Terror",
+      "iframe": "https://www.youtube.com/embed/RFt6jumiTU4?si=oJwluA5Fv32VrlfH",
+      "video_link": "https://www.youtube.com/watch?v=RFt6jumiTU4",
+      "actores": [
+        {
+          "nombre": "Lucy Hale",
+          "wikipedia": "https://en.wikipedia.org/wiki/Lucy_Hale"
+        },
+        {
+          "nombre": "Tyler Posey",
+          "wikipedia": "https://en.wikipedia.org/wiki/Tyler_Posey"
+        },
+        {
+          "nombre": "Violett Beane",
+          "wikipedia": "https://en.wikipedia.org/wiki/Violett_Beane"
+        },
+        {
+          "nombre": "Hayden Szeto",
+          "wikipedia": "https://en.wikipedia.org/wiki/Hayden_Szeto"
+        },
+        {
+          "nombre": "Landon Liboiron",
+          "wikipedia": "https://en.wikipedia.org/wiki/Landon_Liboiron"
+        }
+      ],
+      "sinopsis": "Todo comienza con un grupo de amigos pasándoselo bien, hasta que empiezan a jugar a \"Verdad o reto\". Lo que parece un juego de niños se acaba convirtiendo en algo terrorífico."
+    },
+    {
+      "id": "no_respires_2",
+      "titulo": "No Respires 2",
+      "duracion": "99 minutos",
+      "genero": "Terror",
+      "iframe": "https://www.youtube.com/embed/en_3ZnETSGE?si=fcpL76xdYt3fjcYy",
+      "video_link": "https://www.youtube.com/watch?v=en_3ZnETSGE",
+      "actores": [
+        {
+          "nombre": "Stephen Lang",
+          "wikipedia": "https://es.wikipedia.org/wiki/Stephen_Lang"
+        },
+        {
+          "nombre": "Brendan Sexton III",
+          "wikipedia": "https://es.wikipedia.org/wiki/Brendan_Sexton_III"
+        },
+        {
+          "nombre": "Steffan Rhodri",
+          "wikipedia": "https://es.wikipedia.org/wiki/Steffan_Rhodri"
+        },
+        {
+          "nombre": "Fiona O'Shaughnessy",
+          "wikipedia": "https://es.wikipedia.org/wiki/Fiona_O%27Shaughnessy"
+        }
+      ],
+      "sinopsis": "La secuela tiene lugar años después del mortal allanamiento de morada inicial, en los que Norman Nordstrom vive en una discreta calma hasta que sus pecados del pasado le alcanzan."
+    }
+  ]
+}

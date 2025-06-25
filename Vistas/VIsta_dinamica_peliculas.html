@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><span id="titulo"></span></title>
+  <link rel="stylesheet" href="../../Estilos/styles.css" />
+  <link rel="stylesheet" href="../../Estilos/header.css" />
+  <link rel="stylesheet" href="../../Estilos/vistaDetalleSeriePelicula.css" />
+  <link rel="stylesheet" href="../../Estilos/footer.css" />
+  <link rel="stylesheet" href="../../Estilos/botones.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <a href="../../Vistas/PantallaPrincipal.html" class="nav-item">
+        <span><img src="../../Imagenes/IconosHeader/Casa.png" alt="icon-house" /></span>
+        <span>Home</span>
+      </a>
+      <a href="../../Vistas/VistaDetalleSerie.html" class="nav-item">
+        <span><img src="../../Imagenes/IconosHeader/Serie.png" alt="icon-series" /></span>
+        <span>Series</span>
+      </a>
+      <a href="../../Vistas/VistaDetallePelicula.html" class="nav-item">
+        <span><img src="../../Imagenes/IconosHeader/Pelicula.png" alt="icon-pelicula" /></span>
+        <span>Peliculas</span>
+      </a>
+      <a href="../../Vistas/vistaPerfil.html" class="nav-item">
+        <span><img src="../../Imagenes/IconosHeader/Perfil.png" alt="iconperfil" /></span>
+        <span>Perfil</span>
+      </a>
+    </nav>
+  </header>
+
+  <div class="pelicula-serie">
+    <div class="iframe-a" id="iframe-container">
+      <!-- Aquí se inyectará el iframe dinámicamente -->
+    </div>
+    <div class="detalle-pelicula-serie">
+      <p><strong>Titulo:</strong> <span id="titulo"></span></p>
+      <p><strong>Duracion:</strong> <span id="duracion"></span></p>
+      <p><strong>Genero:</strong> <span id="genero"></span></p>
+      <p>
+        <strong>Actores:</strong>
+        <span id="actores"></span>
+      </p>
+      <p class="descripcion-pelicula-serie" id="descripcion"></p>
+    </div>
+  </div>
+
+  <div class="peliculas-series-similares">
+    <h1>Similares</h1>
+    <div class="galeria-peliculas-series" id="similares">
+      <!-- Aquí se pueden inyectar los enlaces similares si quieres hacerlo dinámico -->
+    </div>
+  </div>
+
+  <footer class="footer">
+    Creada por Pfeiffer Juan Pablo y Axel Deantonio
+  </footer>
+
+  <!-- Aquí después incluirás el script JS para inyectar contenido dinámico -->
+  <script src="/JavaScript/vistaDinamica.js"></script>
+</body>
+
+</html>
