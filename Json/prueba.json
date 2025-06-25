@@ -1,0 +1,56 @@
+{
+  "titulo": "American Pie 2",
+  "duracion": "106 minutos",
+  "genero": "Comedia",
+  "iframe": "https://www.youtube.com/embed/FLWu4KewJlU?si=z9xKLkCTbFXarBxh",
+  "video_link": "https://www.youtube.com/watch?v=FLWu4KewJlU",
+  "actores": [
+    {
+      "nombre": "Jason Biggs",
+      "wikipedia": "https://es.wikipedia.org/wiki/Jason_Biggs"
+    },
+    {
+      "nombre": "Shannon Elizabeth",
+      "wikipedia": "https://es.wikipedia.org/wiki/Shannon_Elizabeth"
+    },
+    {
+      "nombre": "Lisa Arturo",
+      "wikipedia": "https://es.wikipedia.org/wiki/Lisa_Arturo"
+    },
+    {
+      "nombre": "Alyson Hannigan",
+      "wikipedia": "https://es.wikipedia.org/wiki/Alyson_Hannigan"
+    },
+    {
+      "nombre": "Chris Klein",
+      "wikipedia": "https://es.wikipedia.org/wiki/Chris_Klein_(actor)"
+    },
+    {
+      "nombre": "Thomas Ian Nicholas",
+      "wikipedia": "https://es.wikipedia.org/wiki/Thomas_Ian_Nicholas"
+    }
+  ],
+  "sinopsis": "Sigue a Jim y sus amigos mientras se reúnen en su casa de playa durante el verano, después de su primer año en la universidad. La película explora sus intentos de tener el mejor verano, buscando nuevas experiencias sexuales y relaciones.",
+  "similares": [
+    {
+      "titulo": "¿Y dónde están las rubias?",
+      "imagen": "../../Imagenes/rubias.jpg",
+      "link": "VistaDetallePeliculaYDondeLasRubias.html"
+    },
+    {
+      "titulo": "Zootopia",
+      "imagen": "../../Imagenes/zootopia.jpeg",
+      "link": "VistaDetallePeliculaZootopia.html"
+    },
+    {
+      "titulo": "Bob Esponja",
+      "imagen": "../../Imagenes/Bob.jpg",
+      "link": "VistaDetallePeliculaBobEsponja.html"
+    },
+    {
+      "titulo": "Scary Movie",
+      "imagen": "../../Imagenes/scarymovie.jpg",
+      "link": "VistaDetallePeliculaScaryMovie.html"
+    }
+  ]
+}
