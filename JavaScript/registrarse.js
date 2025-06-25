@@ -224,6 +224,8 @@ function registerValidate() {
 
         setTimeout(function () {
           mensaje.textContent = "";
+      window.location.href = "../index.html";
+          
         }, 2000);
       }, 1000);
     }

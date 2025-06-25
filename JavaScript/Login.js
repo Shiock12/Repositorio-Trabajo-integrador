@@ -23,8 +23,9 @@ document.querySelector("form").addEventListener("submit", function (event) {
 
     const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 
-    const usuarioEncontrado = usuarios.find(u => u.username === usuario && u.password === contraseña);
+    const usuarioEncontrado = usuarios.find(u => u.nombreDeUsuario === usuario && u.contraseña === contraseña);
 
+    //Se muestra en perfil
     if (usuarioEncontrado) {
         // Guardar al usuario logueado para usarlo después si querés
         localStorage.setItem("usuarioLogueado", JSON.stringify(usuarioEncontrado));

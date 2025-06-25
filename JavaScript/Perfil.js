@@ -1,29 +1,40 @@
 document.addEventListener("DOMContentLoaded", () => {
   const usuarios = JSON.parse(localStorage.getItem("usuarios") || []);
-  const usuarioActivo = JSON.parse(localStorage.getItem("usuarioActivo"));
+  const usuarioActivo = JSON.parse(localStorage.getItem("usuarioLogueado")); // CAMBIADO
 
   if (!usuarioActivo) {
     alert("No hay usuario activo");
-    window.location.href = "index.html";
+    window.location.href = "./index.html";
     return;
   }
 
-  const usuarioActual = usuarios.find(u => u.username === usuarioActivo.username);
+  const usuarioActual = usuarios.find(u => u.nombreDeUsuario === usuarioActivo.nombreDeUsuario);
   if (!usuarioActual) {
     alert("Usuario no encontrado");
     return;
   }
 
   // Mostrar datos
-  document.getElementById("username").textContent = usuarioActual.username;
+  document.getElementById("username").textContent = usuarioActual.nombreDeUsuario;
   document.getElementById("email").value = usuarioActual.email;
 
   // Mostrar método de pago
-  if (usuarioActual.metodoPago === "tarjeta") {
+  const metodo = usuarioActual.metodoDePago;
+  if (metodo === "tarjeta-de-credito") {
     document.getElementById("tarjeta-de-credito").checked = true;
-  } else if (usuarioActual.metodoPago === "cupon") {
+
+    if (usuarioActual.numeroDeTarjeta) {
+      document.getElementById("numero-de-tarjeta").value = "**** **** **** " + usuarioActual.numeroDeTarjeta.slice(-4);
+    }
+  } else if (metodo === "cupon-de-pago") {
     document.getElementById("cupon-de-pago").checked = true;
-  } else if (usuarioActual.metodoPago === "transferencia") {
+
+    if (usuarioActual.cuponDePago === "pago-facil") {
+      document.getElementById("pago-facil").checked = true;
+    } else if (usuarioActual.cuponDePago === "rapipago") {
+      document.getElementById("rapipago").checked = true;
+    }
+  } else if (metodo === "transferencia") {
     document.getElementById("metodo-de-pago").checked = true;
   }
 
@@ -44,14 +55,12 @@ document.addEventListener("DOMContentLoaded", () => {
     return contrasenasIguales && contrasenaValida && (hayMetodo || tieneCupon);
   };
 
-  // Validación dinámica
   document.querySelectorAll("input").forEach(input => {
     input.addEventListener("input", () => {
       guardarBtn.disabled = !camposValidos();
     });
   });
 
-  // Guardar cambios
   guardarBtn.addEventListener("click", (e) => {
     e.preventDefault();
 
@@ -68,9 +77,8 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    // Validaciones extra de tarjeta
     if (document.getElementById("tarjeta-de-credito").checked) {
-      const num = document.getElementById("numero-de-tarjeta").value;
+      const num = document.getElementById("numero-de-tarjeta").value.replace(/\s/g, "").replace(/\*/g, "");
       const cod = document.getElementById("codigo-de-seguridad").value;
 
       if (!/^[1-9]{3}$/.test(cod)) {
@@ -92,55 +100,50 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      usuarioActual.metodoPago = "tarjeta";
+      usuarioActual.metodoDePago = "tarjeta-de-credito";
+      usuarioActual.numeroDeTarjeta = num;
+      usuarioActual.codigoDeSeguridad = cod; // opcional, podés no guardarlo por seguridad
     }
 
     if (document.getElementById("cupon-de-pago").checked) {
-      if (!document.getElementById("pago-facil").checked && !document.getElementById("rapipago").checked) {
+      const tipoCupon = document.getElementById("pago-facil").checked ? "pago-facil" :
+                        document.getElementById("rapipago").checked ? "rapipago" : "";
+
+      if (!tipoCupon) {
         alert("Debés seleccionar al menos un tipo de cupón");
         return;
       }
-      usuarioActual.metodoPago = "cupon";
+
+      usuarioActual.metodoDePago = "cupon-de-pago";
+      usuarioActual.cuponDePago = tipoCupon;
     }
 
     if (document.getElementById("metodo-de-pago").checked) {
-      usuarioActual.metodoPago = "transferencia";
+      usuarioActual.metodoDePago = "transferencia";
     }
 
-    // Actualizar contraseña
-    usuarioActual.password = nuevaPass;
+    usuarioActual.contraseña = nuevaPass;
 
-    // Guardar en localStorage
-    const index = usuarios.findIndex(u => u.username === usuarioActual.username);
+    const index = usuarios.findIndex(u => u.nombreDeUsuario === usuarioActual.nombreDeUsuario);
     usuarios[index] = usuarioActual;
 
     localStorage.setItem("usuarios", JSON.stringify(usuarios));
-    localStorage.setItem("usuarioActivo", JSON.stringify(usuarioActual));
+    localStorage.setItem("usuarioLogueado", JSON.stringify(usuarioActual));
 
     alert("Cambios guardados correctamente");
   });
 
-  // Cancelar suscripción
   cancelarBtn.addEventListener("click", (e) => {
     e.preventDefault();
 
     if (confirm("¿Estás seguro de cancelar la suscripción? Se eliminará tu cuenta.")) {
-      const nuevosUsuarios = usuarios.filter(u => u.username !== usuarioActual.username);
+      const nuevosUsuarios = usuarios.filter(u => u.nombreDeUsuario !== usuarioActual.nombreDeUsuario);
       localStorage.setItem("usuarios", JSON.stringify(nuevosUsuarios));
-      localStorage.removeItem("usuarioActivo");
+      localStorage.removeItem("usuarioLogueado");
 
       alert("Suscripción cancelada");
-      window.location.href = "index.html";
+      window.location.href = "../index.html";
     }
-  });
-
-  // Cerrar sesión
-  const cerrarSesionBtn = document.createElement("button");
-  cerrarSesionBtn.textContent = "Cerrar sesión";
-  cerrarSesionBtn.className = "btn-secundario";
-  cerrarSesionBtn.addEventListener("click", () => {
-    localStorage.removeItem("usuarioActivo");
-    window.location.href = "index.html";
   });
 
   document.querySelector(".footer").appendChild(cerrarSesionBtn);
