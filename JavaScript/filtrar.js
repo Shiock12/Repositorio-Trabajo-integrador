@@ -9,7 +9,7 @@
 
       items.forEach(item => {
         if (categoriaSeleccionada === "") {
-          item.style.display = "block"; // para que grid funcione bien
+          item.style.display = "block"; 
           return;
         }
         if (item.classList.contains(categoriaSeleccionada)) {
@@ -37,7 +37,7 @@
       const coincideCategoria =
         categoriaSeleccionada === "" || item.classList.contains(categoriaSeleccionada);
 
-      // Tomamos el texto del atributo alt de la imagen dentro del enlace para comparar con búsqueda
+
       const nombreItem = item.querySelector("img").alt.toLowerCase();
 
       const coincideBusqueda = nombreItem.includes(textoBusqueda);
@@ -50,7 +50,6 @@
     });
   }
 
-  // Escuchar cambios en select y en input para filtrar
   selectCategoria.addEventListener("change", filtrar);
   inputBuscador.addEventListener("input", filtrar);
 });
