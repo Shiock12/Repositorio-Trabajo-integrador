@@ -1,4 +1,4 @@
-  document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   const selectCategoria = document.getElementById("selectCategoria");
   const inputBusqueda = document.getElementById("inputBusqueda");
   const items = document.querySelectorAll(".galeria-Series-Peliculas a");
@@ -10,8 +10,8 @@
     items.forEach(item => {
       const img = item.querySelector("img");
       const nombre = img.alt.toLowerCase();
-      // Las clases están en la imagen
-      const tieneCategoria = categoriaSeleccionada === "" || img.classList.contains(categoriaSeleccionada);
+
+      const tieneCategoria = categoriaSeleccionada === "" || item.classList.contains(categoriaSeleccionada);
       const coincideBusqueda = nombre.includes(textoBusqueda);
 
       if (tieneCategoria && coincideBusqueda) {

@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            document.title = serie.titulo; // Título en pestaña
+            document.title = serie.titulo; 
 
             // Rellenar campos
             document.getElementById('titulo-texto').textContent = serie.titulo || '';
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </iframe>
                 <a href="${serie.video_link}" class="boton-comenzar" target="_blank" rel="noopener noreferrer">Comenzar</a>`;
 
-            // Actores con guiones entre ellos
+    
             const actoresCont = document.getElementById('actores');
             actoresCont.innerHTML = serie.actores.map((actor, index) => {
                 let sep = index < serie.actores.length - 1 ? ' - ' : '';

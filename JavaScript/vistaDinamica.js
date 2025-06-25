@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             // Crea datos en el HTML
-            document.title = pelicula.titulo;  // Cambiar título de la pestaña
+            document.title = pelicula.titulo; 
 
             // Título, duración, género, descripción
             document.getElementById('titulo').textContent = pelicula.titulo;
