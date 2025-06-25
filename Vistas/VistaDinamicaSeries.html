@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">   
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><span id="titulo"></span></title>
+    <title><span id="titulo-documento"></span></title>
     <link rel="stylesheet" href="../../Estilos/styles.css" />
     <link rel="stylesheet" href="../../Estilos/header.css" />
     <link rel="stylesheet" href="../../Estilos/vistaDetalleSeriePelicula.css" />
@@ -36,47 +36,45 @@
 
     <div class="pelicula-serie">
         <div class="iframe-a" id="iframe-container">
+            <!-- Aca va el iframe -->
         </div>
         <div class="detalle-pelicula-serie">
-            <div class="detalle-pelicula-serie">
-                <div class="seleccionar">
-                    <div class="temporadas">
-                        <label for="temporadas">Temporadas:</label>
-                        <select name="temporadas" id="temporadas">
-                            <option value="temporada_1">Temporada 1</option>
-                            <option value="temporada_2">Temporada 2</option>
-                            <option value="temporada_3">Temporada 3</option>
-                            <option value="temporada_4">Temporada 4</option>
-                            <option value="temporada_5">Temporada 5</option>
-                        </select>
-                    </div>
-                    <div class="capitulos">
-                        <label for="capitulos">Capitulos:</label>
-                        <select name="capitulos" id="capitulos">
-                            <option value="capitulo_1">Capitulo 1</option>
-                            <option value="capitulo_2">Capitulo 2</option>
-                            <option value="capitulo_3">Capitulo 3</option>
-                            <option value="capitulo_4">Capitulo 4</option>
-                            <option value="capitulo_5">Capitulo 5</option>
-                            <option value="capitulo_6">Capitulo 6</option>
-                            <option value="capitulo_7">Capitulo 7</option>
-                            <option value="capitulo_8">Capitulo 8</option>
-                            <option value="capitulo_9">Capitulo 9</option>
-                        </select>
-                    </div>
+            <div class="seleccionar">
+                <div class="temporadas">
+                    <label class="selec"for="temporadas">Temporadas:</label>
+                    <select name="temporadas" id="temporadas">
+                        <option value="temporada_1">Temporada 1</option>
+                        <option value="temporada_2">Temporada 2</option>
+                        <option value="temporada_3">Temporada 3</option>
+                        <option value="temporada_4">Temporada 4</option>
+                        <option value="temporada_5">Temporada 5</option>
+                    </select>
                 </div>
-                <p><strong>Titulo:</strong> <span id="titulo"></span></p>
-                <p><strong>Duracion:</strong> <span id="duracion"></span></p>
-                <p><strong>Genero:</strong> <span id="genero"></span></p>
-                <p>
-                    <strong>Actores:</strong>
-                    <span id="actores"></span>
-                </p>
-                <p class="descripcion-pelicula-serie" id="descripcion"></p>
+                <div class="capitulos">
+                    <label class="selec" for="capitulos">Capitulos:</label>
+                    <select name="capitulos" id="capitulos">
+                        <option value="capitulo_1">Capitulo 1</option>
+                        <option value="capitulo_2">Capitulo 2</option>
+                        <option value="capitulo_3">Capitulo 3</option>
+                        <option value="capitulo_4">Capitulo 4</option>
+                        <option value="capitulo_5">Capitulo 5</option>
+                        <option value="capitulo_6">Capitulo 6</option>
+                        <option value="capitulo_7">Capitulo 7</option>
+                        <option value="capitulo_8">Capitulo 8</option>
+                        <option value="capitulo_9">Capitulo 9</option>
+                    </select>
+                </div>
             </div>
-        </div>
 
-        <div class="peliculas-series-similares">
+            <p><strong>Titulo:</strong> <span id="titulo-texto"></span></p>
+            <p><strong>Duracion:</strong> <span id="duracion"></span></p>
+            <p><strong>Genero:</strong> <span id="genero"></span></p>
+            <p><strong>Actores:</strong> <span id="actores"></span></p>
+            <p class="descripcion-pelicula-serie" id="descripcion"></p>
+        </div>
+    </div>
+
+    <div class="peliculas-series-similares">
         <h1>Similares</h1>
         <div class="galeria-peliculas-series">
             <a href="vistaSerieDivisionPalermo.html">
@@ -94,12 +92,11 @@
         </div>
     </div>
 
+    <footer class="footer">
+        Creada por Pfeiffer Juan Pablo, Axel Deantonio & Luis Spataro
+    </footer>
 
-        <footer class="footer">
-            Creada por Pfeiffer Juan Pablo, Axel Deantonio & Luis Spataro
-        </footer>
-
-        <script src="/JavaScript/vistaDinamicaSeries.js"></script>
+    <script src="/JavaScript/vistaDinamicaSeries.js"></script>
 </body>
 
 </html>

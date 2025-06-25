@@ -195,6 +195,15 @@
     gap: 1.875rem;
   }
 
+  .selec select {
+  font-size: 1.1rem;    
+  padding: 6px 10px;    
+  min-width: 150px;     
+  border-radius: 4px;   
+  border: 1px solid #ccc; 
+  padding: auto;
+}
+
 
   .pelicula-serie .iframe-a {
     width: 100%;
