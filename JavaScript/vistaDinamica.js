@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     const urlParams = new URLSearchParams(window.location.search);
     const id = urlParams.get('id');
 
@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    // Cargar el JSON 
     fetch('../../Json/peliculas.json') 
         .then(response => {
             if (!response.ok) throw new Error('No se pudo cargar el JSON');
