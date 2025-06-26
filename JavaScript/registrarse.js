@@ -22,7 +22,6 @@ const EXPRESIONES_REGULARES = {
   LETRAS: /^[a-zA-Z\s]+$/,
   NUMEROS: /^\d+$/,
   LETRAS_Y_NUMEROS: /^[a-zA-Z0-9]+$/,
-  CONTRASEÑA: /^(?=(?:.*[A-Za-z]){2,})(?=(?:.*\d){2,})(?=(?:.*[^A-Za-z\d]){2,}).{6,8}$/
 };
 
 function registerValidate() {
@@ -106,10 +105,26 @@ function registerValidate() {
     }
 
     //Valida la contraseña
+    //Campos para validar la contraseña
+    const tieneDosLetras = '(?=(?:.*[A-Za-z]){2,})';
+    const tieneDosNumeros = '(?=(?:.*\\d){2,})';
+    const tieneDosEspeciales = '(?=(?:.*[^A-Za-z\\d]){2,})';
+    const minimoOchoCaracteres = '.{8,}';
+    
+    //Expresion regular para validar la contraseña
+    const contraseñaValida = new RegExp(
+      `^${tieneDosLetras}${tieneDosNumeros}${tieneDosEspeciales}${minimoOchoCaracteres}$`
+    );
+
+    //Funcion que valida la contraseña
+    function validarContraseña(contraseña) {
+      return contraseñaValida.test(contraseña);
+    };
+
     if (contraseña === "") {
       contraseñaError.textContent = MENSAJES_DE_ERROR.CONTRASEÑA;
       isFormValid = false;
-    } else if (!EXPRESIONES_REGULARES.CONTRASEÑA.test(contraseña)) {
+    } else if (!validarContraseña(contraseña)) {
       contraseñaError.textContent = MENSAJES_DE_ERROR.CONTRASEÑA_INVALIDA;
       isFormValid = false;
     }
@@ -177,7 +192,7 @@ function registerValidate() {
       submitBtn.disabled = true;
       submitBtn.textContent = "Enviando...";
 
-      
+
       setTimeout(function () {
         registerForm.reset();
         submitBtn.disabled = false;
@@ -224,8 +239,8 @@ function registerValidate() {
 
         setTimeout(function () {
           mensaje.textContent = "";
-      window.location.href = "../index.html";
-          
+          window.location.href = "../index.html";
+
         }, 2000);
       }, 1000);
     }
