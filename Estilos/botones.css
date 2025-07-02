@@ -12,7 +12,8 @@
         border: 0.0625rem solid black;
         border-radius: 0.3125rem;
     }
-    .btn-primario{
+
+    .btn-primario {
         padding: 10px;
         background-color: lightgreen;
         color: black;
@@ -21,7 +22,8 @@
         text-decoration: none;
         text-align: center;
     }
-    .btn-secundario{
+
+    .btn-secundario {
         padding: 10px;
         background-color: orangered;
         color: black;
@@ -30,7 +32,8 @@
         text-decoration: none;
         text-align: center;
     }
-    .btn-terciario{
+
+    .btn-terciario {
         padding: 10px;
         background-color: grey;
         color: black;
@@ -57,7 +60,8 @@
         border: 0.0625rem solid black;
         border-radius: 0.3125rem;
     }
-    .btn-primario{
+
+    .btn-primario {
         padding: 10px;
         background-color: lightgreen;
         color: black;
@@ -66,7 +70,8 @@
         text-decoration: none;
         text-align: center;
     }
-    .btn-secundario{
+
+    .btn-secundario {
         padding: 10px;
         background-color: orangered;
         color: black;
@@ -76,6 +81,7 @@
         text-align: center;
     }
 }
+
 /*Movil M*/
 @media screen and (min-width: 375px) {
     .boton-comenzar {
@@ -91,7 +97,8 @@
         border: 0.0625rem solid black;
         border-radius: 0.3125rem;
     }
-    .btn-primario{
+
+    .btn-primario {
         padding: 10px;
         background-color: lightgreen;
         color: black;
@@ -100,7 +107,8 @@
         text-decoration: none;
         text-align: center;
     }
-    .btn-secundario{
+
+    .btn-secundario {
         padding: 10px;
         background-color: orangered;
         color: black;
@@ -125,7 +133,8 @@
         border: 0.0625rem solid black;
         border-radius: 0.3125rem;
     }
-    .btn-primario{
+
+    .btn-primario {
         padding: 10px;
         background-color: lightgreen;
         color: black;
@@ -134,7 +143,8 @@
         text-decoration: none;
         text-align: center;
     }
-    .btn-secundario{
+
+    .btn-secundario {
         padding: 10px;
         background-color: orangered;
         color: black;
@@ -144,9 +154,10 @@
         text-align: center;
     }
 }
+
 /*Movil L*/
 @media screen and (min-width: 425px) {
-   .boton-comenzar {
+    .boton-comenzar {
         width: 100%;
         padding: 0.625rem;
         margin-top: 0.625rem;
@@ -159,7 +170,8 @@
         border: 0.0625rem solid black;
         border-radius: 0.3125rem;
     }
-    .btn-primario{
+
+    .btn-primario {
         padding: 10px;
         background-color: lightgreen;
         color: black;
@@ -168,7 +180,8 @@
         text-decoration: none;
         text-align: center;
     }
-    .btn-secundario{
+
+    .btn-secundario {
         padding: 10px;
         background-color: orangered;
         color: black;
@@ -178,6 +191,7 @@
         text-align: center;
     }
 }
+
 /*Smartphones horizontal*/
 /*Tablet vertical*/
 @media screen and (min-width: 667px) {
@@ -194,7 +208,8 @@
         border: 0.0625rem solid black;
         border-radius: 0.3125rem;
     }
-    .btn-primario{
+
+    .btn-primario {
         padding: 10px;
         background-color: lightgreen;
         color: black;
@@ -203,7 +218,8 @@
         text-decoration: none;
         text-align: center;
     }
-    .btn-secundario{
+
+    .btn-secundario {
         padding: 10px;
         background-color: orangered;
         color: black;
@@ -213,6 +229,7 @@
         text-align: center;
     }
 }
+
 /*Tablet horizontal*/
 @media screen and (min-width: 1024px) {
     .boton-comenzar {
@@ -228,7 +245,8 @@
         border: 0.0625rem solid black;
         border-radius: 0.3125rem;
     }
-    .btn-primario{
+
+    .btn-primario {
         padding: 10px;
         background-color: lightgreen;
         color: black;
@@ -237,7 +255,8 @@
         text-decoration: none;
         text-align: center;
     }
-    .btn-secundario{
+
+    .btn-secundario {
         padding: 10px;
         background-color: orangered;
         color: black;
@@ -247,6 +266,7 @@
         text-align: center;
     }
 }
+
 /*Pc chico*/
 @media screen and (min-width: 1280px) {
     .boton-comenzar {
@@ -262,7 +282,8 @@
         border: 0.0625rem solid black;
         border-radius: 0.3125rem;
     }
-    .btn-primario{
+
+    .btn-primario {
         padding: 10px;
         background-color: lightgreen;
         color: black;
@@ -271,7 +292,8 @@
         text-decoration: none;
         text-align: center;
     }
-    .btn-secundario{
+
+    .btn-secundario {
         padding: 10px;
         background-color: orangered;
         color: black;
@@ -280,10 +302,34 @@
         text-decoration: none;
         text-align: center;
     }
+
+    .fav-btn {
+        background-color: #eee;
+        color: gray;
+        border: 1px solid gray;
+        border-radius: 8px;
+        padding: 10px 15px;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        justify-content: center;
+        margin-top: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .fav-btn.active {
+        color: red;
+        border-color: red;
+    }
+
 }
+
 /*Pc grande*/
 @media screen and (min-width: 1920px) {
-   .boton-comenzar {
+    .boton-comenzar {
         width: 100%;
         padding: 0.625rem;
         margin-top: 0.625rem;
@@ -296,7 +342,8 @@
         border: 0.0625rem solid black;
         border-radius: 0.3125rem;
     }
-    .btn-primario{
+
+    .btn-primario {
         padding: 10px;
         background-color: lightgreen;
         color: black;
@@ -305,7 +352,8 @@
         text-decoration: none;
         text-align: center;
     }
-    .btn-secundario{
+
+    .btn-secundario {
         padding: 10px;
         background-color: orangered;
         color: black;
@@ -314,4 +362,27 @@
         text-decoration: none;
         text-align: center;
     }
+
+    .fav-btn {
+        background-color: #eee;
+        color: gray;
+        border: 1px solid gray;
+        border-radius: 8px;
+        padding: 10px 15px;
+        font-size: 16px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+        text-justify: center;
+        margin-top: 10px;
+        transition: all 0.3s ease;
+    }
+
+    .fav-btn.active {
+        color: red;
+        border-color: red;
+    }
+
 }

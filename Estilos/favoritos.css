@@ -1,0 +1,38 @@
+.favoritos {
+  margin-top: 40px;
+  padding: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+
+.favoritos h2 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.tarjeta-favorita {
+  display: inline-block;
+  width: 200px;
+  margin: 8px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.tarjeta-favorita img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease;
+}
+
+.tarjeta-favorita:hover img {
+  transform: scale(1.05);
+}
+
+.tarjeta-favorita p {
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
