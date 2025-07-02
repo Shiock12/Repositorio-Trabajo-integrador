@@ -131,6 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("usuarioLogueado", JSON.stringify(usuarioActual));
 
     alert("Cambios guardados correctamente");
+    window.location.href = "../PantallaPrincipal.html";
   });
 
   cancelarBtn.addEventListener("click", (e) => {
