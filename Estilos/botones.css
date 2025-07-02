@@ -21,6 +21,11 @@
         text-decoration: none;
         text-align: center;
     }
+
+    .btn-primario:disabled{
+        cursor:not-allowed;
+    }
+
     .btn-secundario{
         padding: 10px;
         background-color: orangered;
@@ -66,6 +71,11 @@
         text-decoration: none;
         text-align: center;
     }
+
+    .btn-primario:disabled{
+        cursor:not-allowed;
+    }
+
     .btn-secundario{
         padding: 10px;
         background-color: orangered;
@@ -100,6 +110,11 @@
         text-decoration: none;
         text-align: center;
     }
+
+    .btn-primario:disabled{
+        cursor:not-allowed;
+    }
+
     .btn-secundario{
         padding: 10px;
         background-color: orangered;
@@ -134,6 +149,11 @@
         text-decoration: none;
         text-align: center;
     }
+
+    .btn-primario:disabled{
+        cursor:not-allowed;
+    }
+
     .btn-secundario{
         padding: 10px;
         background-color: orangered;
@@ -168,6 +188,11 @@
         text-decoration: none;
         text-align: center;
     }
+
+.btn-primario:disabled{
+        cursor:not-allowed;
+    }
+
     .btn-secundario{
         padding: 10px;
         background-color: orangered;
@@ -203,6 +228,11 @@
         text-decoration: none;
         text-align: center;
     }
+
+.btn-primario:disabled{
+        cursor:not-allowed;
+    }
+
     .btn-secundario{
         padding: 10px;
         background-color: orangered;
@@ -237,6 +267,11 @@
         text-decoration: none;
         text-align: center;
     }
+
+    .btn-primario:disabled{
+        cursor:not-allowed;
+    }
+
     .btn-secundario{
         padding: 10px;
         background-color: orangered;
@@ -271,6 +306,11 @@
         text-decoration: none;
         text-align: center;
     }
+
+    .btn-primario:disabled{
+        cursor:not-allowed;
+    }
+
     .btn-secundario{
         padding: 10px;
         background-color: orangered;
@@ -304,6 +344,10 @@
         border-radius: 5px;
         text-decoration: none;
         text-align: center;
+    }
+
+    .btn-primario:disabled{
+        cursor:not-allowed;
     }
     .btn-secundario{
         padding: 10px;
