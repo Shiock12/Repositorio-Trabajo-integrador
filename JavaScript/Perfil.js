@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const usuarios = JSON.parse(localStorage.getItem("usuarios") || []);
-  const usuarioActivo = JSON.parse(localStorage.getItem("usuarioLogueado")); // CAMBIADO
+  const usuarioActivo = JSON.parse(localStorage.getItem("usuarioLogueado"));
 
   if (!usuarioActivo) {
     alert("No hay usuario activo");
@@ -18,17 +18,17 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("username").textContent = usuarioActual.nombreDeUsuario;
   document.getElementById("email").value = usuarioActual.email;
 
-  // Mostrar método de pago
   const metodo = usuarioActual.metodoDePago;
   if (metodo === "tarjeta-de-credito") {
     document.getElementById("tarjeta-de-credito").checked = true;
-
     if (usuarioActual.numeroDeTarjeta) {
       document.getElementById("numero-de-tarjeta").value = "**** **** **** " + usuarioActual.numeroDeTarjeta.slice(-4);
     }
+    if (usuarioActual.codigoDeSeguridad) {
+      document.getElementById("codigo-de-seguridad").value = "***";
+    }
   } else if (metodo === "cupon-de-pago") {
     document.getElementById("cupon-de-pago").checked = true;
-
     if (usuarioActual.cuponDePago === "pago-facil") {
       document.getElementById("pago-facil").checked = true;
     } else if (usuarioActual.cuponDePago === "rapipago") {
@@ -78,31 +78,30 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (document.getElementById("tarjeta-de-credito").checked) {
-      const num = document.getElementById("numero-de-tarjeta").value.replace(/\s/g, "").replace(/\*/g, "");
+      let num = document.getElementById("numero-de-tarjeta").value.replace(/\s/g, "");
       const cod = document.getElementById("codigo-de-seguridad").value;
 
-      if (!/^[1-9]{3}$/.test(cod)) {
-        alert("Código de seguridad inválido");
-        return;
+      const nuevaTarjetaIngresada = !num.includes("*") && /^\d{16}$/.test(num);
+      const nuevoCodIngresado = cod !== "***" && /^[0-9]{3}$/.test(cod);
+
+      if (nuevaTarjetaIngresada) {
+        const suma = num.slice(0, 15).split("").reduce((a, b) => a + parseInt(b), 0);
+        const ultimo = parseInt(num[15]);
+        const sumaPar = suma % 2 === 0;
+
+        if ((sumaPar && ultimo % 2 !== 1) || (!sumaPar && ultimo % 2 !== 0)) {
+          alert("Número de tarjeta inválido según validación de suma");
+          return;
+        }
+
+        usuarioActual.numeroDeTarjeta = num;
       }
 
-      if (!/^\d{16}$/.test(num)) {
-        alert("La tarjeta debe tener 16 dígitos");
-        return;
-      }
-
-      const suma = num.slice(0, 15).split("").reduce((a, b) => a + parseInt(b), 0);
-      const ultimo = parseInt(num[15]);
-      const sumaPar = suma % 2 === 0;
-
-      if ((sumaPar && ultimo % 2 !== 1) || (!sumaPar && ultimo % 2 !== 0)) {
-        alert("Número de tarjeta inválido según validación de suma");
-        return;
+      if (nuevoCodIngresado) {
+        usuarioActual.codigoDeSeguridad = cod;
       }
 
       usuarioActual.metodoDePago = "tarjeta-de-credito";
-      usuarioActual.numeroDeTarjeta = num;
-      usuarioActual.codigoDeSeguridad = cod; // opcional, podés no guardarlo por seguridad
     }
 
     if (document.getElementById("cupon-de-pago").checked) {
@@ -146,6 +145,4 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../index.html";
     }
   });
-
-  document.querySelector(".footer").appendChild(cerrarSesionBtn);
 });
