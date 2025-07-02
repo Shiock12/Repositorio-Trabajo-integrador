@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const usuarios = JSON.parse(localStorage.getItem("usuarios") || []);
+  const usuarios = JSON.parse(localStorage.getItem("usuarios") || "[]");
   const usuarioActivo = JSON.parse(localStorage.getItem("usuarioLogueado"));
 
   if (!usuarioActivo) {
@@ -18,9 +18,16 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("username").textContent = usuarioActual.nombreDeUsuario;
   document.getElementById("email").value = usuarioActual.email;
 
+  const tarjeta = document.getElementById("tarjeta-de-credito");
+  const cupon = document.getElementById("cupon-de-pago");
+  const pagoFacil = document.getElementById("pago-facil");
+  const rapipago = document.getElementById("rapipago");
+  const transferencia = document.getElementById("metodo-de-pago");
+
+  // Mostrar método de pago actual
   const metodo = usuarioActual.metodoDePago;
   if (metodo === "tarjeta-de-credito") {
-    document.getElementById("tarjeta-de-credito").checked = true;
+    tarjeta.checked = true;
     if (usuarioActual.numeroDeTarjeta) {
       document.getElementById("numero-de-tarjeta").value = "**** **** **** " + usuarioActual.numeroDeTarjeta.slice(-4);
     }
@@ -28,15 +35,67 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("codigo-de-seguridad").value = "***";
     }
   } else if (metodo === "cupon-de-pago") {
-    document.getElementById("cupon-de-pago").checked = true;
+    cupon.checked = true;
     if (usuarioActual.cuponDePago === "pago-facil") {
-      document.getElementById("pago-facil").checked = true;
+      pagoFacil.checked = true;
     } else if (usuarioActual.cuponDePago === "rapipago") {
-      document.getElementById("rapipago").checked = true;
+      rapipago.checked = true;
     }
   } else if (metodo === "transferencia") {
-    document.getElementById("metodo-de-pago").checked = true;
+    transferencia.checked = true;
   }
+
+  // Exclusividad de métodos
+  tarjeta.addEventListener("change", () => {
+    if (tarjeta.checked) {
+      cupon.checked = false;
+      pagoFacil.checked = false;
+      rapipago.checked = false;
+      transferencia.checked = false;
+    }
+  });
+
+  cupon.addEventListener("change", () => {
+    if (cupon.checked) {
+      tarjeta.checked = false;
+      transferencia.checked = false;
+      if (!pagoFacil.checked && !rapipago.checked) {
+        pagoFacil.checked = true;
+      }
+    } else {
+      pagoFacil.checked = false;
+      rapipago.checked = false;
+    }
+  });
+
+  pagoFacil.addEventListener("change", () => {
+    if (pagoFacil.checked) {
+      cupon.checked = true;
+      tarjeta.checked = false;
+      transferencia.checked = false;
+    } else if (!rapipago.checked) {
+      cupon.checked = false;
+    }
+  });
+
+  rapipago.addEventListener("change", () => {
+    if (rapipago.checked) {
+      cupon.checked = true;
+      tarjeta.checked = false;
+      transferencia.checked = false;
+    } else if (!pagoFacil.checked) {
+      cupon.checked = false;
+    }
+  });
+
+  transferencia.addEventListener("change", () => {
+    if (transferencia.checked) {
+      tarjeta.checked = false;
+      cupon.checked = false;
+      pagoFacil.checked = false;
+      rapipago.checked = false;
+    }
+  });
 
   const guardarBtn = document.querySelector(".btn-primario");
   const cancelarBtn = document.querySelector(".btn-secundario");
@@ -46,8 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const repetirPass = document.getElementById("repetir-contraseña").value;
 
     const hayMetodo = document.querySelector("input[name='metodo-de-pago']:checked");
-    const tieneCupon = document.getElementById("cupon-de-pago").checked &&
-      (document.getElementById("pago-facil").checked || document.getElementById("rapipago").checked);
+    const tieneCupon = cupon.checked && (pagoFacil.checked || rapipago.checked);
 
     const contrasenasIguales = nuevaPass === repetirPass;
     const contrasenaValida = /^(?=(?:.*[A-Za-z]){2,})(?=(?:.*\d){2,})(?=(?:.*[!@#$%^&*()_+={}\[\]:;"'<>,.?/\\|`~\-]){2,}).{8,}$/.test(nuevaPass);
@@ -77,7 +135,8 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
-    if (document.getElementById("tarjeta-de-credito").checked) {
+    // TARJETA DE CRÉDITO
+    if (tarjeta.checked) {
       let num = document.getElementById("numero-de-tarjeta").value.replace(/\s/g, "");
       const cod = document.getElementById("codigo-de-seguridad").value;
 
@@ -95,18 +154,29 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         usuarioActual.numeroDeTarjeta = num;
+        document.getElementById("numero-de-tarjeta").value = "**** **** **** " + num.slice(-4);
+      } else if (num.includes("*")) {
+        num = usuarioActual.numeroDeTarjeta;
+      } else {
+        alert("Ingresá un número de tarjeta válido de 16 dígitos");
+        return;
       }
 
       if (nuevoCodIngresado) {
         usuarioActual.codigoDeSeguridad = cod;
+        document.getElementById("codigo-de-seguridad").value = "***";
+      } else if (cod !== "***") {
+        alert("Código de seguridad inválido (deben ser 3 dígitos)");
+        return;
       }
 
       usuarioActual.metodoDePago = "tarjeta-de-credito";
     }
 
-    if (document.getElementById("cupon-de-pago").checked) {
-      const tipoCupon = document.getElementById("pago-facil").checked ? "pago-facil" :
-                        document.getElementById("rapipago").checked ? "rapipago" : "";
+    // CUPÓN
+    if (cupon.checked) {
+      const tipoCupon = pagoFacil.checked ? "pago-facil" :
+                        rapipago.checked ? "rapipago" : "";
 
       if (!tipoCupon) {
         alert("Debés seleccionar al menos un tipo de cupón");
@@ -117,7 +187,8 @@ document.addEventListener("DOMContentLoaded", () => {
       usuarioActual.cuponDePago = tipoCupon;
     }
 
-    if (document.getElementById("metodo-de-pago").checked) {
+    // TRANSFERENCIA
+    if (transferencia.checked) {
       usuarioActual.metodoDePago = "transferencia";
     }
 
@@ -130,7 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("usuarioLogueado", JSON.stringify(usuarioActual));
 
     alert("Cambios guardados correctamente");
-    window.location.href = "../PantallaPrincipal.html";
+    window.location.href = "./PantallaPrincipal.html";
   });
 
   cancelarBtn.addEventListener("click", (e) => {
@@ -145,4 +216,11 @@ document.addEventListener("DOMContentLoaded", () => {
       window.location.href = "../index.html";
     }
   });
+
+  // Botón de cerrar sesión si existe
+ const cerrarSesionBtn = document.getElementById("cerrar-sesion");
+  cerrarSesionBtn.addEventListener("click", () => {
+    localStorage.removeItem("usuarioLogueado");
+    window.location.href = "../index.html";
+  })
 });

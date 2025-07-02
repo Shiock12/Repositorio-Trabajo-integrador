@@ -8,7 +8,7 @@ const MENSAJES_DE_ERROR = {
   NOMBRE_DE_USUARIO: "el nombre de usuario es requerido",
   NOMBRE_DE_USUARIO_INVALIDO: "el nombre de usuario no es valido",
   CONTRASEÑA: "la contraseña es requerida",
-  CONTRASEÑA_INVALIDA: "la contraseña debe tener ente 6 y 8 caracteres ( mínimo 2 letras, 2 números y 2 caracteres especiales)",
+  CONTRASEÑA_INVALIDA: "la contraseña debe tener minimo 8 caracteres ( mínimo 2 letras, 2 números y 2 caracteres especiales)",
   REPETIR_CONTRASEÑA: "la constraseña es requerida",
   REPETIR_CONTRASEÑA_INVALIDA: "la constraseña debe ser igual a la anterior",
   METODO_DE_PAGO: "seleccione una opcion",
@@ -191,7 +191,6 @@ function registerValidate() {
     if (isFormValid) {
       submitBtn.disabled = true;
       submitBtn.textContent = "Enviando...";
-
 
       setTimeout(function () {
         registerForm.reset();

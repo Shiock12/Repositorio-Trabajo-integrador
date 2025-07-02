@@ -30,6 +30,15 @@
         text-decoration: none;
         text-align: center;
     }
+    .btn-terciario{
+        padding: 10px;
+        background-color: grey;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+    }
 }
 
 /*Smartphones vertical*/
