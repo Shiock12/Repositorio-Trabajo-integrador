@@ -246,3 +246,20 @@ function registerValidate() {
   });
 }
 registerValidate();
+
+document.querySelectorAll('input[name="metodo-de-pago"]').forEach((radio) => {
+  radio.addEventListener("change", () => {
+    const metodo = radio.value;
+
+    if (metodo !== "cupon-de-pago") {
+      document.querySelectorAll('input[name="opcion-de-cupon"]').forEach((subRadio) => {
+        subRadio.checked = false;
+      });
+    }
+
+    if (metodo !== "tarjeta-de-credito") {
+      document.getElementById("numero-de-tarjeta").value = "";
+      document.getElementById("codigo-de-seguridad").value = "";
+    }
+  });
+});
