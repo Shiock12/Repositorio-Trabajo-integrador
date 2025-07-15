@@ -92,6 +92,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 localStorage.setItem("favoritos", JSON.stringify(favoritos));
             });
+     const contenedorSimilares = document.getElementById('similares');
+
+            if (serie.similares && serie.similares.length > 0) {
+                serie.similares.forEach(similarId => {
+                    const serieSimilar = data.Series.find(s => s.id === similarId);
+                    if (serieSimilar) {
+                        const card = document.createElement('div');
+                        card.classList.add('card-similar');
+                        card.innerHTML = `
+                            <a href="VistaDinamicaSeries.html?id=${serieSimilar.id}">
+                                <img src="../../Imagenes/${serieSimilar.id}.jpg" alt="${serieSimilar.titulo}" />
+                            </a>
+                        `;
+                        contenedorSimilares.appendChild(card);
+                    }
+                });
+            } else {
+                contenedorSimilares.innerHTML = "<p>No hay series similares.</p>";
+            }
+
         })
         .catch(error => {
             console.error('Error cargando los datos:', error);

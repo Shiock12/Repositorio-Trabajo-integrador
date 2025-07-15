@@ -69,9 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const heart = this.querySelector('.heart');
                 heart.textContent = this.classList.contains('active') ? '❤️' : '♡';
 
-                // Leer y actualizar favoritos del usuario
                 let favoritos = JSON.parse(localStorage.getItem("favoritos")) || {};
-
                 if (!favoritos[usuarioLogueado.nombreDeUsuario]) {
                     favoritos[usuarioLogueado.nombreDeUsuario] = [];
                 }
@@ -87,6 +85,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 localStorage.setItem("favoritos", JSON.stringify(favoritos));
             });
+
+            const contenedorSimilares = document.getElementById('similares');
+
+            if (pelicula.similares && pelicula.similares.length > 0) {
+                pelicula.similares.forEach(similarId => {
+                    const peliSimilar = data.Peliculas.find(p => p.id === similarId);
+                    if (peliSimilar) {
+                        const card = document.createElement('div');
+                        card.classList.add('card-similar');
+                        card.innerHTML = `
+                            <a href="VistaDinamicaPeliculas.html?id=${peliSimilar.id}">
+                                <img src="../../Imagenes/${peliSimilar.id}.jpg" alt="${peliSimilar.titulo}" />
+                            </a>
+                        `;
+                        contenedorSimilares.appendChild(card);
+                    }
+                });
+            } else {
+                contenedorSimilares.innerHTML = "<p>No hay películas similares.</p>";
+            }
+
         })
         .catch(error => {
             console.error('Error cargando los datos:', error);

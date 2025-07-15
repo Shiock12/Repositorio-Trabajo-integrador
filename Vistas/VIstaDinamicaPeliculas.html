@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title><span id="titulo"></span></title>
+  <title>Detalle Película</title>
   <link rel="stylesheet" href="../../Estilos/styles.css" />
   <link rel="stylesheet" href="../../Estilos/header.css" />
   <link rel="stylesheet" href="../../Estilos/vistaDetalleSeriePelicula.css" />
@@ -25,7 +24,7 @@
       </a>
       <a href="../../Vistas/VistaDetallePelicula.html" class="nav-item">
         <span><img src="../../Imagenes/IconosHeader/Pelicula.png" alt="icon-pelicula" /></span>
-        <span>Peliculas</span>
+        <span>Películas</span>
       </a>
       <a href="../../Vistas/vistaPerfil.html" class="nav-item">
         <span><img src="../../Imagenes/IconosHeader/Perfil.png" alt="iconperfil" /></span>
@@ -36,43 +35,27 @@
 
   <div class="pelicula-serie">
     <div class="iframe-a" id="iframe-container">
-      <!-- Aca va el iframe de youtube -->
+      <!-- Iframe dinámico -->
     </div>
     <div class="detalle-pelicula-serie">
-      <p><strong>Titulo:</strong> <span id="titulo"></span></p>
-      <p><strong>Duracion:</strong> <span id="duracion"></span></p>
-      <p><strong>Genero:</strong> <span id="genero"></span></p>
-      <p>
-        <strong>Actores:</strong>
-        <span id="actores"></span>
-      </p>
+      <p><strong>Título:</strong> <span id="titulo"></span></p>
+      <p><strong>Duración:</strong> <span id="duracion"></span></p>
+      <p><strong>Género:</strong> <span id="genero"></span></p>
+      <p><strong>Actores:</strong> <span id="actores"></span></p>
       <p class="descripcion-pelicula-serie" id="descripcion"></p>
     </div>
   </div>
 
   <div class="peliculas-series-similares">
     <h1>Similares</h1>
-    <div class="galeria-peliculas-series">
-      <a href="VIstaDinamicaPeliculas.html?id=fatherhood">
-        <img src="../../Imagenes/paternidad.jpg" alt="Fatherhood" />
-      </a>
-      <a href="../Vistas/VIstaDinamicaPeliculas.html?id=inseparables" class="comedia">
-        <img src="../Imagenes/inseparables.jpg" alt="inseparables" />
-      </a>
-      <a href="VIstaDinamicaPeliculas.html?id=la-ballena">
-        <img src="../../Imagenes/ballena.jpg" alt="LaBallena" />
-      </a>
-      <a href="VIstaDinamicaPeliculas.html?id=los-dos-papas">
-        <img src="../../Imagenes/dospapas.jpg" alt="DosPapas" />
-      </a>
-
+    <div id="similares" class="galeria-peliculas-series">
     </div>
+  </div>
 
-    <footer class="footer">
-      Creada por Pfeiffer Juan Pablo, Axel Deantonio & Luis Spataro
-    </footer>
+  <footer class="footer">
+    Creada por Pfeiffer Juan Pablo, Axel Deantonio & Luis Spataro
+  </footer>
 
-    <script src="/JavaScript/vistaDinamica.js"></script>
+  <script src="../../JavaScript/vistaDinamica.js"></script>
 </body>
-
 </html>

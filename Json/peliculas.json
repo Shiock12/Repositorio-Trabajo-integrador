@@ -7,6 +7,9 @@
       "genero": "Comedia",
       "iframe": "https://www.youtube.com/embed/FLWu4KewJlU?si=z9xKLkCTbFXarBxh",
       "video_link": "https://www.youtube.com/watch?v=FLWu4KewJlU",
+      "similares": [
+        "bob-esponja","scary-movie-5","y-donde-estan-las-rubias","zootopia"
+      ],
       "actores": [
         {
           "nombre": "Jason Biggs",
@@ -42,6 +45,9 @@
       "genero": "Comedia",
       "iframe": "https://www.youtube.com/embed/Whvm9CGDp2U?si=Q3Iw02GQl5M6Y2tJ",
       "video_link": "https://www.youtube.com/watch?v=Whvm9CGDp2U",
+      "similares": [
+        "scary-movie-5","y-donde-estan-las-rubias","zootopia","american-pie-2"
+      ],
       "actores": [
         {
           "nombre": "Tom Kenny",
@@ -77,6 +83,9 @@
       "genero": "Comedia",
       "iframe": "https://www.youtube.com/embed/RMDZ8M47j0I?si=-3tmubJbQh7tcHdi&start=128",
       "video_link": "https://www.youtube.com/watch?v=HTLPULt0eJ4",
+      "similares": [
+      "bob-esponja","y-donde-estan-las-rubias","zootopia","american-pie-2"
+      ],
       "actores": [
         {
           "nombre": "Ashley Tisdale",
@@ -112,6 +121,9 @@
       "genero": "Comedia",
       "iframe": "https://www.youtube.com/embed/aeVkbNka9HM?si=C3jyy9CpE8AeSBaW",
       "video_link": "https://www.youtube.com/watch?v=aeVkbNka9HM&t=7s",
+      "similares": [
+        "scary-movie-5","bob-esponja","american-pie-2","zootopia"
+      ],
       "actores": [
         {
           "nombre": "Shawn Wayans",
@@ -151,6 +163,9 @@
       "genero": "Comedia",
       "iframe": "https://www.youtube.com/embed/xmwGekxPjwg?si=Lip-FBZY1J2taxfx",
       "video_link": "https://www.youtube.com/watch?v=xmwGekxPjwg",
+      "similares": [
+        "scary-movie-5","bob-esponja","y-donde-estan-las-rubias","american-pie-2"
+      ],
       "actores": [
         {
           "nombre": "Ginnifer Goodwin",
@@ -190,6 +205,9 @@
       "genero": "Drama",
       "iframe": "https://www.youtube.com/embed/nWiQodhMvz4?si=WZF47LlGvmrANrBc",
       "video_link": "https://www.youtube.com/watch?v=ZQMdtjQnyo4",
+      "similares": [
+        "los-dos-papas","el-aura","fatherhood","inseparables"
+      ],
       "actores": [
         {
           "nombre": "Brendan Fraser",
@@ -221,6 +239,9 @@
       "genero": "Drama",
       "iframe": "https://www.youtube.com/embed/epf-XMQ5Q8M?si=BP1XfOp1i9lu0PEc",
       "video_link": "https://www.youtube.com/watch?v=epf-XMQ5Q8M",
+      "similares": [
+        "la-ballena","el-aura","fatherhood","inseparables"
+      ],
       "actores": [
         {
           "nombre": "Anthony Hopkins",
@@ -240,6 +261,9 @@
       "genero": "Drama",
       "iframe": "https://www.youtube.com/embed/zE-PhxHi618?si=i1wQobjT2fOLGctW",
       "video_link": "https://www.youtube.com/watch?v=zE-PhxHi618",
+      "similares": [
+        "la-ballena","los-dos-papas","fatherhood","inseparables"
+      ],
       "actores": [
         {
           "nombre": "Ricardo Darín",
@@ -275,6 +299,9 @@
       "genero": "Drama",
       "iframe": "https://www.youtube.com/embed/T3mwUEoZdrI?si=tJ-GfGdKdsfdKAm7",
       "video_link": "https://www.youtube.com/watch?v=T3mwUEoZdrI&t=2s",
+      "similares": [
+        "la-ballena","los-dos-papas","el-aura","inseparables"
+      ],
       "actores": [
         {
           "nombre": "Kevin Hart",
@@ -310,6 +337,9 @@
       "genero": "Drama",
       "iframe": "https://www.youtube.com/embed/CRImvPVA4Io?si=5Si3tBrivGrXv5J1",
       "video_link": "https://www.youtube.com/watch?v=CRImvPVA4Io",
+      "similares": [
+        "la-ballena","los-dos-papas","el-aura","fatherhood"
+      ],
       "actores": [
         {
           "nombre": "Rodrigo de la Serna",
@@ -341,6 +371,9 @@
       "genero": "Terror",
       "iframe": "https://www.youtube.com/embed/gvxNaSIB_WI?si=R_sCIHWyt89a-S5Z",
       "video_link": "https://www.youtube.com/watch?v=gvxNaSIB_WI",
+      "similares": [
+        "nop","el_ultimo_exorcismo_ii","verdad_o_reto","no_respires_2"
+      ],
       "actores": [
         {
           "nombre": "Nat Wolff",
@@ -372,6 +405,9 @@
       "genero": "Terror",
       "iframe": "https://www.youtube.com/embed/v0kTARdZah8?si=RfgGgLsTGGWDVSLW",
       "video_link": "https://www.youtube.com/watch?v=v0kTARdZah8",
+      "similares": [
+        "death-note","el_ultimo_exorcismo_ii","verdad_o_reto","no_respires_2"
+      ],
       "actores": [
         {
           "nombre": "Daniel Kaluuya",
@@ -407,6 +443,9 @@
       "genero": "Terror",
       "iframe": "https://www.youtube.com/embed/pkJPitRDVwQ?si=Pi5KfeB70jzu9U0O",
       "video_link": "https://www.youtube.com/watch?v=pkJPitRDVwQ",
+      "similares": [
+        "death-note","nop","verdad_o_reto","no_respires_2"
+      ],
       "actores": [
         {
           "nombre": "Ashley Bell",
@@ -434,6 +473,9 @@
       "genero": "Terror",
       "iframe": "https://www.youtube.com/embed/RFt6jumiTU4?si=oJwluA5Fv32VrlfH",
       "video_link": "https://www.youtube.com/watch?v=RFt6jumiTU4",
+      "similares": [
+        "death-note","nop","el_ultimo_exorcismo_ii","no_respires_2"
+      ],
       "actores": [
         {
           "nombre": "Lucy Hale",
@@ -465,6 +507,9 @@
       "genero": "Terror",
       "iframe": "https://www.youtube.com/embed/en_3ZnETSGE?si=fcpL76xdYt3fjcYy",
       "video_link": "https://www.youtube.com/watch?v=en_3ZnETSGE",
+      "similares": [
+        "death-note","nop","el_ultimo_exorcismo_ii","verdad_o_reto"
+      ],
       "actores": [
         {
           "nombre": "Stephen Lang",
@@ -493,6 +538,9 @@
       "genero": "Comedia",
       "iframe": "https://www.youtube.com/embed/aTtinse4RWQ?si=6Xori9Tw5HxlMbZy",
       "video_link": "https://www.youtube.com/watch?v=aTtinse4RWQ",
+      "similares": [
+        "division-palermo","on-my-block","the-office","un-hombre-infiltrado"
+      ],
       "actores": [
         {
           "nombre": "Abbi Jacobson",
@@ -545,6 +593,9 @@
       "genero": "Comedia",
       "iframe": "https://www.youtube.com/embed/Ozz-5rWXoI0?si=iB-hwjSQwR6Y9h_I",
       "video_link": "https://www.youtube.com/watch?v=Ozz-5rWXoI0",
+      "similares": [
+        "desencanto","on-my-block","the-office","un-hombre-infiltrado"
+      ],
       "actores": [
         {
           "nombre": "Santiago Korovsky",
@@ -597,6 +648,9 @@
       "genero": "Comedia",
       "iframe": "https://www.youtube.com/embed/H65irEWSg9k?si=Q0OvcyankaOacMBL",
       "video_link": "https://www.youtube.com/watch?v=H65irEWSg9k",
+      "similares": [
+        "desencanto","division-palermo","the-office","un-hombre-infiltrado"
+      ],
       "actores": [
         {
           "nombre": "Sierra Capri",
@@ -649,6 +703,9 @@
       "genero": "Comedia",
       "iframe": "https://www.youtube.com/embed/tNcDHWpselE?si=2CMno0vYlXX24R6T",
       "video_link": "https://www.youtube.com/watch?v=tNcDHWpselE",
+      "similares": [
+        "desencanto","division-palermo","on-my-block","un-hombre-infiltrado"
+      ],
       "actores": [
         {
           "nombre": "Steve Carell",
@@ -701,6 +758,9 @@
       "genero": "Comedia",
       "iframe": "https://www.youtube.com/embed/ddmBGDfrjko?si=WtGqicskZTOOGMC6",
       "video_link": "https://www.youtube.com/watch?v=ddmBGDfrjko",
+      "similares": [
+        "desencanto","division-palermo","on-my-block","the-office"
+      ],
       "actores": [
         {
           "nombre": "Ted Danson",
@@ -745,6 +805,9 @@
       "genero": "Drama",
       "iframe": "https://www.youtube.com/embed/F__GiNn8c4U?si=a5VAL8dRlFBY9sel",
       "video_link": "https://www.youtube.com/watch?v=F__GiNn8c4U",
+      "similares": [
+        "la-ley-de-los-audaces","legado","prision_break","stranger_things"
+      ],
       "actores": [
         {
           "nombre": "Álvaro Rico",
@@ -793,6 +856,9 @@
       "genero": "Drama",
       "iframe": "https://www.youtube.com/embed/8pApNU09c_g?si=LGTVQW7syrkt95Ib",
       "video_link": "https://www.youtube.com/watch?v=8pApNU09c_g",
+       "similares": [
+        "el-jardinero","legado","prision_break","stranger_things"
+      ],
       "actores": [
         {
           "nombre": "Gabriel Macht",
@@ -845,6 +911,9 @@
       "genero": "Drama",
       "iframe": "https://www.youtube.com/embed/UKfLu1Ocnlw?si=c6GUEfUL_JWCpYbZ",
       "video_link": "https://www.youtube.com/watch?v=UKfLu1Ocnlw",
+       "similares": [
+        "el-jardinero","la-ley-de-los-audaces","prision_break","stranger_things"
+      ],
       "actores": [
         {
           "nombre": "José Coronado",
@@ -897,6 +966,9 @@
       "genero": "Drama",
       "iframe": "https://www.youtube.com/embed/_RhU7Ne21bc?si=iTf92UysEzdVe9ra",
       "video_link": "https://www.youtube.com/watch?v=_RhU7Ne21bc",
+      "similares": [
+        "el-jardinero","la-ley-de-los-audaces","legado","stranger_things"
+      ],
       "actores": [
         {
           "nombre": "Dominic Purcell",
@@ -945,6 +1017,9 @@
       "genero": "Drama",
       "iframe": "https://www.youtube.com/embed/32qjg3lg7gA?si=hvd90dalSRjx9yRv",
       "video_link": "https://www.youtube.com/watch?v=32qjg3lg7gA",
+      "similares": [
+        "el-jardinero","la-ley-de-los-audaces","legado","prision_break"
+      ],
       "actores": [
         {
           "nombre": "Winona Ryder",
@@ -993,6 +1068,9 @@
       "genero": "Terror",
       "iframe": "https://www.youtube.com/embed/tQA1omPJN24?si=BQ42hXRwmX6__UmB",
       "video_link": "https://www.youtube.com/watch?v=tQA1omPJN24",
+      "similares": [
+        "dahmer","felicidad_intensa","la_maldicion_de_hill_house","the_walking_dead"
+      ],
       "actores": [
         {
           "nombre": "Jaime King",
@@ -1041,6 +1119,9 @@
       "genero": "Terror",
       "iframe": "https://www.youtube.com/embed/OjUL6j2Az3Q?si=-kcIwgWgAGfmiFDb",
       "video_link": "https://www.youtube.com/watch?v=OjUL6j2Az3Q",
+      "similares": [
+        "black_summer","felicidad_intensa","la_maldicion_de_hill_house","the_walking_dead"
+      ],
       "actores": [
         {
           "nombre": "Evan Peters",
@@ -1089,6 +1170,9 @@
       "genero": "Terror",
       "iframe": "https://www.youtube.com/embed/gqhUlldiLEo?si=v-J0RIx2ATf2hMLj",
       "video_link": "https://www.youtube.com/watch?v=gqhUlldiLEo",
+      "similares": [
+        "black_summer","dahmer","la_maldicion_de_hill_house","the_walking_dead"
+      ],
       "actores": [
         {
           "nombre": "Han Hyo-joo",
@@ -1129,6 +1213,9 @@
       "genero": "Terror",
       "iframe": "https://www.youtube.com/embed/mTvNeafShH0?si=oTrE6MjRbiWlSCIk",
       "video_link": "https://www.youtube.com/watch?v=mTvNeafShH0",
+       "similares": [
+        "black_summer","dahmer","felicidad_intensa","the_walking_dead"
+      ],
       "actores": [
         {
           "nombre": "Michiel Huisman",
@@ -1177,6 +1264,9 @@
       "genero": "Terror",
       "iframe": "https://www.youtube.com/embed/sfAc2U20uyg?si=jnq5YiZ-FZIbQJmt",
       "video_link": "https://www.youtube.com/watch?v=sfAc2U20uyg",
+      "similares": [
+        "black_summer","dahmer","felicidad_intensa","la_maldicion_de_hill_house"
+      ],
       "actores": [
         {
           "nombre": "Andrew Lincoln",
