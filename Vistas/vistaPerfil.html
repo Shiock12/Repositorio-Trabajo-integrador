@@ -67,7 +67,7 @@
           <input type="radio" name="metodo-de-pago" id="tarjeta-de-credito" required>
           <label for="tarjeta-de-credito">Tarjeta de crédito</label>
           <div class="campo">
-            <input type="text" name="numero-de-tarjeta" id="numero-de-tarjeta">
+            <input type="text" name="numero-de-tarjeta" id="numero-de-tarjeta" maxlength="16">
             <input type="text" size="3" maxlength="3" name="codigo-de-seguridad" id="codigo-de-seguridad">
           </div>
         </div>
@@ -76,11 +76,11 @@
           <label for="cupon-de-pago">Cupón de pago</label>
           <div class="campo-cupon-de-pago">
             <div>
-              <input type="radio" name="cupon-de-pago" id="pago-facil" >
+              <input type="radio" name="cupon-de-pago" id="pago-facil">
               <label for="pago-facil">Pago facil</label>
             </div>
             <div>
-              <input type="radio" name="cupon-de-pago" id="rapipago" >
+              <input type="radio" name="cupon-de-pago" id="rapipago">
               <label for="rapipago">RapiPago</label>
             </div>
           </div>
@@ -94,7 +94,7 @@
         </div>
       </section>
       <div class="botones">
-        <button type="submit" class="btn-primario" disabled>Guardar cambios</button>
+        <button type="submit" class="btn-primario">Guardar cambios</button>
         <button type="submit" class="btn-secundario">Cancelar subscripcion</button>
         <button type="submit" class="btn-terciario" id="cerrar-sesion">Cerrar sesion</button>
 
@@ -102,15 +102,16 @@
     </form>
   </div>
   <section class="favoritos">
-  <h2>Películas favoritas</h2>
-  <div id="lista-peliculas-favoritas" class="galeria-Series-Peliculas"></div>
-  <h2>Series favoritas</h2>
-  <div id="lista-series-favoritas" class="galeria-Series-Peliculas"></div>
-</section>
+    <h2>Películas favoritas</h2>
+    <div id="lista-peliculas-favoritas" class="galeria-Series-Peliculas"></div>
+    <h2>Series favoritas</h2>
+    <div id="lista-series-favoritas" class="galeria-Series-Peliculas"></div>
+  </section>
   <footer class="footer">
     Creada por Pfeiffer Juan Pablo - Axel Deantonio - Luis Spataro
     <script src="../JavaScript/Perfil.js"></script>
-     <script src="../JavaScript/mostrarFavoritos.js"></script>
+    <script src="../JavaScript/mostrarFavoritos.js"></script>
   </footer>
 </body>
+
 </html>

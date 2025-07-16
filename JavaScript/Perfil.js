@@ -36,9 +36,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   } else if (metodo === "cupon-de-pago") {
     cupon.checked = true;
-    if (usuarioActual.cuponDePago === "pago-facil") {
+    if (usuarioActual.cuponDePago.value === "pago-facil") {
       pagoFacil.checked = true;
-    } else if (usuarioActual.cuponDePago === "rapipago") {
+    } else if (usuarioActual.cuponDePago.value === "rapipago") {
       rapipago.checked = true;
     }
   } else if (metodo === "transferencia") {
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
       let num = document.getElementById("numero-de-tarjeta").value.replace(/\s/g, "");
       const cod = document.getElementById("codigo-de-seguridad").value;
 
-      const nuevaTarjetaIngresada = !num.includes("*") && /^\d{16}$/.test(num);
+      const nuevaTarjetaIngresada = !num.includes("*") && /^\d+$/.test(num);
       const nuevoCodIngresado = cod !== "***" && /^[0-9]{3}$/.test(cod);
 
       if (nuevaTarjetaIngresada) {
