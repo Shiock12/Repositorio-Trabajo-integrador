@@ -20,18 +20,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
         if (favoritosDelUsuario.includes(idSerie)) {
             heartIcon.textContent = "❤️";
-            heartIcon.classList.add('favorito'); // <-- Se agrega la clase al cargar si es favorito
+            heartIcon.classList.add('favorito'); 
         } else {
             heartIcon.textContent = "♡";
         }
 
-        // Crear un contenedor relativo
         item.style.position = "relative";
         item.appendChild(heartIcon);
 
         // Manejar click
         heartIcon.addEventListener("click", (event) => {
-            event.preventDefault(); // Evita navegar al link al hacer click en el corazón
+            event.preventDefault(); 
             toggleFavorito(idSerie, heartIcon, usuarioLogueado);
         });
     });
@@ -50,12 +49,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const index = lista.indexOf(id);
 
         if (index !== -1) {
-            // Si ya está en favoritos, lo quitamos
             lista.splice(index, 1);
             heartIcon.textContent = "♡";
             heartIcon.classList.remove('favorito');
         } else {
-            // Si no está, lo agregamos
             lista.push(id);
             heartIcon.textContent = "❤️";
             heartIcon.classList.add('favorito');
