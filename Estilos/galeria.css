@@ -13,6 +13,38 @@
         gap: 1rem;
         padding: 5%;
     }
+/*---- Boton corazon ----*/
+.heart-icon {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+    color: white;
+    background-color: gray;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    transition: transform 0.2s, background-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.heart-icon:hover {
+    transform: scale(1.2);
+}
+
+.heart-icon.favorito {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: red !important;
+}
+
+
+
 
     .galeria-PantallaPrincipal img {
         width: 100%;
