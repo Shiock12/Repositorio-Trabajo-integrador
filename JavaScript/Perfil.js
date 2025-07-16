@@ -101,17 +101,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const cancelarBtn = document.querySelector(".btn-secundario");
 
   const camposValidos = () => {
-    const nuevaPass = document.getElementById("nueva-contraseña").value;
-    const repetirPass = document.getElementById("repetir-contraseña").value;
+  const nuevaPass = document.getElementById("nueva-contraseña").value;
+  const repetirPass = document.getElementById("repetir-contraseña").value;
 
-    const hayMetodo = document.querySelector("input[name='metodo-de-pago']:checked");
-    const tieneCupon = cupon.checked && (pagoFacil.checked || rapipago.checked);
+  const hayMetodo = document.querySelector("input[name='metodo-de-pago']:checked");
+  const tieneCupon = cupon.checked && (pagoFacil.checked || rapipago.checked);
 
-    const contrasenasIguales = nuevaPass === repetirPass;
-    const contrasenaValida = /^(?=(?:.*[A-Za-z]){2,})(?=(?:.*\d){2,})(?=(?:.*[!@#$%^&*()_+={}\[\]:;"'<>,.?/\\|`~\-]){2,}).{8,}$/.test(nuevaPass);
+  const contrasenasVacias = nuevaPass === "" && repetirPass === "";
 
-    return contrasenasIguales && contrasenaValida && (hayMetodo || tieneCupon);
-  };
+  const contrasenasIguales = nuevaPass === repetirPass;
+  const contrasenaValida = /^(?=(?:.*[A-Za-z]){2,})(?=(?:.*\d){2,})(?=(?:.*[!@#$%^&*()_+={}\[\]:;"'<>,.?/\\|`~\-]){2,}).{8,}$/.test(nuevaPass);
+
+  return (contrasenasVacias || (contrasenasIguales && contrasenaValida)) && (hayMetodo || tieneCupon);
+};
 
   document.querySelectorAll("input").forEach(input => {
     input.addEventListener("input", () => {
@@ -192,7 +194,9 @@ document.addEventListener("DOMContentLoaded", () => {
       usuarioActual.metodoDePago = "transferencia";
     }
 
-    usuarioActual.contraseña = nuevaPass;
+    if (nuevaPass !== "") {
+  usuarioActual.contraseña = nuevaPass;
+}
 
     const index = usuarios.findIndex(u => u.nombreDeUsuario === usuarioActual.nombreDeUsuario);
     usuarios[index] = usuarioActual;
