@@ -12,19 +12,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const items = document.querySelectorAll(".galeria-Series-Peliculas a");
 
     items.forEach(item => {
-        const img = item.querySelector("img");
         const idSerie = obtenerIdDesdeHref(item.href);
 
         // Crear el contenedor del corazón
         const heartIcon = document.createElement("span");
         heartIcon.classList.add("heart-icon");
-        heartIcon.textContent = favoritosDelUsuario.includes(idSerie) ? "❤️" : "♡";
-        heartIcon.style.position = "absolute";
-        heartIcon.style.top = "5px";
-        heartIcon.style.right = "5px";
-        heartIcon.style.fontSize = "24px";
-        heartIcon.style.cursor = "pointer";
-        heartIcon.style.userSelect = "none";
+
+        if (favoritosDelUsuario.includes(idSerie)) {
+            heartIcon.textContent = "❤️";
+            heartIcon.classList.add('favorito'); // <-- Se agrega la clase al cargar si es favorito
+        } else {
+            heartIcon.textContent = "♡";
+        }
 
         // Crear un contenedor relativo
         item.style.position = "relative";
@@ -43,26 +42,25 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function toggleFavorito(id, heartIcon, usuario) {
-    let favoritos = JSON.parse(localStorage.getItem("favoritos")) || {};
-    if (!favoritos[usuario.nombreDeUsuario]) {
-        favoritos[usuario.nombreDeUsuario] = [];
+        let favoritos = JSON.parse(localStorage.getItem("favoritos")) || {};
+        if (!favoritos[usuario.nombreDeUsuario]) {
+            favoritos[usuario.nombreDeUsuario] = [];
+        }
+        const lista = favoritos[usuario.nombreDeUsuario];
+        const index = lista.indexOf(id);
+
+        if (index !== -1) {
+            // Si ya está en favoritos, lo quitamos
+            lista.splice(index, 1);
+            heartIcon.textContent = "♡";
+            heartIcon.classList.remove('favorito');
+        } else {
+            // Si no está, lo agregamos
+            lista.push(id);
+            heartIcon.textContent = "❤️";
+            heartIcon.classList.add('favorito');
+        }
+
+        localStorage.setItem("favoritos", JSON.stringify(favoritos));
     }
-    const lista = favoritos[usuario.nombreDeUsuario];
-    const index = lista.indexOf(id);
-
-    if (index !== -1) {
-        // Si ya está en favoritos, lo quitamos
-        lista.splice(index, 1);
-        heartIcon.textContent = "♡";  // Usamos el mismo símbolo sólido
-        heartIcon.classList.remove('favorito');
-    } else {
-        // Si no está, lo agregamos
-        lista.push(id);
-        heartIcon.textContent = "❤️";
-        heartIcon.classList.add('favorito');
-    }
-
-    localStorage.setItem("favoritos", JSON.stringify(favoritos));
-}
-
 });
